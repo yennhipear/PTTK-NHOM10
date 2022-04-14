@@ -21,5 +21,22 @@ namespace GUI.BUS
 
             return dao.LayDSVacxinHT();
         }
+
+        public String[] LayCTVacxin(String maVacxin)
+        {
+            VacxinDAO dao = new VacxinDAO();
+            DataTable dataTable = dao.LayCTVacxin(maVacxin);
+            if (dao == null)
+            {
+                MessageBox.Show("Đã xảy ra lỗi! Không thể lấy chi tiết vắc xin");
+                return null;
+            }
+
+            String[] result = new String[2];
+            result[0] = $"Hãng sản xuất: {dataTable.Rows[0]["HANGVACXIN"].ToString()}";
+            result[1] = $"Mô tả: {dataTable.Rows[0]["MOTA"].ToString()}";
+
+            return result;
+        }
     }
 }

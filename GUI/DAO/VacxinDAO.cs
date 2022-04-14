@@ -26,7 +26,7 @@ namespace GUI.DAO
             try
             {
                 cnn.Open();
-                String command = "Select MAVACXIN, TENVACXIN from VACXIN";
+                String command = "Select MAVACXIN, TENVACXIN, NGUABENH from VACXIN";
                 SqlDataAdapter sqlDaDH = new SqlDataAdapter(command, cnn);
                 sqlDaDH.Fill(result);
 
@@ -35,6 +35,28 @@ namespace GUI.DAO
             catch (Exception ex)
             {
                 result = null;                
+            }
+            return result;
+        }
+
+        public DataTable LayCTVacxin(String maVacxin)
+        {
+            SqlConnection cnn = new SqlConnection(ConfigurationManager.ConnectionStrings["SQLConnectionString"].ConnectionString);
+            DataTable result = new DataTable();
+            try
+            {
+                cnn.Open();
+                SqlCommand command = new SqlCommand("Select HANGVACXIN, MOTA from VACXIN WHERE MAVACXIN = @maVacxin", cnn);
+                command.Parameters.Add(new SqlParameter("@maVacxin", maVacxin));
+
+                SqlDataAdapter sqlDaDH = new SqlDataAdapter(command);
+                sqlDaDH.Fill(result);
+
+                cnn.Close();
+            }
+            catch (Exception ex)
+            {
+                result = null;
             }
             return result;
         }

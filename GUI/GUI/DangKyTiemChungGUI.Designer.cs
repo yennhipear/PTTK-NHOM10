@@ -32,18 +32,18 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.DSVacxinChon_Datagridview = new System.Windows.Forms.DataGridView();
+            this.label2 = new System.Windows.Forms.Label();
+            this.panel2 = new System.Windows.Forms.Panel();
+            this.ChiTiet_Textbox = new System.Windows.Forms.TextBox();
+            this.label3 = new System.Windows.Forms.Label();
+            this.MaVacxin = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenVacxin = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.NguaBenh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ThemBtnCol = new System.Windows.Forms.DataGridViewButtonColumn();
             this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.dataGridViewButtonColumn1 = new System.Windows.Forms.DataGridViewButtonColumn();
             this.dataGridViewButtonColumn2 = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.label2 = new System.Windows.Forms.Label();
-            this.panel2 = new System.Windows.Forms.Panel();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.MaVacxin = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenVacxin = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ChiTietBtnCol = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.ThemBtnCol = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DSVacxinHT_Datagridview)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DSVacxinChon_Datagridview)).BeginInit();
@@ -52,11 +52,14 @@
             // 
             // DSVacxinHT_Datagridview
             // 
+            this.DSVacxinHT_Datagridview.AllowUserToAddRows = false;
+            this.DSVacxinHT_Datagridview.AllowUserToDeleteRows = false;
+            this.DSVacxinHT_Datagridview.AllowUserToOrderColumns = true;
             this.DSVacxinHT_Datagridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DSVacxinHT_Datagridview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaVacxin,
             this.TenVacxin,
-            this.ChiTietBtnCol,
+            this.NguaBenh,
             this.ThemBtnCol});
             this.DSVacxinHT_Datagridview.Location = new System.Drawing.Point(0, 25);
             this.DSVacxinHT_Datagridview.Name = "DSVacxinHT_Datagridview";
@@ -85,6 +88,7 @@
             // 
             // DSVacxinChon_Datagridview
             // 
+            this.DSVacxinChon_Datagridview.AllowUserToAddRows = false;
             this.DSVacxinChon_Datagridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DSVacxinChon_Datagridview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn1,
@@ -95,41 +99,6 @@
             this.DSVacxinChon_Datagridview.Name = "DSVacxinChon_Datagridview";
             this.DSVacxinChon_Datagridview.Size = new System.Drawing.Size(415, 201);
             this.DSVacxinChon_Datagridview.TabIndex = 3;
-            // 
-            // dataGridViewTextBoxColumn1
-            // 
-            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn1.FillWeight = 80F;
-            this.dataGridViewTextBoxColumn1.HeaderText = "Mã vắc xin";
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            // 
-            // dataGridViewTextBoxColumn2
-            // 
-            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn2.HeaderText = "Tên vắc xin";
-            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
-            this.dataGridViewTextBoxColumn2.ReadOnly = true;
-            // 
-            // dataGridViewButtonColumn1
-            // 
-            this.dataGridViewButtonColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewButtonColumn1.FillWeight = 80F;
-            this.dataGridViewButtonColumn1.HeaderText = "Chi tiết";
-            this.dataGridViewButtonColumn1.Name = "dataGridViewButtonColumn1";
-            this.dataGridViewButtonColumn1.ReadOnly = true;
-            this.dataGridViewButtonColumn1.Text = "Chi tiết";
-            this.dataGridViewButtonColumn1.UseColumnTextForButtonValue = true;
-            // 
-            // dataGridViewButtonColumn2
-            // 
-            this.dataGridViewButtonColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewButtonColumn2.FillWeight = 60F;
-            this.dataGridViewButtonColumn2.HeaderText = "Thêm";
-            this.dataGridViewButtonColumn2.Name = "dataGridViewButtonColumn2";
-            this.dataGridViewButtonColumn2.ReadOnly = true;
-            this.dataGridViewButtonColumn2.Text = "Thêm";
-            this.dataGridViewButtonColumn2.UseColumnTextForButtonValue = true;
             // 
             // label2
             // 
@@ -142,23 +111,22 @@
             // 
             // panel2
             // 
-            this.panel2.Controls.Add(this.textBox1);
+            this.panel2.Controls.Add(this.ChiTiet_Textbox);
             this.panel2.Controls.Add(this.label3);
             this.panel2.Location = new System.Drawing.Point(434, 4);
             this.panel2.Name = "panel2";
             this.panel2.Size = new System.Drawing.Size(354, 434);
             this.panel2.TabIndex = 3;
             // 
-            // textBox1
+            // ChiTiet_Textbox
             // 
-            this.textBox1.Location = new System.Drawing.Point(0, 25);
-            this.textBox1.Multiline = true;
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
-            this.textBox1.Size = new System.Drawing.Size(354, 409);
-            this.textBox1.TabIndex = 1;
-            this.textBox1.WordWrap = false;
+            this.ChiTiet_Textbox.Location = new System.Drawing.Point(0, 25);
+            this.ChiTiet_Textbox.Multiline = true;
+            this.ChiTiet_Textbox.Name = "ChiTiet_Textbox";
+            this.ChiTiet_Textbox.ReadOnly = true;
+            this.ChiTiet_Textbox.ScrollBars = System.Windows.Forms.ScrollBars.Vertical;
+            this.ChiTiet_Textbox.Size = new System.Drawing.Size(354, 409);
+            this.ChiTiet_Textbox.TabIndex = 1;
             // 
             // label3
             // 
@@ -177,6 +145,7 @@
             this.MaVacxin.HeaderText = "Mã vắc xin";
             this.MaVacxin.Name = "MaVacxin";
             this.MaVacxin.ReadOnly = true;
+            this.MaVacxin.Visible = false;
             // 
             // TenVacxin
             // 
@@ -186,15 +155,16 @@
             this.TenVacxin.Name = "TenVacxin";
             this.TenVacxin.ReadOnly = true;
             // 
-            // ChiTietBtnCol
+            // NguaBenh
             // 
-            this.ChiTietBtnCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.ChiTietBtnCol.FillWeight = 80F;
-            this.ChiTietBtnCol.HeaderText = "Chi tiết";
-            this.ChiTietBtnCol.Name = "ChiTietBtnCol";
-            this.ChiTietBtnCol.ReadOnly = true;
-            this.ChiTietBtnCol.Text = "Chi tiết";
-            this.ChiTietBtnCol.UseColumnTextForButtonValue = true;
+            this.NguaBenh.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.NguaBenh.DataPropertyName = "NGUABENH";
+            this.NguaBenh.FillWeight = 70F;
+            this.NguaBenh.HeaderText = "Ngừa bệnh";
+            this.NguaBenh.Name = "NguaBenh";
+            this.NguaBenh.ReadOnly = true;
+            this.NguaBenh.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            this.NguaBenh.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
             // ThemBtnCol
             // 
@@ -205,6 +175,42 @@
             this.ThemBtnCol.ReadOnly = true;
             this.ThemBtnCol.Text = "Thêm";
             this.ThemBtnCol.UseColumnTextForButtonValue = true;
+            // 
+            // dataGridViewTextBoxColumn1
+            // 
+            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn1.FillWeight = 80F;
+            this.dataGridViewTextBoxColumn1.HeaderText = "Mã vắc xin";
+            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
+            this.dataGridViewTextBoxColumn1.ReadOnly = true;
+            this.dataGridViewTextBoxColumn1.Visible = false;
+            // 
+            // dataGridViewTextBoxColumn2
+            // 
+            this.dataGridViewTextBoxColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewTextBoxColumn2.HeaderText = "Tên vắc xin";
+            this.dataGridViewTextBoxColumn2.Name = "dataGridViewTextBoxColumn2";
+            this.dataGridViewTextBoxColumn2.ReadOnly = true;
+            // 
+            // dataGridViewButtonColumn1
+            // 
+            this.dataGridViewButtonColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewButtonColumn1.FillWeight = 80F;
+            this.dataGridViewButtonColumn1.HeaderText = "Ngừa bệnh";
+            this.dataGridViewButtonColumn1.Name = "dataGridViewButtonColumn1";
+            this.dataGridViewButtonColumn1.ReadOnly = true;
+            this.dataGridViewButtonColumn1.Text = "Ngừa bệnh";
+            this.dataGridViewButtonColumn1.UseColumnTextForButtonValue = true;
+            // 
+            // dataGridViewButtonColumn2
+            // 
+            this.dataGridViewButtonColumn2.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.dataGridViewButtonColumn2.FillWeight = 60F;
+            this.dataGridViewButtonColumn2.HeaderText = "Thêm";
+            this.dataGridViewButtonColumn2.Name = "dataGridViewButtonColumn2";
+            this.dataGridViewButtonColumn2.ReadOnly = true;
+            this.dataGridViewButtonColumn2.Text = "Thêm";
+            this.dataGridViewButtonColumn2.UseColumnTextForButtonValue = true;
             // 
             // DangKyTiemChungGUI
             // 
@@ -232,16 +238,16 @@
         private System.Windows.Forms.Panel panel1;
         private System.Windows.Forms.Label label2;
         private System.Windows.Forms.Panel panel2;
-        private System.Windows.Forms.TextBox textBox1;
+        private System.Windows.Forms.TextBox ChiTiet_Textbox;
         private System.Windows.Forms.Label label3;
         private System.Windows.Forms.DataGridView DSVacxinChon_Datagridview;
+        private System.Windows.Forms.DataGridViewTextBoxColumn MaVacxin;
+        private System.Windows.Forms.DataGridViewTextBoxColumn TenVacxin;
+        private System.Windows.Forms.DataGridViewTextBoxColumn NguaBenh;
+        private System.Windows.Forms.DataGridViewButtonColumn ThemBtnCol;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn2;
         private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn1;
         private System.Windows.Forms.DataGridViewButtonColumn dataGridViewButtonColumn2;
-        private System.Windows.Forms.DataGridViewTextBoxColumn MaVacxin;
-        private System.Windows.Forms.DataGridViewTextBoxColumn TenVacxin;
-        private System.Windows.Forms.DataGridViewButtonColumn ChiTietBtnCol;
-        private System.Windows.Forms.DataGridViewButtonColumn ThemBtnCol;
     }
 }
