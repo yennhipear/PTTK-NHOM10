@@ -31,7 +31,15 @@ namespace GUI.GUI
             if (e.RowIndex >= 0)
             {
                 String maVacxin = DSVacxinHT_Datagridview.Rows[e.RowIndex].Cells[0].Value.ToString();
-                ChiTiet_Textbox.Lines = dktcBus.LayCTVacxin(maVacxin);
+                String[] chiTietVacxin = dktcBus.LayCTVacxin(maVacxin);
+
+                HangSX_ND_Label.Text = chiTietVacxin[0];
+                MoTa_ND_Label.Text = chiTietVacxin[1];
+
+                HangSX_Label.Visible = true;
+                MoTa_Label.Visible = true;
+                HangSX_ND_Label.Visible = true;
+                MoTa_ND_Label.Visible = true;
             }
         }
     }

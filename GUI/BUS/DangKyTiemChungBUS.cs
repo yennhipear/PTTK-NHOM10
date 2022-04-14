@@ -33,8 +33,8 @@ namespace GUI.BUS
             }
 
             String[] result = new String[2];
-            result[0] = $"Hãng sản xuất: {dataTable.Rows[0]["HANGVACXIN"].ToString()}";
-            result[1] = $"Mô tả: {dataTable.Rows[0]["MOTA"].ToString()}";
+            result[0] = $"{dataTable.Rows[0]["HANGVACXIN"].ToString()}";
+            result[1] = $"{dataTable.Rows[0]["MOTA"].ToString()}";
 
             return result;
         }
