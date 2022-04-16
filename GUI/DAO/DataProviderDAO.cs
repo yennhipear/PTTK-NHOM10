@@ -6,6 +6,7 @@ using System.Threading.Tasks;
 using System.Data;
 using System.Data.SqlClient;
 using System.Configuration;
+using System.Windows.Forms;
 
 namespace GUI.DAO
 {
@@ -38,6 +39,7 @@ namespace GUI.DAO
             }
             catch (Exception ex)
             {
+                MessageBox.Show(ex.ToString());
                 result = null;
             }
             return result;
