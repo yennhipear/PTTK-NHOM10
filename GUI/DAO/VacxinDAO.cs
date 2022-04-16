@@ -7,57 +7,24 @@ using System.Data;
 using System.Data.SqlClient;
 using System.Windows.Forms;
 using System.Configuration;
+using GUI.DAO;
 
 namespace GUI.DAO
 {
     class VacxinDAO
     {
-        
-
-        public VacxinDAO()
-        {
-
-        }
-
         public DataTable LayDSVacxinHT()
-        {
-            SqlConnection cnn = new SqlConnection(ConfigurationManager.ConnectionStrings["SQLConnectionString"].ConnectionString);
-            DataTable result = new DataTable();
-            try
-            {
-                cnn.Open();
-                String command = "Select MAVACXIN, TENVACXIN, NGUABENH from VACXIN";
-                SqlDataAdapter sqlDaDH = new SqlDataAdapter(command, cnn);
-                sqlDaDH.Fill(result);
-
-                cnn.Close();
-            }
-            catch (Exception ex)
-            {
-                result = null;                
-            }
+        {           
+            DataTable result = DataProviderDAO.getInstance().ExecuteQuery(new SqlCommand("Select MAVACXIN, TENVACXIN, NGUABENH, GIABAN from VACXIN"));           
             return result;
         }
 
         public DataTable LayCTVacxin(String maVacxin)
         {
-            SqlConnection cnn = new SqlConnection(ConfigurationManager.ConnectionStrings["SQLConnectionString"].ConnectionString);
-            DataTable result = new DataTable();
-            try
-            {
-                cnn.Open();
-                SqlCommand command = new SqlCommand("Select HANGVACXIN, MOTA from VACXIN WHERE MAVACXIN = @maVacxin", cnn);
-                command.Parameters.Add(new SqlParameter("@maVacxin", maVacxin));
-
-                SqlDataAdapter sqlDaDH = new SqlDataAdapter(command);
-                sqlDaDH.Fill(result);
-
-                cnn.Close();
-            }
-            catch (Exception ex)
-            {
-                result = null;
-            }
+            SqlCommand command = new SqlCommand("Select HANGVACXIN, MOTA from VACXIN WHERE MAVACXIN = @maVacxin");
+            command.Parameters.Add(new SqlParameter("@maVacxin", maVacxin));
+            
+            DataTable result = DataProviderDAO.getInstance().ExecuteQuery(command);         
             return result;
         }
     }

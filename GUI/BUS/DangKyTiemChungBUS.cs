@@ -9,9 +9,9 @@ using System.Windows.Forms;
 
 namespace GUI.BUS
 {
-    class DangKyTiemChungBUS
+    class DSVacxinBUS
     {
-        public DangKyTiemChungBUS() { }
+        public DSVacxinBUS() { }
         public DataTable LayDSVacxinHT()
         {
             VacxinDAO dao = new VacxinDAO();

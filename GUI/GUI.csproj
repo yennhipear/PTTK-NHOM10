@@ -48,7 +48,10 @@
   </ItemGroup>
   <ItemGroup>
     <Compile Include="BUS\DangKyTiemChungBUS.cs" />
+    <Compile Include="DAO\DataProviderDAO.cs" />
+    <Compile Include="DAO\PhieuDangKyTiemChungDAO.cs" />
     <Compile Include="DAO\VacxinDAO.cs" />
+    <Compile Include="DTO\PhieuDangKyTiemChungDTO.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -61,6 +64,12 @@
     <Compile Include="GUI\DangKyTiemChungGUI.Designer.cs">
       <DependentUpon>DangKyTiemChungGUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\DSVacxinGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\DSVacxinGUI.Designer.cs">
+      <DependentUpon>DSVacxinGUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
@@ -68,6 +77,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\DangKyTiemChungGUI.resx">
       <DependentUpon>DangKyTiemChungGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DSVacxinGUI.resx">
+      <DependentUpon>DSVacxinGUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
@@ -91,8 +103,6 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup>
-    <Folder Include="DTO\" />
-  </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>
