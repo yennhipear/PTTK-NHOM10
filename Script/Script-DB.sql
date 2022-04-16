@@ -77,4 +77,17 @@ VALUES
 Lịch cơ bản: Uống 2 liều, khoảng cách giữa 2 liều là 14 ngày. Thời gian bảo vệ khi uốn đủ 2 liều cơ bản là 24 tháng.
 Uống nhắc lại: Trước mùa dịch tả, phác đồ uống nhắc lại vẫn là uống 2 liều và khoảng cách giữa 2 liều là 14 ngày.', 200,  200000)
 
-select * from VACXIN
+--select * from VACXIN
+
+CREATE TABLE LICHRANH
+(
+	MALICHRANH INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+	MANHANVIEN INT NOT NULL,
+	MATUAN INT NOT NULL,
+	NGAY TINYINT NOT NULL CHECK (NGAY > -1 and NGAY < 6),
+	CA TINYINT NOT NULL CHECK (CA > -1 and CA < 3)
+)
+GO
+INSERT INTO LICHRANH VALUES (1, 1, 2, 1), (1, 1, 3, 2);
+
+--select * from LICHRANH

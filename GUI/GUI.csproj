@@ -47,16 +47,25 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="BUS\DangKyLichRanhBUS.cs" />
     <Compile Include="BUS\DangKyTiemChungBUS.cs" />
     <Compile Include="DAO\DataProviderDAO.cs" />
+    <Compile Include="DAO\LichRanhDAO.cs" />
     <Compile Include="DAO\PhieuDangKyTiemChungDAO.cs" />
     <Compile Include="DAO\VacxinDAO.cs" />
+    <Compile Include="DTO\LichRanhDTO.cs" />
     <Compile Include="DTO\PhieuDangKyTiemChungDTO.cs" />
     <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="Form1.Designer.cs">
       <DependentUpon>Form1.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DangKyLichRanhGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\DangKyLichRanhGUI.Designer.cs">
+      <DependentUpon>DangKyLichRanhGUI.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\DangKyTiemChungGUI.cs">
       <SubType>Form</SubType>
@@ -86,6 +95,9 @@
     <Compile Include="Properties\AssemblyInfo.cs" />
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DangKyLichRanhGUI.resx">
+      <DependentUpon>DangKyLichRanhGUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\DangKyTiemChungGUI.resx">
       <DependentUpon>DangKyTiemChungGUI.cs</DependentUpon>
