@@ -46,7 +46,7 @@ namespace GUI.BUS
                     return -1;
             }
         }
-        static public bool dangKyLichRanh(int userID, int weekID, DataGridView dklrDGV)
+        static public bool dangKyLichRanh(int userID, int week, DataGridView dklrDGV)
         {
             // check null
             for(int i = 0; i < dklrDGV.Rows.Count - 1; ++i)
@@ -64,7 +64,7 @@ namespace GUI.BUS
                 shift = getShiftInt(dklrDGV.Rows[i].Cells["dklrShift"].Value.ToString());
                 dklrArr.Add(new List<int>{ day, shift });
             }
-            LichRanhDTO lrInfo = new LichRanhDTO(userID, weekID, dklrArr);
+            LichRanhDTO lrInfo = new LichRanhDTO(userID, week, dklrArr);
             LichRanhDAO.themLichRanh(lrInfo);
             return true;
         }

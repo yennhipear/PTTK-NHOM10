@@ -23,9 +23,9 @@ namespace GUI.GUI
             DialogResult choose = MessageBox.Show("Xác nhận đăng ký?", "Xác nhận", MessageBoxButtons.YesNo);
             // get these infos later from DB
             int userID = 1;
-            int weekID = 1;
+            int week = 1;
             if (choose == DialogResult.Yes) {
-                if(DangKyLichRanhBUS.dangKyLichRanh(userID, weekID, dklrDGV))
+                if(DangKyLichRanhBUS.dangKyLichRanh(userID, week, dklrDGV))
                 {
                     MessageBox.Show("Đăng ký thành công", "Thông báo", MessageBoxButtons.OK);
                     this.Close();

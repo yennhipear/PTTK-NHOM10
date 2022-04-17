@@ -10,12 +10,12 @@ namespace GUI.DTO
     class LichRanhDTO
     {
         public int userID;
-        public int weekID;
+        public int week;
         public List<List<int>> regArr;
-        public LichRanhDTO(int userID, int weekID, List<List<int>> dklrArr)
+        public LichRanhDTO(int userID, int week, List<List<int>> dklrArr)
         {
             this.userID = userID;
-            this.weekID = weekID;
+            this.week = week;
             regArr = new List<List<int>>();
             for(int i = 0; i < dklrArr.Count; ++i)
             {
