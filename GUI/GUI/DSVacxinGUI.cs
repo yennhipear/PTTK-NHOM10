@@ -94,5 +94,25 @@ namespace GUI.GUI
         {
             (new DangKyTiemChungGUI(DSVacxinChon_Datagridview, long.Parse(ThanhTien_Label.Text))).Show();
         }
+
+        private void HangSX_Label_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel2_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void DSVacxinGUI_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DSVacxinHT_Datagridview_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

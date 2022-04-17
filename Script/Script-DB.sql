@@ -31,6 +31,16 @@ CREATE TABLE VACXIN
 
 GO
 
+CREATE TABLE KHACHHANG
+(
+	MAKH INT IDENTITY(1,1) NOT NULL PRIMARY KEY,
+	HOTENKH NVARCHAR(100) NOT NULL,
+	DIACHIKH NVARCHAR(100),
+	GIOITINHKH NVARCHAR(4),
+	CMNDKH NCHAR(12),
+	NGAYSINHKH DATETIME,
+	SDTKH NCHAR(10)
+)
 CREATE TABLE LICHRANH
 (
 	MANHANVIEN INT NOT NULL,
@@ -88,7 +98,6 @@ Lịch cơ bản: Uống 2 liều, khoảng cách giữa 2 liều là 14 ngày. 
 Uống nhắc lại: Trước mùa dịch tả, phác đồ uống nhắc lại vẫn là uống 2 liều và khoảng cách giữa 2 liều là 14 ngày.', 200,  200000)
 
 --select * from VACXIN
-
 --INSERT INTO LICHRANH VALUES (1, "2022-04-11", 1), (1, "2022-04-12", 2);
 
 --select * from LICHRANH
