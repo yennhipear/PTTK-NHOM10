@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="BUS\DangKyLichRanhBUS.cs" />
     <Compile Include="BUS\DangKyTiemChungBUS.cs" />
+    <Compile Include="BUS\DatMuaVacxinBUS.cs" />
     <Compile Include="BUS\XepLichLamViecBUS.cs" />
     <Compile Include="DAO\DataProviderDAO.cs" />
     <Compile Include="DAO\LichRanhDAO.cs" />
@@ -58,30 +59,26 @@
     <Compile Include="DTO\LichLamViecDTO.cs" />
     <Compile Include="DTO\LichRanhDTO.cs" />
     <Compile Include="DTO\PhieuDangKyTiemChungDTO.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="GUI\DangKyLichRanhGUI.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\DangKyLichRanhGUI.Designer.cs">
       <DependentUpon>DangKyLichRanhGUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\DangKyTaiKhoanGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\DangKyTaiKhoanGUI.Designer.cs" />
     <Compile Include="GUI\DangKyTiemChungGUI.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="GUI\DangKyTiemChungGUI.Designer.cs">
       <DependentUpon>DangKyTiemChungGUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\DatMuaVacxin.cs">
+    <Compile Include="GUI\DangNhapGUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\DatMuaVacxin.Designer.cs">
-      <DependentUpon>DatMuaVacxin.cs</DependentUpon>
-    </Compile>
+    <Compile Include="GUI\DangNhapGUI.Designer.cs" />
     <Compile Include="GUI\DatMuaVacxinGUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -118,6 +115,14 @@
     <Compile Include="GUI\DuyetDSDatMua.Designer.cs">
       <DependentUpon>DuyetDSDatMua.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\Menu.Designer.cs" />
+    <Compile Include="GUI\ThanhToanGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ThanhToanGUI.Designer.cs" />
     <Compile Include="GUI\XepLichLamViecGUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -126,18 +131,14 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="GUI\DangKyLichRanhGUI.resx">
       <DependentUpon>DangKyLichRanhGUI.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DangKyTaiKhoanGUI.resx" />
     <EmbeddedResource Include="GUI\DangKyTiemChungGUI.resx">
       <DependentUpon>DangKyTiemChungGUI.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\DatMuaVacxin.resx">
-      <DependentUpon>DatMuaVacxin.cs</DependentUpon>
-    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DangNhapGUI.resx" />
     <EmbeddedResource Include="GUI\DatMuaVacxinGUI.resx">
       <DependentUpon>DatMuaVacxinGUI.cs</DependentUpon>
     </EmbeddedResource>
@@ -155,6 +156,10 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\DuyetDSDatMua.resx">
       <DependentUpon>DuyetDSDatMua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\Menu.resx" />
+    <EmbeddedResource Include="GUI\ThanhToanGUI.resx">
+      <DependentUpon>ThanhToanGUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\XepLichLamViecGUI.resx">
       <DependentUpon>XepLichLamViecGUI.cs</DependentUpon>

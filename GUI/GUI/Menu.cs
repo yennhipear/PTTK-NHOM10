@@ -36,9 +36,10 @@ namespace GUI
 
         private void btnDatMuaVacxin_Click(object sender, EventArgs e)
         {
-
+            (new DatMuaVacxinGUI()).Show();
         }
 
+    
         private void Menu_Load(object sender, EventArgs e)
         {
 
