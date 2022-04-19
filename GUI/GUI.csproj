@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="BUS\DangKyLichRanhBUS.cs" />
     <Compile Include="BUS\DangKyTiemChungBUS.cs" />
+    <Compile Include="BUS\DatMuaVacxinBUS.cs" />
     <Compile Include="BUS\XepLichLamViecBUS.cs" />
     <Compile Include="DAO\DataProviderDAO.cs" />
     <Compile Include="DAO\LichRanhDAO.cs" />
@@ -75,12 +76,6 @@
     </Compile>
     <Compile Include="GUI\DangKyTiemChungGUI.Designer.cs">
       <DependentUpon>DangKyTiemChungGUI.cs</DependentUpon>
-    </Compile>
-    <Compile Include="GUI\DatMuaVacxin.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\DatMuaVacxin.Designer.cs">
-      <DependentUpon>DatMuaVacxin.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\DatMuaVacxinGUI.cs">
       <SubType>Form</SubType>
@@ -134,9 +129,6 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\DangKyTiemChungGUI.resx">
       <DependentUpon>DangKyTiemChungGUI.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\DatMuaVacxin.resx">
-      <DependentUpon>DatMuaVacxin.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\DatMuaVacxinGUI.resx">
       <DependentUpon>DatMuaVacxinGUI.cs</DependentUpon>

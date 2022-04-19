@@ -36,10 +36,10 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(27, 34);
-            this.button1.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
+            this.button1.Location = new System.Drawing.Point(20, 28);
+            this.button1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
             this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(213, 84);
+            this.button1.Size = new System.Drawing.Size(160, 68);
             this.button1.TabIndex = 0;
             this.button1.Text = "Đăng ký tiêm chủng";
             this.button1.UseVisualStyleBackColor = true;
@@ -47,10 +47,10 @@
             // 
             // button2
             // 
-            this.button2.Location = new System.Drawing.Point(267, 34);
-            this.button2.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.button2.Location = new System.Drawing.Point(200, 28);
+            this.button2.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(189, 84);
+            this.button2.Size = new System.Drawing.Size(142, 68);
             this.button2.TabIndex = 1;
             this.button2.Text = "Đăng ký lịch rảnh";
             this.button2.UseVisualStyleBackColor = true;
@@ -58,10 +58,10 @@
             // 
             // btnDatMuaVacxin
             // 
-            this.btnDatMuaVacxin.Location = new System.Drawing.Point(27, 159);
-            this.btnDatMuaVacxin.Margin = new System.Windows.Forms.Padding(4, 3, 4, 3);
+            this.btnDatMuaVacxin.Location = new System.Drawing.Point(20, 128);
+            this.btnDatMuaVacxin.Margin = new System.Windows.Forms.Padding(3, 2, 3, 2);
             this.btnDatMuaVacxin.Name = "btnDatMuaVacxin";
-            this.btnDatMuaVacxin.Size = new System.Drawing.Size(213, 84);
+            this.btnDatMuaVacxin.Size = new System.Drawing.Size(160, 68);
             this.btnDatMuaVacxin.TabIndex = 1;
             this.btnDatMuaVacxin.Text = "Đặt mua vắc-xin";
             this.btnDatMuaVacxin.UseVisualStyleBackColor = true;
@@ -69,10 +69,10 @@
             // 
             // button3
             // 
-            this.button3.Location = new System.Drawing.Point(267, 159);
-            this.button3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.button3.Location = new System.Drawing.Point(200, 128);
+            this.button3.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button3.Name = "button3";
-            this.button3.Size = new System.Drawing.Size(189, 84);
+            this.button3.Size = new System.Drawing.Size(142, 68);
             this.button3.TabIndex = 2;
             this.button3.Text = "Xếp lịch làm việc";
             this.button3.UseVisualStyleBackColor = true;
@@ -80,15 +80,15 @@
             // 
             // Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(12F, 25F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(480, 269);
+            this.ClientSize = new System.Drawing.Size(360, 215);
             this.Controls.Add(this.button3);
             this.Controls.Add(this.btnDatMuaVacxin);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.button2);
-            this.Margin = new System.Windows.Forms.Padding(6, 5, 6, 5);
-            this.Name = "Menu";
+            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Name = "Form1";
             this.StartPosition = System.Windows.Forms.FormStartPosition.CenterScreen;
             this.Text = "Menu";
             this.Load += new System.EventHandler(this.Menu_Load);

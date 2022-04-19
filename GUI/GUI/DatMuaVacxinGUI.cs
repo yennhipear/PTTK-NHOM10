@@ -12,7 +12,7 @@ namespace GUI.GUI
 {
     public partial class DatMuaVacxinGUI : Form
     {
-       
+        DatMuaVacxinGUI dmvxBus;
         public DatMuaVacxinGUI()
         {
             InitializeComponent();
