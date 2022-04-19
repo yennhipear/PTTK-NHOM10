@@ -1,0 +1,32 @@
+﻿using System;
+using System.Collections.Generic;
+using System.ComponentModel;
+using System.Data;
+using System.Drawing;
+using System.Linq;
+using System.Text;
+using System.Threading.Tasks;
+using System.Windows.Forms;
+
+namespace GUI
+{
+    public partial class ThanhToanGUI : Form
+    {
+        public ThanhToanGUI()
+        {
+            InitializeComponent();
+        }
+
+        private void InitializeComponent()
+        {
+            this.SuspendLayout();
+            // 
+            // ThanhToanGUI
+            // 
+            this.ClientSize = new System.Drawing.Size(273, 241);
+            this.Name = "ThanhToanGUI";
+            this.ResumeLayout(false);
+
+        }
+    }
+}
