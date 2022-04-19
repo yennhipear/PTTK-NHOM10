@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class Form1 : Form
+    public partial class Menu : Form
     {
-        public Form1()
+        public Menu()
         {
             InitializeComponent();
         }
@@ -32,6 +32,16 @@ namespace GUI
         private void button3_Click(object sender, EventArgs e)
         {
             (new XepLichLamViecGUI()).Show();
+        }
+
+        private void btnDatMuaVacxin_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void Menu_Load(object sender, EventArgs e)
+        {
+
         }
     }
 }

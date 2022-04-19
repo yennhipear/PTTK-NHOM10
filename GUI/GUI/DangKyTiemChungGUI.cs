@@ -34,5 +34,10 @@ namespace GUI.GUI
             ThanhTien_Label.Text = TongTien.ToString();
             ThanhTien_Label.Visible = true;
         }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }

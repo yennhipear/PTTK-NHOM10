@@ -82,6 +82,12 @@
     <Compile Include="GUI\DatMuaVacxin.Designer.cs">
       <DependentUpon>DatMuaVacxin.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\DatMuaVacxinGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\DatMuaVacxinGUI.Designer.cs">
+      <DependentUpon>DatMuaVacxinGUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\DatVacXinKhac.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,6 +99,18 @@
     </Compile>
     <Compile Include="GUI\DSVacxinGUI.Designer.cs">
       <DependentUpon>DSVacxinGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\DuyetPhieuDatMuaGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\DuyetPhieuDatMuaGUI.Designer.cs">
+      <DependentUpon>DuyetPhieuDatMuaGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\LapDSDatMuaGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\LapDSDatMuaGUI.Designer.cs">
+      <DependentUpon>LapDSDatMuaGUI.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\DuyetDSDatMua.cs">
       <SubType>Form</SubType>
@@ -120,11 +138,20 @@
     <EmbeddedResource Include="GUI\DatMuaVacxin.resx">
       <DependentUpon>DatMuaVacxin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DatMuaVacxinGUI.resx">
+      <DependentUpon>DatMuaVacxinGUI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\DatVacXinKhac.resx">
       <DependentUpon>DatVacXinKhac.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\DSVacxinGUI.resx">
       <DependentUpon>DSVacxinGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DuyetPhieuDatMuaGUI.resx">
+      <DependentUpon>DuyetPhieuDatMuaGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\LapDSDatMuaGUI.resx">
+      <DependentUpon>LapDSDatMuaGUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\DuyetDSDatMua.resx">
       <DependentUpon>DuyetDSDatMua.cs</DependentUpon>
