@@ -17,16 +17,6 @@ namespace GUI
             InitializeComponent();
         }
 
-        private void InitializeComponent()
-        {
-            this.SuspendLayout();
-            // 
-            // ThanhToanGUI
-            // 
-            this.ClientSize = new System.Drawing.Size(273, 241);
-            this.Name = "ThanhToanGUI";
-            this.ResumeLayout(false);
-
-        }
+        
     }
 }
