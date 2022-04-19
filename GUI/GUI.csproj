@@ -8,11 +8,10 @@
     <OutputType>WinExe</OutputType>
     <RootNamespace>GUI</RootNamespace>
     <AssemblyName>GUI</AssemblyName>
-    <TargetFrameworkVersion>v4.8</TargetFrameworkVersion>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <AutoGenerateBindingRedirects>true</AutoGenerateBindingRedirects>
     <Deterministic>true</Deterministic>
-    <TargetFrameworkProfile />
   </PropertyGroup>
   <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
     <PlatformTarget>AnyCPU</PlatformTarget>
@@ -51,18 +50,6 @@
     <Compile Include="BUS\DangKyLichRanhBUS.cs" />
     <Compile Include="BUS\DangKyTiemChungBUS.cs" />
     <Compile Include="BUS\XepLichLamViecBUS.cs" />
-    <Compile Include="DangKyTaiKhoanGUI.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DangKyTaiKhoanGUI.Designer.cs">
-      <DependentUpon>DangKyTaiKhoanGUI.cs</DependentUpon>
-    </Compile>
-    <Compile Include="DangNhapGUI.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="DangNhapGUI.Designer.cs">
-      <DependentUpon>DangNhapGUI.cs</DependentUpon>
-    </Compile>
     <Compile Include="DAO\DataProviderDAO.cs" />
     <Compile Include="DAO\LichRanhDAO.cs" />
     <Compile Include="DAO\PhieuDangKyTiemChungDAO.cs" />
@@ -71,11 +58,11 @@
     <Compile Include="DTO\LichLamViecDTO.cs" />
     <Compile Include="DTO\LichRanhDTO.cs" />
     <Compile Include="DTO\PhieuDangKyTiemChungDTO.cs" />
-    <Compile Include="Menu.cs">
+    <Compile Include="Form1.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="Menu.Designer.cs">
-      <DependentUpon>Menu.cs</DependentUpon>
+    <Compile Include="Form1.Designer.cs">
+      <DependentUpon>Form1.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\DangKyLichRanhGUI.cs">
       <SubType>Form</SubType>
@@ -95,6 +82,12 @@
     <Compile Include="GUI\DatMuaVacxin.Designer.cs">
       <DependentUpon>DatMuaVacxin.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\DatMuaVacxinGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\DatMuaVacxinGUI.Designer.cs">
+      <DependentUpon>DatMuaVacxinGUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\DatVacXinKhac.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -107,6 +100,18 @@
     <Compile Include="GUI\DSVacxinGUI.Designer.cs">
       <DependentUpon>DSVacxinGUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\DuyetPhieuDatMuaGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\DuyetPhieuDatMuaGUI.Designer.cs">
+      <DependentUpon>DuyetPhieuDatMuaGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\LapDSDatMuaGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\LapDSDatMuaGUI.Designer.cs">
+      <DependentUpon>LapDSDatMuaGUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\XepLichLamViecGUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -115,20 +120,8 @@
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <Compile Include="ThanhToanGUI.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="ThanhToanGUI.Designer.cs">
-      <DependentUpon>ThanhToanGUI.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="DangKyTaiKhoanGUI.resx">
-      <DependentUpon>DangKyTaiKhoanGUI.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="DangNhapGUI.resx">
-      <DependentUpon>DangNhapGUI.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="Menu.resx">
-      <DependentUpon>Menu.cs</DependentUpon>
+    <EmbeddedResource Include="Form1.resx">
+      <DependentUpon>Form1.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\DangKyLichRanhGUI.resx">
       <DependentUpon>DangKyLichRanhGUI.cs</DependentUpon>
@@ -139,11 +132,20 @@
     <EmbeddedResource Include="GUI\DatMuaVacxin.resx">
       <DependentUpon>DatMuaVacxin.cs</DependentUpon>
     </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DatMuaVacxinGUI.resx">
+      <DependentUpon>DatMuaVacxinGUI.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\DatVacXinKhac.resx">
       <DependentUpon>DatVacXinKhac.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\DSVacxinGUI.resx">
       <DependentUpon>DSVacxinGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DuyetPhieuDatMuaGUI.resx">
+      <DependentUpon>DuyetPhieuDatMuaGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\LapDSDatMuaGUI.resx">
+      <DependentUpon>LapDSDatMuaGUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\XepLichLamViecGUI.resx">
       <DependentUpon>XepLichLamViecGUI.cs</DependentUpon>
@@ -156,7 +158,6 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
-      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="Properties\Settings.settings">
       <Generator>SettingsSingleFileGenerator</Generator>
