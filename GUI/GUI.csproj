@@ -94,6 +94,12 @@
     <Compile Include="GUI\DSVacxinGUI.Designer.cs">
       <DependentUpon>DSVacxinGUI.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\DuyetDSDatMua.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\DuyetDSDatMua.Designer.cs">
+      <DependentUpon>DuyetDSDatMua.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\XepLichLamViecGUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -119,6 +125,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\DSVacxinGUI.resx">
       <DependentUpon>DSVacxinGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\DuyetDSDatMua.resx">
+      <DependentUpon>DuyetDSDatMua.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\XepLichLamViecGUI.resx">
       <DependentUpon>XepLichLamViecGUI.cs</DependentUpon>
