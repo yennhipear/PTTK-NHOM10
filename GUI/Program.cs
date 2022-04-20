@@ -19,8 +19,8 @@ namespace GUI
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Menu());
             //Application.Run(new DangNhapGUI());
-            //Application.Run(new DangKyTaiKhoanGUI());
-            Application.Run(new DatMuaVacxinGUI());
+            Application.Run(new DangKyTaiKhoanGUI());
+            //Application.Run(new DatMuaVacxinGUI());
 
         }
     }

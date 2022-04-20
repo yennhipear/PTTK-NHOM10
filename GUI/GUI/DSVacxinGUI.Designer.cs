@@ -42,8 +42,14 @@
             this.label1 = new System.Windows.Forms.Label();
             this.panel1 = new System.Windows.Forms.Panel();
             this.DSVacxinChon_Datagridview = new System.Windows.Forms.DataGridView();
+            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.dataGridViewButtonColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Chon_GiaBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Chon_SL = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label2 = new System.Windows.Forms.Label();
             this.panel2 = new System.Windows.Forms.Panel();
+            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
             this.MoTa_ND_Label = new System.Windows.Forms.Label();
             this.HangSX_ND_Label = new System.Windows.Forms.Label();
             this.MoTa_Label = new System.Windows.Forms.Label();
@@ -53,12 +59,6 @@
             this.label4 = new System.Windows.Forms.Label();
             this.ThanhTien_Label = new System.Windows.Forms.Label();
             this.button2 = new System.Windows.Forms.Button();
-            this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn2 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewButtonColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Chon_GiaBan = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Chon_SL = new System.Windows.Forms.DataGridViewTextBoxColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DSVacxinHT_Datagridview)).BeginInit();
             this.panel1.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DSVacxinChon_Datagridview)).BeginInit();
@@ -151,7 +151,7 @@
             this.label1.Location = new System.Drawing.Point(4, 15);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(328, 32);
+            this.label1.Size = new System.Drawing.Size(430, 45);
             this.label1.TabIndex = 1;
             this.label1.Text = "Danh sách vắc xin hệ thống";
             // 
@@ -190,135 +190,6 @@
             this.DSVacxinChon_Datagridview.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.DSVacxinChon_Datagridview.Size = new System.Drawing.Size(444, 247);
             this.DSVacxinChon_Datagridview.TabIndex = 3;
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(4, 307);
-            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(317, 32);
-            this.label2.TabIndex = 2;
-            this.label2.Text = "Danh sách vắc xin đã chọn";
-            // 
-            // panel2
-            // 
-            this.panel2.Controls.Add(this.flowLayoutPanel1);
-            this.panel2.Controls.Add(this.MoTa_ND_Label);
-            this.panel2.Controls.Add(this.HangSX_ND_Label);
-            this.panel2.Controls.Add(this.MoTa_Label);
-            this.panel2.Controls.Add(this.HangSX_Label);
-            this.panel2.Controls.Add(this.label3);
-            this.panel2.Location = new System.Drawing.Point(470, 6);
-            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(351, 465);
-            this.panel2.TabIndex = 3;
-            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
-            // 
-            // MoTa_ND_Label
-            // 
-            this.MoTa_ND_Label.Location = new System.Drawing.Point(83, 135);
-            this.MoTa_ND_Label.Name = "MoTa_ND_Label";
-            this.MoTa_ND_Label.RightToLeft = System.Windows.Forms.RightToLeft.No;
-            this.MoTa_ND_Label.Size = new System.Drawing.Size(265, 320);
-            this.MoTa_ND_Label.TabIndex = 4;
-            this.MoTa_ND_Label.Text = "label6";
-            this.MoTa_ND_Label.Visible = false;
-            // 
-            // HangSX_ND_Label
-            // 
-            this.HangSX_ND_Label.Location = new System.Drawing.Point(83, 40);
-            this.HangSX_ND_Label.Name = "HangSX_ND_Label";
-            this.HangSX_ND_Label.Size = new System.Drawing.Size(265, 84);
-            this.HangSX_ND_Label.TabIndex = 3;
-            this.HangSX_ND_Label.Text = "label6";
-            this.HangSX_ND_Label.Visible = false;
-            // 
-            // MoTa_Label
-            // 
-            this.MoTa_Label.AutoSize = true;
-            this.MoTa_Label.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MoTa_Label.Location = new System.Drawing.Point(6, 135);
-            this.MoTa_Label.Name = "MoTa_Label";
-            this.MoTa_Label.Size = new System.Drawing.Size(82, 32);
-            this.MoTa_Label.TabIndex = 2;
-            this.MoTa_Label.Text = "Mô tả";
-            this.MoTa_Label.Visible = false;
-            // 
-            // HangSX_Label
-            // 
-            this.HangSX_Label.AutoSize = true;
-            this.HangSX_Label.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HangSX_Label.Location = new System.Drawing.Point(4, 40);
-            this.HangSX_Label.Name = "HangSX_Label";
-            this.HangSX_Label.Size = new System.Drawing.Size(119, 32);
-            this.HangSX_Label.TabIndex = 1;
-            this.HangSX_Label.Text = "Hãng SX:";
-            this.HangSX_Label.Visible = false;
-            this.HangSX_Label.Click += new System.EventHandler(this.HangSX_Label_Click);
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label3.Location = new System.Drawing.Point(6, 15);
-            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(298, 32);
-            this.label3.TabIndex = 0;
-            this.label3.Text = "Thông tin chi tiết vắc xin";
-            // 
-            // button1
-            // 
-            this.button1.Location = new System.Drawing.Point(696, 552);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 33);
-            this.button1.TabIndex = 4;
-            this.button1.Text = "Xác nhận";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(466, 506);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(143, 32);
-            this.label4.TabIndex = 5;
-            this.label4.Text = "Thành tiền:";
-            // 
-            // ThanhTien_Label
-            // 
-            this.ThanhTien_Label.AutoSize = true;
-            this.ThanhTien_Label.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ThanhTien_Label.ForeColor = System.Drawing.Color.Maroon;
-            this.ThanhTien_Label.Location = new System.Drawing.Point(568, 485);
-            this.ThanhTien_Label.Name = "ThanhTien_Label";
-            this.ThanhTien_Label.Size = new System.Drawing.Size(181, 71);
-            this.ThanhTien_Label.TabIndex = 6;
-            this.ThanhTien_Label.Text = "label5";
-            this.ThanhTien_Label.Visible = false;
-            // 
-            // button2
-            // 
-            this.button2.BackColor = System.Drawing.SystemColors.ActiveCaption;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Location = new System.Drawing.Point(469, 552);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(219, 33);
-            this.button2.TabIndex = 7;
-            this.button2.Text = "Tôi muốn đặt vắc xin ngoài";
-            this.button2.UseVisualStyleBackColor = false;
-            // 
-            // flowLayoutPanel1
-            // 
-            this.flowLayoutPanel1.Location = new System.Drawing.Point(208, 404);
-            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 100);
-            this.flowLayoutPanel1.TabIndex = 5;
             // 
             // dataGridViewTextBoxColumn1
             // 
@@ -373,11 +244,140 @@
             this.Chon_SL.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             this.Chon_SL.SortMode = System.Windows.Forms.DataGridViewColumnSortMode.NotSortable;
             // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label2.Location = new System.Drawing.Point(4, 307);
+            this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(414, 45);
+            this.label2.TabIndex = 2;
+            this.label2.Text = "Danh sách vắc xin đã chọn";
+            // 
+            // panel2
+            // 
+            this.panel2.Controls.Add(this.flowLayoutPanel1);
+            this.panel2.Controls.Add(this.MoTa_ND_Label);
+            this.panel2.Controls.Add(this.HangSX_ND_Label);
+            this.panel2.Controls.Add(this.MoTa_Label);
+            this.panel2.Controls.Add(this.HangSX_Label);
+            this.panel2.Controls.Add(this.label3);
+            this.panel2.Location = new System.Drawing.Point(470, 6);
+            this.panel2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.panel2.Name = "panel2";
+            this.panel2.Size = new System.Drawing.Size(351, 465);
+            this.panel2.TabIndex = 3;
+            this.panel2.Paint += new System.Windows.Forms.PaintEventHandler(this.panel2_Paint);
+            // 
+            // flowLayoutPanel1
+            // 
+            this.flowLayoutPanel1.Location = new System.Drawing.Point(208, 404);
+            this.flowLayoutPanel1.Name = "flowLayoutPanel1";
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(200, 100);
+            this.flowLayoutPanel1.TabIndex = 5;
+            // 
+            // MoTa_ND_Label
+            // 
+            this.MoTa_ND_Label.Location = new System.Drawing.Point(83, 135);
+            this.MoTa_ND_Label.Name = "MoTa_ND_Label";
+            this.MoTa_ND_Label.RightToLeft = System.Windows.Forms.RightToLeft.No;
+            this.MoTa_ND_Label.Size = new System.Drawing.Size(265, 320);
+            this.MoTa_ND_Label.TabIndex = 4;
+            this.MoTa_ND_Label.Text = "label6";
+            this.MoTa_ND_Label.Visible = false;
+            // 
+            // HangSX_ND_Label
+            // 
+            this.HangSX_ND_Label.Location = new System.Drawing.Point(83, 40);
+            this.HangSX_ND_Label.Name = "HangSX_ND_Label";
+            this.HangSX_ND_Label.Size = new System.Drawing.Size(265, 84);
+            this.HangSX_ND_Label.TabIndex = 3;
+            this.HangSX_ND_Label.Text = "label6";
+            this.HangSX_ND_Label.Visible = false;
+            // 
+            // MoTa_Label
+            // 
+            this.MoTa_Label.AutoSize = true;
+            this.MoTa_Label.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.MoTa_Label.Location = new System.Drawing.Point(6, 135);
+            this.MoTa_Label.Name = "MoTa_Label";
+            this.MoTa_Label.Size = new System.Drawing.Size(109, 45);
+            this.MoTa_Label.TabIndex = 2;
+            this.MoTa_Label.Text = "Mô tả";
+            this.MoTa_Label.Visible = false;
+            // 
+            // HangSX_Label
+            // 
+            this.HangSX_Label.AutoSize = true;
+            this.HangSX_Label.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.HangSX_Label.Location = new System.Drawing.Point(4, 40);
+            this.HangSX_Label.Name = "HangSX_Label";
+            this.HangSX_Label.Size = new System.Drawing.Size(158, 45);
+            this.HangSX_Label.TabIndex = 1;
+            this.HangSX_Label.Text = "Hãng SX:";
+            this.HangSX_Label.Visible = false;
+            this.HangSX_Label.Click += new System.EventHandler(this.HangSX_Label_Click);
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label3.Location = new System.Drawing.Point(6, 15);
+            this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(390, 45);
+            this.label3.TabIndex = 0;
+            this.label3.Text = "Thông tin chi tiết vắc xin";
+            // 
+            // button1
+            // 
+            this.button1.Location = new System.Drawing.Point(696, 552);
+            this.button1.Name = "button1";
+            this.button1.Size = new System.Drawing.Size(125, 33);
+            this.button1.TabIndex = 4;
+            this.button1.Text = "Xác nhận";
+            this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label4.Location = new System.Drawing.Point(466, 506);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(188, 45);
+            this.label4.TabIndex = 5;
+            this.label4.Text = "Thành tiền:";
+            // 
+            // ThanhTien_Label
+            // 
+            this.ThanhTien_Label.AutoSize = true;
+            this.ThanhTien_Label.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ThanhTien_Label.ForeColor = System.Drawing.Color.Maroon;
+            this.ThanhTien_Label.Location = new System.Drawing.Point(568, 485);
+            this.ThanhTien_Label.Name = "ThanhTien_Label";
+            this.ThanhTien_Label.Size = new System.Drawing.Size(239, 93);
+            this.ThanhTien_Label.TabIndex = 6;
+            this.ThanhTien_Label.Text = "label5";
+            this.ThanhTien_Label.Visible = false;
+            // 
+            // button2
+            // 
+            this.button2.BackColor = System.Drawing.SystemColors.ActiveCaption;
+            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.button2.Location = new System.Drawing.Point(469, 552);
+            this.button2.Name = "button2";
+            this.button2.Size = new System.Drawing.Size(219, 33);
+            this.button2.TabIndex = 7;
+            this.button2.Text = "Tôi muốn đặt vắc xin ngoài";
+            this.button2.UseVisualStyleBackColor = false;
+            // 
             // DSVacxinGUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(18F, 45F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(831, 606);
+            this.ClientSize = new System.Drawing.Size(897, 658);
             this.Controls.Add(this.button2);
             this.Controls.Add(this.ThanhTien_Label);
             this.Controls.Add(this.label4);
