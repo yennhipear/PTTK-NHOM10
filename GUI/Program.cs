@@ -1,4 +1,5 @@
-﻿using System;
+﻿using GUI.GUI;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
@@ -18,7 +19,8 @@ namespace GUI
             Application.SetCompatibleTextRenderingDefault(false);
             //Application.Run(new Menu());
             //Application.Run(new DangNhapGUI());
-            Application.Run(new DangKyTaiKhoanGUI());
+            //Application.Run(new DangKyTaiKhoanGUI());
+            Application.Run(new DatMuaVacxinGUI());
 
         }
     }
