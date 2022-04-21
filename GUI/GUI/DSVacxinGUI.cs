@@ -13,14 +13,14 @@ namespace GUI.GUI
 {
     public partial class DSVacxinGUI : Form
     {
-        DSVacxinBUS dktcBus;
+        DangKyTiemChungBUS dktcBus;
 
         public DSVacxinGUI()
         {
             InitializeComponent();
             GoiVacxinHT_Datagridview.AutoGenerateColumns = false;
 
-            dktcBus = new DSVacxinBUS();
+            dktcBus = new DangKyTiemChungBUS();
             GoiVacxinHT_Datagridview.DataSource = dktcBus.LayDSGoiVacxinHT();
 
             GoiVacxinHT_Datagridview.CellClick += HienThiCTGoiVacxin;

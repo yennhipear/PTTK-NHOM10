@@ -6,12 +6,13 @@ using System.Threading.Tasks;
 using System.Data;
 using GUI.DAO;
 using System.Windows.Forms;
+using GUI.DTO;
 
 namespace GUI.BUS
 {
-    class DSVacxinBUS
+    class DangKyTiemChungBUS
     {
-        public DSVacxinBUS() { }
+        public DangKyTiemChungBUS() { }
         public DataTable LayDSVacxinHT()
         {
             VacxinDAO dao = new VacxinDAO();
@@ -46,6 +47,11 @@ namespace GUI.BUS
             result[1] = $"{dataTable.Rows[0]["MOTA"].ToString()}";
 
             return result;
+        }
+
+        public int LuuThongTinDangKy(PhieuDangKyTiemChungDTO phieuDangKy)
+        {
+            return PhieuDangKyTiemChungDAO.getInstance().LuuThongTinDangKy(phieuDangKy);
         }
 
     }

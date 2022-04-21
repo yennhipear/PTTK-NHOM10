@@ -12,7 +12,7 @@ namespace GUI.DAO
 {
     class DataProviderDAO
     {
-        private static SqlConnection cnn = new SqlConnection(ConfigurationManager.ConnectionStrings["SQLConnectionString"].ConnectionString);
+        
         private static DataProviderDAO Instance = null;
 
         private DataProviderDAO() { }
@@ -41,6 +41,41 @@ namespace GUI.DAO
             {
                 MessageBox.Show(ex.ToString());
                 result = null;
+            }
+            return result;
+        }
+
+        public object ExecuteScalar(SqlCommand command)
+        {
+            object result = null;
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["SQLConnectionString"].ConnectionString);
+            try
+            {
+                conn.Open();
+                command.Connection = conn;
+                result = command.ExecuteScalar();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+                result = null;
+            }            
+            return result;
+        }
+
+        public int ExecuteNonQuery(SqlCommand command)
+        {
+            int result = 0;
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["SQLConnectionString"].ConnectionString);
+            try
+            {
+                conn.Open();
+                command.Connection = conn;
+                result = command.ExecuteNonQuery();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
             }
             return result;
         }

@@ -4,14 +4,30 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
+using System.Data.SqlClient;
 
 namespace GUI.DAO
 {
     class PhieuDangKyTiemChungDAO
     {
-        public bool LuuThongTinDangKy(PhieuDangKyTiemChungDTO phieuDangKy)
+        private static PhieuDangKyTiemChungDAO Instance = null;
+
+        private PhieuDangKyTiemChungDAO() { }
+
+        public static PhieuDangKyTiemChungDAO getInstance()
         {
-            return true;
+            if (Instance == null)
+                Instance = new PhieuDangKyTiemChungDAO();
+            return Instance;
+        }
+
+        public int LuuThongTinDangKy(PhieuDangKyTiemChungDTO phieuDangKy)
+        {
+            SqlCommand command = phieuDangKy.getInsertSqlCommand();
+
+            int result = DataProviderDAO.getInstance().ExecuteNonQuery(command);
+            return result;
+           
         }
     }
 }

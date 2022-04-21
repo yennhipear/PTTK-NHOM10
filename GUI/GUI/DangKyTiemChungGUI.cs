@@ -1,4 +1,5 @@
 ﻿using GUI.DAO;
+using GUI.BUS;
 using GUI.DTO;
 using System;
 using System.Collections.Generic;
@@ -89,6 +90,31 @@ namespace GUI.GUI
         private void GiamHo_Checkbox_CheckedChanged(object sender, EventArgs e)
         {
            TTNgTiem_Panel.Enabled = DKNT_Checkbox.Checked;
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            String MaKH, HoTenNT, CMNDNT, DiaChiNT, GioiTinhNT, SDTNT, QUANHE;
+            DateTime NgayDK, NgSinhNT;
+
+            MaKH = "1";
+            HoTenNT = HoTenNT_TextBox.Text;
+            CMNDNT = CMNDNT_TextBox.Text;
+            DiaChiNT = DiaChiNT_TextBox.Text;
+            GioiTinhNT = "Nam";
+            SDTNT = SdtNT_TextBox.Text;
+            QUANHE = QH_ComboBox.Text;
+
+            NgayDK = TGDK_Picker.Value;
+            NgSinhNT = NgaySinhNT_Picker.Value;
+
+            PhieuDangKyTiemChungDTO model = new PhieuDangKyTiemChungDTO(MaKH, HoTenNT, CMNDNT, DiaChiNT, GioiTinhNT, SDTNT, QUANHE, NgayDK, NgSinhNT);
+
+            DangKyTiemChungBUS bus = new DangKyTiemChungBUS();
+            if (bus.LuuThongTinDangKy(model) > 0)
+                MessageBox.Show("Đăng ký thành công", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            else
+                MessageBox.Show("Đã xảy ra lỗi. Không thể thực hiện đăng ký", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
     }
 }
