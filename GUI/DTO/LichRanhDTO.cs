@@ -10,16 +10,14 @@ namespace GUI.DTO
     class LichRanhDTO
     {
         public int userID;
-        public int week;
-        public List<List<int>> regArr;
-        public LichRanhDTO(int userID, int week, List<List<int>> dklrArr)
+        public List<List<dynamic>> regArr;
+        public LichRanhDTO(int userID, List<List<dynamic>> dklrArr)
         {
             this.userID = userID;
-            this.week = week;
-            regArr = new List<List<int>>();
+            regArr = new List<List<dynamic>>();
             for(int i = 0; i < dklrArr.Count; ++i)
             {
-                regArr.Add(new List<int>(dklrArr[i]));
+                regArr.Add(new List<dynamic>(dklrArr[i]));
             }
         }
     }

@@ -16,11 +16,12 @@ namespace GUI.DAO
             string dklrQuery = "INSERT INTO LICHRANH VALUES ";
             for(int i = 0; i < lrInfo.regArr.Count - 1; ++i)
             {
-                dklrQuery += $"({lrInfo.userID}, {lrInfo.week}, {lrInfo.regArr[i][0]}, {lrInfo.regArr[i][1]}),";
+                dklrQuery += $"({lrInfo.userID}, '{lrInfo.regArr[i][0]}', {lrInfo.regArr[i][1]}),";
             }
-            List<int> last = new List<int>(lrInfo.regArr[lrInfo.regArr.Count - 1]);
-            dklrQuery += $"({lrInfo.userID}, {lrInfo.week}, {last[0]}, {last[1]})";
+            List<dynamic> last = new List<dynamic>(lrInfo.regArr[lrInfo.regArr.Count - 1]);
+            dklrQuery += $"({lrInfo.userID}, '{last[0]}', {last[1]})";
             DataProviderDAO.getInstance().ExecuteQuery(new SqlCommand(dklrQuery));
+            //MessageBox.Show(dklrQuery);
             return true;
         }
     }
