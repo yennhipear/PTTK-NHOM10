@@ -105,6 +105,7 @@ namespace GUI.GUI
         private void button1_Click(object sender, EventArgs e)
         {
             (new DangKyTiemChungGUI(DSVacxinChon_Datagridview, long.Parse(ThanhTien_Label.Text))).Show();
+            this.Close();
         }
 
    

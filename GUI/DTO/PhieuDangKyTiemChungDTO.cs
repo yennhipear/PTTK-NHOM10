@@ -12,7 +12,9 @@ namespace GUI.DTO
         private String MaPDKTC, MaKH, HoTenNT, CMNDNT, DiaChiNT, GioiTinhNT, SDTNT, QUANHE;
         private DateTime NgayDK, NgSinhNT;
 
-        public PhieuDangKyTiemChungDTO(string maKH, string hoTenNT, string cMNDNT, string diaChiNT, string gioiTinhNT, string sDTNT, string qUANHE, DateTime ngayDK, DateTime ngSinhNT)
+        private List<CTPHIEUDKTC> DsCT = new List<CTPHIEUDKTC>();
+
+        public PhieuDangKyTiemChungDTO(string maKH, string hoTenNT, string cMNDNT, string diaChiNT, string gioiTinhNT, string sDTNT, string qUANHE, DateTime ngayDK, DateTime ngSinhNT, List<CTPHIEUDKTC> dsCT)
         {
             MaKH = maKH;
             HoTenNT = hoTenNT;
@@ -23,13 +25,14 @@ namespace GUI.DTO
             QUANHE = qUANHE;
             NgayDK = ngayDK;
             NgSinhNT = ngSinhNT;
+            DsCT = dsCT;
         }
 
         public SqlCommand getInsertSqlCommand()
         {
             SqlCommand command = new SqlCommand(
                 @"INSERT PHIEUDANGKYTIEMCHUNG (MAKH, HOTENNT, CMNDNT, DIACHINT,NGSINHNT, GIOITINHNT, SDTNT, QUANHE, THOIGIANDK)
-                  VALUES (@maKH, @hoTenNT, @cmndNT, @diaChiNT, @ngSinhNT, @gioiTinhNT, @sdtNT, @quanHe, @thoiGianDK)");
+                  VALUES (@maKH, @hoTenNT, @cmndNT, @diaChiNT, @ngSinhNT, @gioiTinhNT, @sdtNT, @quanHe, @thoiGianDK); SELECT SCOPE_IDENTITY()");
 
             command.Parameters.Add(new SqlParameter("@maKH", MaKH));
             command.Parameters.Add(new SqlParameter("@hoTenNT", HoTenNT));
@@ -43,5 +46,23 @@ namespace GUI.DTO
 
             return command;
         }
+
+        public void setMaPDKTC(String maMoi)
+        {
+            this.MaPDKTC = maMoi;
+        }
+
+        public List<SqlCommand> getInsertCTSqlCommand(String maPDKTC)
+        {
+            MaPDKTC = maPDKTC;
+            List<SqlCommand> commands = new List<SqlCommand>();
+
+            foreach (CTPHIEUDKTC ct in DsCT)
+            {
+                commands.Add(ct.getInsertCommand(MaPDKTC));
+            }           
+            return commands;
+        }
+
     }
 }

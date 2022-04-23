@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.HoTenNT_TextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -42,6 +42,8 @@
             this.NgaySinhNT_Picker = new System.Windows.Forms.DateTimePicker();
             this.label6 = new System.Windows.Forms.Label();
             this.TTNgTiem_Panel = new System.Windows.Forms.Panel();
+            this.GioiTinh_ComboBox = new System.Windows.Forms.ComboBox();
+            this.label13 = new System.Windows.Forms.Label();
             this.QH_ComboBox = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -51,9 +53,9 @@
             this.label9 = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.DSVacxinChon_Datagridview = new System.Windows.Forms.DataGridView();
-            this.dataGridViewTextBoxColumn1 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn3 = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.dataGridViewTextBoxColumn5 = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Chon_Ma = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Chon_Ten = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Chon_Gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Chon_SLTiem = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Chon_LanTiem = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.button1 = new System.Windows.Forms.Button();
@@ -149,12 +151,13 @@
             // 
             // NgaySinhNT_Picker
             // 
-            this.NgaySinhNT_Picker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.NgaySinhNT_Picker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.NgaySinhNT_Picker.ImeMode = System.Windows.Forms.ImeMode.NoControl;
             this.NgaySinhNT_Picker.Location = new System.Drawing.Point(90, 180);
             this.NgaySinhNT_Picker.MaxDate = new System.DateTime(2022, 4, 15, 0, 0, 0, 0);
             this.NgaySinhNT_Picker.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
             this.NgaySinhNT_Picker.Name = "NgaySinhNT_Picker";
+            this.NgaySinhNT_Picker.ShowCheckBox = true;
             this.NgaySinhNT_Picker.Size = new System.Drawing.Size(250, 29);
             this.NgaySinhNT_Picker.TabIndex = 9;
             this.NgaySinhNT_Picker.Value = new System.DateTime(2022, 4, 15, 0, 0, 0, 0);
@@ -172,6 +175,8 @@
             // 
             // TTNgTiem_Panel
             // 
+            this.TTNgTiem_Panel.Controls.Add(this.GioiTinh_ComboBox);
+            this.TTNgTiem_Panel.Controls.Add(this.label13);
             this.TTNgTiem_Panel.Controls.Add(this.QH_ComboBox);
             this.TTNgTiem_Panel.Controls.Add(this.label12);
             this.TTNgTiem_Panel.Controls.Add(this.NgaySinhNT_Picker);
@@ -189,18 +194,43 @@
             this.TTNgTiem_Panel.Location = new System.Drawing.Point(13, 104);
             this.TTNgTiem_Panel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TTNgTiem_Panel.Name = "TTNgTiem_Panel";
-            this.TTNgTiem_Panel.Size = new System.Drawing.Size(343, 261);
+            this.TTNgTiem_Panel.Size = new System.Drawing.Size(343, 313);
             this.TTNgTiem_Panel.TabIndex = 0;
+            // 
+            // GioiTinh_ComboBox
+            // 
+            this.GioiTinh_ComboBox.BackColor = System.Drawing.Color.White;
+            this.GioiTinh_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.GioiTinh_ComboBox.FormattingEnabled = true;
+            this.GioiTinh_ComboBox.Items.AddRange(new object[] {
+            "Nam",
+            "Nữ",
+            "Khác"});
+            this.GioiTinh_ComboBox.Location = new System.Drawing.Point(90, 264);
+            this.GioiTinh_ComboBox.Name = "GioiTinh_ComboBox";
+            this.GioiTinh_ComboBox.Size = new System.Drawing.Size(250, 29);
+            this.GioiTinh_ComboBox.TabIndex = 16;
+            // 
+            // label13
+            // 
+            this.label13.AutoSize = true;
+            this.label13.Location = new System.Drawing.Point(0, 267);
+            this.label13.Name = "label13";
+            this.label13.Size = new System.Drawing.Size(73, 21);
+            this.label13.TabIndex = 15;
+            this.label13.Text = "Giới tính:";
             // 
             // QH_ComboBox
             // 
             this.QH_ComboBox.BackColor = System.Drawing.Color.White;
+            this.QH_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
             this.QH_ComboBox.FormattingEnabled = true;
             this.QH_ComboBox.Items.AddRange(new object[] {
             "Con",
             "Bạn",
             "Vợ",
-            "Chồng"});
+            "Chồng",
+            "Khác"});
             this.QH_ComboBox.Location = new System.Drawing.Point(90, 221);
             this.QH_ComboBox.Name = "QH_ComboBox";
             this.QH_ComboBox.Size = new System.Drawing.Size(250, 29);
@@ -238,7 +268,7 @@
             // DKNT_Checkbox
             // 
             this.DKNT_Checkbox.AutoSize = true;
-            this.DKNT_Checkbox.Location = new System.Drawing.Point(13, 28);
+            this.DKNT_Checkbox.Location = new System.Drawing.Point(13, 25);
             this.DKNT_Checkbox.Name = "DKNT_Checkbox";
             this.DKNT_Checkbox.Size = new System.Drawing.Size(15, 14);
             this.DKNT_Checkbox.TabIndex = 13;
@@ -247,12 +277,13 @@
             // 
             // TGDK_Picker
             // 
-            this.TGDK_Picker.Format = System.Windows.Forms.DateTimePickerFormat.Short;
+            this.TGDK_Picker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.TGDK_Picker.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.TGDK_Picker.Location = new System.Drawing.Point(13, 406);
+            this.TGDK_Picker.Location = new System.Drawing.Point(17, 464);
             this.TGDK_Picker.MaxDate = new System.DateTime(2030, 12, 31, 0, 0, 0, 0);
             this.TGDK_Picker.MinDate = new System.DateTime(2022, 4, 19, 0, 0, 0, 0);
             this.TGDK_Picker.Name = "TGDK_Picker";
+            this.TGDK_Picker.ShowCheckBox = true;
             this.TGDK_Picker.Size = new System.Drawing.Size(340, 29);
             this.TGDK_Picker.TabIndex = 14;
             this.TGDK_Picker.Value = new System.DateTime(2022, 4, 19, 0, 0, 0, 0);
@@ -260,7 +291,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(9, 382);
+            this.label9.Location = new System.Drawing.Point(13, 440);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(172, 21);
@@ -283,14 +314,14 @@
             // 
             this.DSVacxinChon_Datagridview.AllowUserToAddRows = false;
             this.DSVacxinChon_Datagridview.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DSVacxinChon_Datagridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DSVacxinChon_Datagridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
             this.DSVacxinChon_Datagridview.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.DSVacxinChon_Datagridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DSVacxinChon_Datagridview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.dataGridViewTextBoxColumn1,
-            this.dataGridViewTextBoxColumn3,
-            this.dataGridViewTextBoxColumn5,
+            this.Chon_Ma,
+            this.Chon_Ten,
+            this.Chon_Gia,
             this.Chon_SLTiem,
             this.Chon_LanTiem});
             this.DSVacxinChon_Datagridview.Location = new System.Drawing.Point(0, 25);
@@ -299,40 +330,40 @@
             this.DSVacxinChon_Datagridview.Name = "DSVacxinChon_Datagridview";
             this.DSVacxinChon_Datagridview.RowHeadersVisible = false;
             this.DSVacxinChon_Datagridview.RowHeadersWidth = 62;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DSVacxinChon_Datagridview.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DSVacxinChon_Datagridview.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.DSVacxinChon_Datagridview.Size = new System.Drawing.Size(447, 389);
             this.DSVacxinChon_Datagridview.TabIndex = 14;
             // 
-            // dataGridViewTextBoxColumn1
+            // Chon_Ma
             // 
-            this.dataGridViewTextBoxColumn1.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn1.DataPropertyName = "MAGOIVACXIN";
-            this.dataGridViewTextBoxColumn1.FillWeight = 80F;
-            this.dataGridViewTextBoxColumn1.HeaderText = "Mã gói vắc xin";
-            this.dataGridViewTextBoxColumn1.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn1.Name = "dataGridViewTextBoxColumn1";
-            this.dataGridViewTextBoxColumn1.ReadOnly = true;
-            this.dataGridViewTextBoxColumn1.Visible = false;
+            this.Chon_Ma.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Chon_Ma.DataPropertyName = "MAGOIVACXIN";
+            this.Chon_Ma.FillWeight = 80F;
+            this.Chon_Ma.HeaderText = "Mã gói vắc xin";
+            this.Chon_Ma.MinimumWidth = 8;
+            this.Chon_Ma.Name = "Chon_Ma";
+            this.Chon_Ma.ReadOnly = true;
+            this.Chon_Ma.Visible = false;
             // 
-            // dataGridViewTextBoxColumn3
+            // Chon_Ten
             // 
-            this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn3.DataPropertyName = "TENGOIVACXIN";
-            this.dataGridViewTextBoxColumn3.HeaderText = "Tên gói vắc xin";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
-            this.dataGridViewTextBoxColumn3.ReadOnly = true;
+            this.Chon_Ten.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Chon_Ten.DataPropertyName = "TENGOIVACXIN";
+            this.Chon_Ten.HeaderText = "Tên gói vắc xin";
+            this.Chon_Ten.MinimumWidth = 8;
+            this.Chon_Ten.Name = "Chon_Ten";
+            this.Chon_Ten.ReadOnly = true;
             // 
-            // dataGridViewTextBoxColumn5
+            // Chon_Gia
             // 
-            this.dataGridViewTextBoxColumn5.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
-            this.dataGridViewTextBoxColumn5.DataPropertyName = "GIABAN";
-            this.dataGridViewTextBoxColumn5.FillWeight = 70F;
-            this.dataGridViewTextBoxColumn5.HeaderText = "Giá";
-            this.dataGridViewTextBoxColumn5.MinimumWidth = 8;
-            this.dataGridViewTextBoxColumn5.Name = "dataGridViewTextBoxColumn5";
-            this.dataGridViewTextBoxColumn5.ReadOnly = true;
+            this.Chon_Gia.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
+            this.Chon_Gia.DataPropertyName = "GIABAN";
+            this.Chon_Gia.FillWeight = 70F;
+            this.Chon_Gia.HeaderText = "Giá";
+            this.Chon_Gia.MinimumWidth = 8;
+            this.Chon_Gia.Name = "Chon_Gia";
+            this.Chon_Gia.ReadOnly = true;
             // 
             // Chon_SLTiem
             // 
@@ -358,7 +389,7 @@
             this.button1.TabIndex = 14;
             this.button1.Text = "Xác nhận";
             this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.XacNhanButton_Click);
             // 
             // ThanhTien_Label
             // 
@@ -396,7 +427,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(821, 502);
+            this.ClientSize = new System.Drawing.Size(823, 511);
             this.Controls.Add(this.TGDK_Picker);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label11);
@@ -439,15 +470,17 @@
         private System.Windows.Forms.DateTimePicker TGDK_Picker;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DataGridView DSVacxinChon_Datagridview;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn1;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn3;
-        private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn5;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Chon_SLTiem;
-        private System.Windows.Forms.DataGridViewTextBoxColumn Chon_LanTiem;
         private System.Windows.Forms.CheckBox DKNT_Checkbox;
         private System.Windows.Forms.Label label10;
         private System.Windows.Forms.ComboBox QH_ComboBox;
         private System.Windows.Forms.Label label12;
         private System.Windows.Forms.Label label11;
+        private System.Windows.Forms.ComboBox GioiTinh_ComboBox;
+        private System.Windows.Forms.Label label13;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Chon_Ma;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Chon_Ten;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Chon_Gia;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Chon_SLTiem;
+        private System.Windows.Forms.DataGridViewTextBoxColumn Chon_LanTiem;
     }
 }

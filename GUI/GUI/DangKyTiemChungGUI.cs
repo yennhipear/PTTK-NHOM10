@@ -36,8 +36,7 @@ namespace GUI.GUI
 
                 }
             }
-            DSVacxinChon_Datagridview.AllowUserToAddRows = false;
-            DSVacxinChon_Datagridview.Refresh();
+            //DSVacxinChon_Datagridview.Refresh();
             DSVacxinChon_Datagridview.CellValueChanged += DSVacxinChon_Datagridview_CellContentClick;
             ThanhTien_Label.Text = TongTien.ToString();
             ThanhTien_Label.Visible = true;
@@ -46,6 +45,14 @@ namespace GUI.GUI
             ThietlapDSCNComboBox();
 
             DKNT_Checkbox.Enabled = true;
+        
+            NgaySinhNT_Picker.CustomFormat = "dd/MM/yyyy";
+            NgaySinhNT_Picker.MaxDate = DateTime.UtcNow;
+            NgaySinhNT_Picker.Checked = false;
+
+            TGDK_Picker.CustomFormat = "dd/MM/yyyy";
+            TGDK_Picker.MinDate = DateTime.UtcNow;
+            TGDK_Picker.Checked = false;
         }
 
         private void ThietlapDSCNComboBox()
@@ -92,27 +99,68 @@ namespace GUI.GUI
            TTNgTiem_Panel.Enabled = DKNT_Checkbox.Checked;
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void XacNhanButton_Click(object sender, EventArgs e)
         {
             String MaKH, HoTenNT, CMNDNT, DiaChiNT, GioiTinhNT, SDTNT, QUANHE;
             DateTime NgayDK, NgSinhNT;
+            List<CTPHIEUDKTC> DsCT = new List<CTPHIEUDKTC>();
 
-            MaKH = "1";
+            MaKH = "1"; //TODO: Lấy mã của KH đang đăng nhập
             HoTenNT = HoTenNT_TextBox.Text;
             CMNDNT = CMNDNT_TextBox.Text;
             DiaChiNT = DiaChiNT_TextBox.Text;
-            GioiTinhNT = "Nam";
+            GioiTinhNT = GioiTinh_ComboBox.Text;
             SDTNT = SdtNT_TextBox.Text;
             QUANHE = QH_ComboBox.Text;
 
             NgayDK = TGDK_Picker.Value;
             NgSinhNT = NgaySinhNT_Picker.Value;
 
-            PhieuDangKyTiemChungDTO model = new PhieuDangKyTiemChungDTO(MaKH, HoTenNT, CMNDNT, DiaChiNT, GioiTinhNT, SDTNT, QUANHE, NgayDK, NgSinhNT);
+            if (DKNT_Checkbox.Checked)
+            {
+                if (String.IsNullOrEmpty(HoTenNT) || String.IsNullOrEmpty(GioiTinhNT)
+                    || String.IsNullOrEmpty(QUANHE) || !NgaySinhNT_Picker.Checked)
+                {
+                    MessageBox.Show("Vui lòng điền đầy đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    HoTenNT_TextBox.Focus();
+                    return;
+                }
+            }
+
+            if (!TGDK_Picker.Checked)
+            {
+                MessageBox.Show("Vui lòng chọn thời gian đăng ký tiêm", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                TGDK_Picker.Focus();
+                return;
+            }
+
+            // Duyệt qua danh sách vắc xin được chọn (DSVacxinChon_datagridview):
+            foreach (DataGridViewRow row in DSVacxinChon_Datagridview.Rows)
+            {
+                if (row.Cells["Chon_ChiNhanh"].Value == null)
+                {
+                    MessageBox.Show("Vui lòng chọn chi nhánh", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                    row.Selected = true;
+                    return;
+                }
+
+                string maGoiVacxin = row.Cells["Chon_Ma"].Value.ToString();
+                int lanTiem = Convert.ToInt32(row.Cells["Chon_LanTiem"].Value);
+                string tenCN = row.Cells["Chon_ChiNhanh"].Value.ToString();
+
+                CTPHIEUDKTC ct = new CTPHIEUDKTC(maGoiVacxin, lanTiem, tenCN);
+                DsCT.Add(ct);
+            }
+            
+            PhieuDangKyTiemChungDTO model = new PhieuDangKyTiemChungDTO(MaKH, HoTenNT, CMNDNT, DiaChiNT, GioiTinhNT, SDTNT, QUANHE, NgayDK, NgSinhNT, DsCT);
 
             DangKyTiemChungBUS bus = new DangKyTiemChungBUS();
-            if (bus.LuuThongTinDangKy(model) > 0)
-                MessageBox.Show("Đăng ký thành công", "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            int newID = bus.LuuThongTinDangKy(model);
+            if (newID > 0)
+            {
+                MessageBox.Show("Đăng ký thành công. Mã phiếu đăng ký của bạn: " + newID.ToString(), "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
+            }
             else
                 MessageBox.Show("Đã xảy ra lỗi. Không thể thực hiện đăng ký", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }

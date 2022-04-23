@@ -58,6 +58,7 @@
     <Compile Include="DAO\VacxinDAO.cs" />
     <Compile Include="DAO\LichLamViecDAO.cs" />
     <Compile Include="DTO\ChiNhanhDTO.cs" />
+    <Compile Include="DTO\CTPHIEUDKTC.cs" />
     <Compile Include="DTO\LichLamViecDTO.cs" />
     <Compile Include="DTO\LichRanhDTO.cs" />
     <Compile Include="DTO\PhieuDangKyTiemChungDTO.cs" />
