@@ -51,11 +51,13 @@
     <Compile Include="BUS\DangKyTiemChungBUS.cs" />
     <Compile Include="BUS\DatMuaVacxinBUS.cs" />
     <Compile Include="BUS\XepLichLamViecBUS.cs" />
+    <Compile Include="DAO\ChiNhanhDAO.cs" />
     <Compile Include="DAO\DataProviderDAO.cs" />
     <Compile Include="DAO\LichRanhDAO.cs" />
     <Compile Include="DAO\PhieuDangKyTiemChungDAO.cs" />
     <Compile Include="DAO\VacxinDAO.cs" />
     <Compile Include="DAO\LichLamViecDAO.cs" />
+    <Compile Include="DTO\ChiNhanhDTO.cs" />
     <Compile Include="DTO\LichLamViecDTO.cs" />
     <Compile Include="DTO\LichRanhDTO.cs" />
     <Compile Include="DTO\PhieuDangKyTiemChungDTO.cs" />

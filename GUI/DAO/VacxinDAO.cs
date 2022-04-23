@@ -15,7 +15,13 @@ namespace GUI.DAO
     {
         public DataTable LayDSVacxinHT()
         {           
-            DataTable result = DataProviderDAO.getInstance().ExecuteQuery(new SqlCommand("Select MAVACXIN, TENVACXIN, NGUABENH, GIABAN from VACXIN"));           
+            DataTable result = DataProviderDAO.getInstance().ExecuteQuery(new SqlCommand("Select MAVACXIN, TENVACXIN, NGUABENH, GIABAN, SLTIEM from VACXIN"));           
+            return result;
+        }
+
+        public DataTable LayDSGoiVacxinHT()
+        {
+            DataTable result = DataProviderDAO.getInstance().ExecuteQuery(new SqlCommand("Select MAGOIVACXIN, TENGOIVACXIN, GIABAN, SLTIEM from GOIVACXIN"));
             return result;
         }
 
@@ -25,6 +31,20 @@ namespace GUI.DAO
             command.Parameters.Add(new SqlParameter("@maVacxin", maVacxin));
             
             DataTable result = DataProviderDAO.getInstance().ExecuteQuery(command);         
+            return result;
+        }
+
+        public DataTable LayCTGoiVacxinHT(String maGoiVacxin)
+        {
+            SqlCommand command = 
+                new SqlCommand(@"select v.MAVACXIN, v.TENVACXIN, v.NGUABENH, v.GIABAN, v.SLTIEM
+                                from GOIVACXIN g JOIN CTGOIVACXIN ct on(ct.MAGOIVACXIN = g.MAGOIVACXIN)
+                                JOIN vacxin v on(v.MAVACXIN = ct.MAVACXIN)
+                                where g.MAGOIVACXIN = @maGoiVacxin");
+
+            command.Parameters.Add(new SqlParameter("@maGoiVacxin", maGoiVacxin));
+
+            DataTable result = DataProviderDAO.getInstance().ExecuteQuery(command);
             return result;
         }
     }
