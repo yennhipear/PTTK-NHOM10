@@ -2,6 +2,7 @@
 using GUI.DTO;
 using System;
 using System.Collections.Generic;
+using System.Globalization;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
@@ -11,25 +12,11 @@ namespace GUI.BUS
 {
     class DangKyLichRanhBUS
     {
-        static private int getDayInt(string dayStr)
+        static private string getOnlyDay(string dayStr)
         {
-            switch(dayStr)
-            {
-                case "Thứ hai":
-                    return 0;
-                case "Thứ ba":
-                    return 1;
-                case "Thứ tư":
-                    return 2;
-                case "Thứ năm":
-                    return 3;
-                case "Thứ sáu":
-                    return 4;
-                case "Thứ bảy":
-                    return 5;
-                default:
-                    return -1;
-            }
+            string onlyDateStr = dayStr.Substring(0, dayStr.IndexOf(' '));
+            DateTime onlyDate = DateTime.Parse(onlyDateStr, CultureInfo.CreateSpecificCulture("vi-VN"));
+            return onlyDate.ToString("yyyy-MM-dd");
         }
 
         static private int getShiftInt(string shiftStr)
@@ -46,7 +33,7 @@ namespace GUI.BUS
                     return -1;
             }
         }
-        static public bool dangKyLichRanh(int userID, int week, DataGridView dklrDGV)
+        static public bool dangKyLichRanh(int userID, DataGridView dklrDGV)
         {
             // check null
             for(int i = 0; i < dklrDGV.Rows.Count - 1; ++i)
@@ -56,15 +43,16 @@ namespace GUI.BUS
                     return false;
                 }
             }
-            List<List<int>> dklrArr = new List<List<int>>();
-            int day, shift;
+            List<List<dynamic>> dklrArr = new List<List<dynamic>>();
+            string day;
+            int shift;
             for (int i = 0; i < dklrDGV.Rows.Count - 1; ++i)
             {
-                day = getDayInt(dklrDGV.Rows[i].Cells["dklrDay"].Value.ToString());
+                day = getOnlyDay(dklrDGV.Rows[i].Cells["dklrDay"].Value.ToString());
                 shift = getShiftInt(dklrDGV.Rows[i].Cells["dklrShift"].Value.ToString());
-                dklrArr.Add(new List<int>{ day, shift });
+                dklrArr.Add(new List<dynamic>{ day, shift });
             }
-            LichRanhDTO lrInfo = new LichRanhDTO(userID, week, dklrArr);
+            LichRanhDTO lrInfo = new LichRanhDTO(userID, dklrArr);
             LichRanhDAO.themLichRanh(lrInfo);
             return true;
         }
