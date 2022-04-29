@@ -101,7 +101,7 @@ namespace GUI.GUI
 
         private void XacNhanButton_Click(object sender, EventArgs e)
         {
-            String MaKH, HoTenNT, CMNDNT, DiaChiNT, GioiTinhNT, SDTNT, QUANHE;
+            String MaKH, HoTenNT, CMNDNT, DiaChiNT, GioiTinhNT, SDTNT, QUANHE, TinhTrang;
             DateTime NgayDK, NgSinhNT;
             List<CTPHIEUDKTC> DsCT = new List<CTPHIEUDKTC>();
 
@@ -115,6 +115,7 @@ namespace GUI.GUI
 
             NgayDK = TGDK_Picker.Value;
             NgSinhNT = NgaySinhNT_Picker.Value;
+            TinhTrang = "Chờ duyệt";
 
             if (DKNT_Checkbox.Checked)
             {
@@ -152,7 +153,7 @@ namespace GUI.GUI
                 DsCT.Add(ct);
             }
             
-            PhieuDangKyTiemChungDTO model = new PhieuDangKyTiemChungDTO(MaKH, HoTenNT, CMNDNT, DiaChiNT, GioiTinhNT, SDTNT, QUANHE, NgayDK, NgSinhNT, DsCT);
+            PhieuDangKyTiemChungDTO model = new PhieuDangKyTiemChungDTO(MaKH, HoTenNT, CMNDNT, DiaChiNT, GioiTinhNT, SDTNT, QUANHE, NgayDK, NgSinhNT, DsCT, TinhTrang);
 
             DangKyTiemChungBUS bus = new DangKyTiemChungBUS();
             int newID = bus.LuuThongTinDangKy(model);

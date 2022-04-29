@@ -24,9 +24,9 @@ namespace GUI.GUI
             GoiVacxinHT_Datagridview.DataSource = dktcBus.LayDSGoiVacxinHT();
 
             GoiVacxinHT_Datagridview.CellClick += HienThiCTGoiVacxin;
-            GoiVacxinHT_Datagridview.CellClick += DSHT_ThemVaoDSChonBtn_Click;            
-            DSVacxinChon_Datagridview.UserDeletedRow += DSChon_XoaHang;
+            GoiVacxinHT_Datagridview.CellClick += DSHT_ThemVaoDSChonBtn_Click;    
             DSVacxinChon_Datagridview.CellClick += HienThiCTGoiVacxin;
+            DSVacxinChon_Datagridview.CellClick += DSChon_XoaHang;
 
             CTGoiVacxin_Datagridview.CellClick += HienThiCTVacxin;
         }
@@ -70,7 +70,6 @@ namespace GUI.GUI
             }
         }
 
-
         public void DSHT_ThemVaoDSChonBtn_Click(Object sender, DataGridViewCellEventArgs e)
         {
             if (e.ColumnIndex == GoiVacxinHT_Datagridview.Columns["ThemBtnCol"].Index && e.RowIndex >= 0)
@@ -89,21 +88,22 @@ namespace GUI.GUI
             }
         }
 
-        //public void DSChon_ThayDoiSL_CellChange(Object sender, DataGridViewCellEventArgs e)
-        //{
-        //    if (e.ColumnIndex == DSVacxinChon_Datagridview.Columns["Chon_SL"].Index && e.RowIndex >= 0)
-        //    {
-        //        HienThiTongTien();
-        //    }            
-        //}
-
-        public void DSChon_XoaHang(Object sender, DataGridViewRowEventArgs e)
+        public void DSChon_XoaHang(Object sender, DataGridViewCellEventArgs e)
         {
-           HienThiTongTien();
+            if(e.ColumnIndex == DSVacxinChon_Datagridview.Columns["Chon_Xoa"].Index && e.RowIndex >= 0)
+            {
+                DSVacxinChon_Datagridview.Rows.RemoveAt(e.RowIndex);
+                HienThiTongTien();
+            }
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void XacNhanButton_Click(object sender, EventArgs e)
         {
+            if (DSVacxinChon_Datagridview.Rows.Count == 0)
+            {
+                MessageBox.Show("Vui lòng chọn ít nhất một gói vắc xin.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
             (new DangKyTiemChungGUI(DSVacxinChon_Datagridview, long.Parse(ThanhTien_Label.Text))).Show();
             this.Close();
         }
