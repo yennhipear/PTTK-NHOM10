@@ -9,10 +9,44 @@ namespace GUI.DTO
 {
     class PhieuDangKyTiemChungDTO
     {
-        private String MaPDKTC, MaKH, HoTenNT, CMNDNT, DiaChiNT, GioiTinhNT, SDTNT, QUANHE, TinhTrang;
-        private DateTime NgayDK, NgSinhNT;
+        public String MaPDKTC { get; set; }
+        public String MaKH { get; set; }
+        public String HoTenNT { get; set; }
+        public String CMNDNT { get; set; }
+        public String DiaChiNT { get; set; }
+        public String GioiTinhNT { get; set; }
+        public String SDTNT { get; set; }
+        public String QUANHE { get; set; }
+        public String TinhTrang { get; set; }
+        public String HoTenKH { get; set; }
+        public String DiaChiKH { get; set; }
+        public String GioiTinhKH { get; set; }
+        public String SDTKH { get; set; }
+        public DateTime NgayDK { get; set; }
+        public DateTime NgSinhNT { get; set; }
+        public DateTime NgSinhKH { get; set; }
+        public List<CTPHIEUDKTC> DsCT { get; set; }
 
-        private List<CTPHIEUDKTC> DsCT = new List<CTPHIEUDKTC>();
+        public PhieuDangKyTiemChungDTO(string maPDKTC, string maKH, string hoTenNT, string cMNDNT, string diaChiNT, string gioiTinhNT, string sDTNT, string qUANHE, string tinhTrang, string hoTenKH, string diaChiKH, string gioiTinhKH, string sDTKH, DateTime ngayDK, DateTime ngSinhNT, DateTime ngSinhKH)
+        {
+            MaPDKTC = maPDKTC;
+            MaKH = maKH;
+            HoTenNT = hoTenNT;
+            CMNDNT = cMNDNT;
+            DiaChiNT = diaChiNT;
+            GioiTinhNT = gioiTinhNT;
+            SDTNT = sDTNT;
+            QUANHE = qUANHE;
+            TinhTrang = tinhTrang;
+            HoTenKH = hoTenKH;
+            DiaChiKH = diaChiKH;
+            GioiTinhKH = gioiTinhKH;
+            SDTKH = sDTKH;
+            NgayDK = ngayDK;
+            NgSinhNT = ngSinhNT;
+            NgSinhKH = ngSinhKH;
+        }
+
 
         public PhieuDangKyTiemChungDTO(string maKH, string hoTenNT, string cMNDNT, string diaChiNT, string gioiTinhNT, string sDTNT, string qUANHE, DateTime ngayDK, DateTime ngSinhNT, List<CTPHIEUDKTC> dsCT, string tinhTrang)
         {
@@ -60,5 +94,6 @@ namespace GUI.DTO
             return commands;
         }
 
+        
     }
 }
