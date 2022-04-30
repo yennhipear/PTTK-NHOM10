@@ -30,11 +30,13 @@ namespace GUI.GUI
             SdtKH_TextBox.Text = phieuDangKy.SDTKH;
             DiaChiKH_TextBox.Text = phieuDangKy.DiaChiKH;
             NgaySinhKH_Picker.Text = phieuDangKy.NgSinhKH.ToShortDateString();
+            GioiTinhKH_ComboBox.Text = phieuDangKy.GioiTinhKH;
 
             HoTenNT_TextBox.Text = phieuDangKy.HoTenNT;
             SdtNT_TextBox.Text = phieuDangKy.SDTNT;
             DiaChiNT_TextBox.Text = phieuDangKy.DiaChiNT;
             NgaySinhNT_Picker.Text = phieuDangKy.NgSinhNT.ToShortDateString();
+            GioiTinhNT_ComboBox.Text = phieuDangKy.GioiTinhNT;
             QuanHe_Combobox.Text = phieuDangKy.QUANHE;
 
             TGDK_Picker.Text = phieuDangKy.NgayDK.ToShortDateString();

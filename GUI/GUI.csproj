@@ -150,6 +150,12 @@
     <EmbeddedResource Include="GUI\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
+    <Compile Include="GUI\ThanhToanGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ThanhToanGUI.Designer.cs">
+      <DependentUpon>ThanhToanGUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\XepLichLamViecGUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -184,6 +190,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\DuyetDSDatMua.resx">
       <DependentUpon>DuyetDSDatMua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\ThanhToanGUI.resx">
+      <DependentUpon>ThanhToanGUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\XepLichLamViecGUI.resx">
       <DependentUpon>XepLichLamViecGUI.cs</DependentUpon>

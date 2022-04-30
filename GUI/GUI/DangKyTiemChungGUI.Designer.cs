@@ -58,10 +58,11 @@
             this.Chon_Gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Chon_SLTiem = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Chon_LanTiem = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.button1 = new System.Windows.Forms.Button();
+            this.XacNhan_Button = new System.Windows.Forms.Button();
             this.ThanhTien_Label = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label11 = new System.Windows.Forms.Label();
+            this.label14 = new System.Windows.Forms.Label();
             this.TTNgTiem_Panel.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DSVacxinChon_Datagridview)).BeginInit();
@@ -191,7 +192,7 @@
             this.TTNgTiem_Panel.Controls.Add(this.label3);
             this.TTNgTiem_Panel.Controls.Add(this.SdtNT_TextBox);
             this.TTNgTiem_Panel.Enabled = false;
-            this.TTNgTiem_Panel.Location = new System.Drawing.Point(13, 104);
+            this.TTNgTiem_Panel.Location = new System.Drawing.Point(15, 133);
             this.TTNgTiem_Panel.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.TTNgTiem_Panel.Name = "TTNgTiem_Panel";
             this.TTNgTiem_Panel.Size = new System.Drawing.Size(343, 313);
@@ -259,7 +260,7 @@
             // label10
             // 
             this.label10.AutoSize = true;
-            this.label10.Location = new System.Drawing.Point(34, 21);
+            this.label10.Location = new System.Drawing.Point(36, 50);
             this.label10.Name = "label10";
             this.label10.Size = new System.Drawing.Size(197, 21);
             this.label10.TabIndex = 15;
@@ -268,7 +269,7 @@
             // DKNT_Checkbox
             // 
             this.DKNT_Checkbox.AutoSize = true;
-            this.DKNT_Checkbox.Location = new System.Drawing.Point(13, 25);
+            this.DKNT_Checkbox.Location = new System.Drawing.Point(15, 54);
             this.DKNT_Checkbox.Name = "DKNT_Checkbox";
             this.DKNT_Checkbox.Size = new System.Drawing.Size(15, 14);
             this.DKNT_Checkbox.TabIndex = 13;
@@ -279,7 +280,7 @@
             // 
             this.TGDK_Picker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
             this.TGDK_Picker.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.TGDK_Picker.Location = new System.Drawing.Point(17, 464);
+            this.TGDK_Picker.Location = new System.Drawing.Point(19, 493);
             this.TGDK_Picker.MaxDate = new System.DateTime(2030, 12, 31, 0, 0, 0, 0);
             this.TGDK_Picker.MinDate = new System.DateTime(2022, 4, 19, 0, 0, 0, 0);
             this.TGDK_Picker.Name = "TGDK_Picker";
@@ -291,7 +292,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(13, 440);
+            this.label9.Location = new System.Drawing.Point(15, 469);
             this.label9.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(172, 21);
@@ -301,11 +302,11 @@
             // panel3
             // 
             this.panel3.Controls.Add(this.DSVacxinChon_Datagridview);
-            this.panel3.Controls.Add(this.button1);
+            this.panel3.Controls.Add(this.XacNhan_Button);
             this.panel3.Controls.Add(this.ThanhTien_Label);
             this.panel3.Controls.Add(this.label8);
             this.panel3.Controls.Add(this.label6);
-            this.panel3.Location = new System.Drawing.Point(363, 21);
+            this.panel3.Location = new System.Drawing.Point(365, 50);
             this.panel3.Name = "panel3";
             this.panel3.Size = new System.Drawing.Size(447, 472);
             this.panel3.TabIndex = 1;
@@ -381,15 +382,15 @@
             this.Chon_LanTiem.Name = "Chon_LanTiem";
             this.Chon_LanTiem.ReadOnly = true;
             // 
-            // button1
+            // XacNhan_Button
             // 
-            this.button1.Location = new System.Drawing.Point(322, 432);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(125, 33);
-            this.button1.TabIndex = 14;
-            this.button1.Text = "Xác nhận";
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.XacNhanButton_Click);
+            this.XacNhan_Button.Location = new System.Drawing.Point(322, 432);
+            this.XacNhan_Button.Name = "XacNhan_Button";
+            this.XacNhan_Button.Size = new System.Drawing.Size(125, 33);
+            this.XacNhan_Button.TabIndex = 14;
+            this.XacNhan_Button.Text = "Xác nhận";
+            this.XacNhan_Button.UseVisualStyleBackColor = true;
+            this.XacNhan_Button.Click += new System.EventHandler(this.XacNhanButton_Click);
             // 
             // ThanhTien_Label
             // 
@@ -416,18 +417,30 @@
             // label11
             // 
             this.label11.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Italic, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label11.Location = new System.Drawing.Point(38, 46);
+            this.label11.Location = new System.Drawing.Point(40, 75);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(315, 53);
             this.label11.TabIndex = 16;
             this.label11.Text = "Trường hợp bạn đang đăng ký tiêm chủng cho người thân, xin hãy nhập đầy đủ thông " +
     "tin của người được tiêm.";
             // 
+            // label14
+            // 
+            this.label14.AutoSize = true;
+            this.label14.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.label14.Location = new System.Drawing.Point(270, 9);
+            this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
+            this.label14.Name = "label14";
+            this.label14.Size = new System.Drawing.Size(191, 25);
+            this.label14.TabIndex = 15;
+            this.label14.Text = "Đăng ký tiêm chủng";
+            // 
             // DangKyTiemChungGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(823, 511);
+            this.ClientSize = new System.Drawing.Size(823, 539);
+            this.Controls.Add(this.label14);
             this.Controls.Add(this.TGDK_Picker);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.label11);
@@ -466,7 +479,7 @@
         private System.Windows.Forms.Label label7;
         private System.Windows.Forms.Label ThanhTien_Label;
         private System.Windows.Forms.Label label8;
-        private System.Windows.Forms.Button button1;
+        private System.Windows.Forms.Button XacNhan_Button;
         private System.Windows.Forms.DateTimePicker TGDK_Picker;
         private System.Windows.Forms.Label label9;
         private System.Windows.Forms.DataGridView DSVacxinChon_Datagridview;
@@ -482,5 +495,6 @@
         private System.Windows.Forms.DataGridViewTextBoxColumn Chon_Gia;
         private System.Windows.Forms.DataGridViewTextBoxColumn Chon_SLTiem;
         private System.Windows.Forms.DataGridViewTextBoxColumn Chon_LanTiem;
+        private System.Windows.Forms.Label label14;
     }
 }
