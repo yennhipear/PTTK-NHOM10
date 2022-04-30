@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.HoTenNT_TextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -314,8 +314,8 @@
             // 
             this.DSVacxinChon_Datagridview.AllowUserToAddRows = false;
             this.DSVacxinChon_Datagridview.AllowUserToResizeRows = false;
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DSVacxinChon_Datagridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DSVacxinChon_Datagridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.DSVacxinChon_Datagridview.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.DSVacxinChon_Datagridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DSVacxinChon_Datagridview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -330,8 +330,8 @@
             this.DSVacxinChon_Datagridview.Name = "DSVacxinChon_Datagridview";
             this.DSVacxinChon_Datagridview.RowHeadersVisible = false;
             this.DSVacxinChon_Datagridview.RowHeadersWidth = 62;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DSVacxinChon_Datagridview.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DSVacxinChon_Datagridview.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.DSVacxinChon_Datagridview.Size = new System.Drawing.Size(447, 389);
             this.DSVacxinChon_Datagridview.TabIndex = 14;
             // 

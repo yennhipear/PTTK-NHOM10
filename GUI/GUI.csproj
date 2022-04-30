@@ -51,6 +51,7 @@
     <Compile Include="BUS\DangKyTiemChungBUS.cs" />
     <Compile Include="BUS\DatMuaVacxinBUS.cs" />
     <Compile Include="BUS\XepLichLamViecBUS.cs" />
+    <Compile Include="BUS\XuLyPhieuDKTCBUS.cs" />
     <Compile Include="DAO\ChiNhanhDAO.cs" />
     <Compile Include="DAO\DataProviderDAO.cs" />
     <Compile Include="DAO\LichRanhDAO.cs" />
@@ -107,6 +108,12 @@
     <Compile Include="GUI\DatVacXinKhac.Designer.cs">
       <DependentUpon>DatVacXinKhac.cs</DependentUpon>
     </Compile>
+    <Compile Include="GUI\DSPhieuDKTC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\DSPhieuDKTC.Designer.cs">
+      <DependentUpon>DSPhieuDKTC.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\DSVacxinGUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -137,6 +144,9 @@
     <Compile Include="GUI\Menu.Designer.cs">
       <DependentUpon>Menu.cs</DependentUpon>
     </Compile>
+    <EmbeddedResource Include="GUI\DSPhieuDKTC.resx">
+      <DependentUpon>DSPhieuDKTC.cs</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
@@ -145,6 +155,12 @@
     </Compile>
     <Compile Include="GUI\XepLichLamViecGUI.Designer.cs">
       <DependentUpon>XepLichLamViecGUI.cs</DependentUpon>
+    </Compile>
+    <Compile Include="GUI\XuLyPhieuDKTC.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\XuLyPhieuDKTC.Designer.cs">
+      <DependentUpon>XuLyPhieuDKTC.cs</DependentUpon>
     </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
@@ -171,6 +187,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\XepLichLamViecGUI.resx">
       <DependentUpon>XepLichLamViecGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\XuLyPhieuDKTC.resx">
+      <DependentUpon>XuLyPhieuDKTC.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
