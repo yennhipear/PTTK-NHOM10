@@ -49,6 +49,7 @@
   <ItemGroup>
     <Compile Include="BUS\DangKyLichRanhBUS.cs" />
     <Compile Include="BUS\DangKyTiemChungBUS.cs" />
+    <Compile Include="BUS\DangNhapBUS.cs" />
     <Compile Include="BUS\DatMuaVacxinBUS.cs" />
     <Compile Include="BUS\XepLichLamViecBUS.cs" />
     <Compile Include="BUS\XuLyPhieuDKTCBUS.cs" />
@@ -63,6 +64,7 @@
     <Compile Include="DTO\LichLamViecDTO.cs" />
     <Compile Include="DTO\LichRanhDTO.cs" />
     <Compile Include="DTO\PhieuDangKyTiemChungDTO.cs" />
+    <Compile Include="DTO\UserCurrentDTO.cs" />
     <Compile Include="GUI\DangKyLichRanhGUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -87,14 +89,23 @@
     <Compile Include="GUI\DangKyTiemChungGUI.Designer.cs">
       <DependentUpon>DangKyTiemChungGUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\DangNhapGUI.cs">
+    <Compile Include="GUI\NVDangNhapGUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\DangNhapGUI.Designer.cs">
-      <DependentUpon>DangNhapGUI.cs</DependentUpon>
+    <Compile Include="GUI\NVDangNhapGUI.Designer.cs">
+      <DependentUpon>NVDangNhapGUI.cs</DependentUpon>
     </Compile>
-    <EmbeddedResource Include="GUI\DangNhapGUI.resx">
-      <DependentUpon>DangNhapGUI.cs</DependentUpon>
+    <Compile Include="GUI\KHDangNhapGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\KHDangNhapGUI.Designer.cs">
+      <DependentUpon>KHDangNhapGUI.cs</DependentUpon>
+    </Compile>
+    <EmbeddedResource Include="GUI\NVDangNhapGUI.resx">
+      <DependentUpon>NVDangNhapGUI.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\KHDangNhapGUI.resx">
+      <DependentUpon>KHDangNhapGUI.cs</DependentUpon>
     </EmbeddedResource>
     <Compile Include="GUI\DatMuaVacxinGUI.cs">
       <SubType>Form</SubType>

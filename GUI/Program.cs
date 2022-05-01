@@ -17,11 +17,11 @@ namespace GUI
         {
             Application.EnableVisualStyles();
             Application.SetCompatibleTextRenderingDefault(false);
-            Application.Run(new Menu());
-            //Application.Run(new DangNhapGUI());
+            //Application.Run(new Menu());
+            Application.Run(new KHDangNhapGUI());
             //Application.Run(new DangKyTaiKhoanGUI());
             //Application.Run(new DatMuaVacxinGUI());
-
+            // xac nhan xong matkhau, dem ham hash, luu kq hash vao cot password, dang nhap tuong tu, so sanh 2 cot
         }
     }
 }

@@ -24,6 +24,7 @@ namespace GUI.DAO
             return Instance;
         }
 
+        //tra ve cai bang data
         public DataTable ExecuteQuery(SqlCommand command)
         {
             SqlConnection cnn = new SqlConnection(ConfigurationManager.ConnectionStrings["SQLConnectionString"].ConnectionString);
@@ -45,6 +46,7 @@ namespace GUI.DAO
             return result;
         }
 
+        //tra ve object moi
         public object ExecuteScalar(SqlCommand command)
         {
             object result = null;
@@ -78,6 +80,21 @@ namespace GUI.DAO
                 MessageBox.Show(ex.ToString());
             }
             return result;
+        }
+
+        public void ExecuteReader(SqlCommand command)
+        {
+            SqlConnection conn = new SqlConnection(ConfigurationManager.ConnectionStrings["SQLConnectionString"].ConnectionString);
+            try
+            {
+                conn.Open();
+                command.Connection = conn;
+                command.ExecuteReader();
+            }
+            catch (Exception ex)
+            {
+                MessageBox.Show(ex.ToString());
+            }
         }
     }
 }
