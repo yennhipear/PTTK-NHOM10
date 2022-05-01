@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace GUI
+namespace GUI.GUI
 {
     public partial class ThanhToanGUI : Form
     {
@@ -17,6 +17,9 @@ namespace GUI
             InitializeComponent();
         }
 
-        
+        private void ThanhToanGUI_Load(object sender, EventArgs e)
+        {
+
+        }
     }
 }

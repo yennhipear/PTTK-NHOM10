@@ -157,6 +157,11 @@
     </Compile>
     <Compile Include="GUI\XacNhanDatMuaGUI.Designer.cs">
       <DependentUpon>XacNhanDatMuaGUI.cs</DependentUpon>
+    <Compile Include="GUI\ThanhToanGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\ThanhToanGUI.Designer.cs">
+      <DependentUpon>ThanhToanGUI.cs</DependentUpon>
     </Compile>
     <Compile Include="GUI\XepLichLamViecGUI.cs">
       <SubType>Form</SubType>
@@ -193,8 +198,11 @@
     <EmbeddedResource Include="GUI\DuyetDSDatMua.resx">
       <DependentUpon>DuyetDSDatMua.cs</DependentUpon>
     </EmbeddedResource>
+
     <EmbeddedResource Include="GUI\XacNhanDatMuaGUI.resx">
       <DependentUpon>XacNhanDatMuaGUI.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\ThanhToanGUI.resx">
+      <DependentUpon>ThanhToanGUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\XepLichLamViecGUI.resx">
       <DependentUpon>XepLichLamViecGUI.cs</DependentUpon>

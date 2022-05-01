@@ -160,6 +160,7 @@ namespace GUI.GUI
             if (newID > 0)
             {
                 MessageBox.Show("Đăng ký thành công. Mã phiếu đăng ký của bạn: " + newID.ToString(), "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                (new ThanhToanGUI()).Show();
                 this.Close();
             }
             else
