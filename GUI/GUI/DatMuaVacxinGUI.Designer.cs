@@ -98,7 +98,6 @@ namespace GUI.GUI
             this.label2.Size = new System.Drawing.Size(408, 32);
             this.label2.TabIndex = 1;
             this.label2.Text = "THÔNG TIN CHI TIẾT GÓI VẮC XIN";
-            this.label2.Click += new System.EventHandler(this.label2_Click);
             // 
             // DSVacXinHT_DataGridView
             // 
@@ -208,7 +207,6 @@ namespace GUI.GUI
             this.DSVacxinDaChon_DataGridView.RowTemplate.Height = 28;
             this.DSVacxinDaChon_DataGridView.Size = new System.Drawing.Size(545, 251);
             this.DSVacxinDaChon_DataGridView.TabIndex = 3;
-            this.DSVacxinDaChon_DataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DSVacxinDaChon_DataGridView_CellContentClick);
             // 
             // MaVX
             // 
@@ -267,7 +265,6 @@ namespace GUI.GUI
             this.panel1.Name = "panel1";
             this.panel1.Size = new System.Drawing.Size(554, 302);
             this.panel1.TabIndex = 4;
-            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // MoTa_ND_Label
             // 
@@ -320,7 +317,6 @@ namespace GUI.GUI
             this.label4.Size = new System.Drawing.Size(301, 32);
             this.label4.TabIndex = 1;
             this.label4.Text = "Thông tin chi tiết Vắc xin";
-            this.label4.Click += new System.EventHandler(this.label4_Click);
             // 
             // label3
             // 
@@ -365,7 +361,6 @@ namespace GUI.GUI
             this.GoiVacxinHT_Datagridview.RowsDefaultCellStyle = dataGridViewCellStyle10;
             this.GoiVacxinHT_Datagridview.Size = new System.Drawing.Size(550, 251);
             this.GoiVacxinHT_Datagridview.TabIndex = 2;
-            this.GoiVacxinHT_Datagridview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GoiVacxinHT_Datagridview_CellContentClick);
             // 
             // dataGridViewTextBoxColumn3
             // 
@@ -479,7 +474,6 @@ namespace GUI.GUI
             this.label5.Size = new System.Drawing.Size(381, 32);
             this.label5.TabIndex = 6;
             this.label5.Text = "DANH SÁCH VẮC XIN ĐÃ CHỌN";
-            this.label5.Click += new System.EventHandler(this.label5_Click);
             // 
             // DatMuaVacxinGUI
             // 
@@ -494,7 +488,6 @@ namespace GUI.GUI
             this.Controls.Add(this.panel2);
             this.Name = "DatMuaVacxinGUI";
             this.Text = "DatMuaVacxin";
-            this.Load += new System.EventHandler(this.DatMuaVacxinGUI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DSVacXinHT_DataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DSVacxinDaChon_DataGridView)).EndInit();
             this.panel1.ResumeLayout(false);

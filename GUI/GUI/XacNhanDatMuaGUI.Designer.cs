@@ -31,6 +31,9 @@ namespace GUI.GUI
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.TTNgTiem_Panel = new System.Windows.Forms.Panel();
+            this.textBox3 = new System.Windows.Forms.TextBox();
+            this.textBox2 = new System.Windows.Forms.TextBox();
+            this.textBox1 = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
             this.label12 = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
@@ -44,22 +47,19 @@ namespace GUI.GUI
             this.label3 = new System.Windows.Forms.Label();
             this.SdtNT_TextBox = new System.Windows.Forms.TextBox();
             this.panel3 = new System.Windows.Forms.Panel();
+            this.DSVacxinDaChon2_DataGridView = new System.Windows.Forms.DataGridView();
+            this.MaVX = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TenVX = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Ngua_Benh = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.Gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.soluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.XoaVacXin = new System.Windows.Forms.DataGridViewButtonColumn();
             this.button1 = new System.Windows.Forms.Button();
             this.ThanhTien_Label = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
-            this.DSVacxinDaChon2_DataGridView = new System.Windows.Forms.DataGridView();
-            this.XoaVacXin = new System.Windows.Forms.DataGridViewButtonColumn();
-            this.soluong = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Gia = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.Ngua_Benh = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TenVX = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaVX = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.TGDK_Picker = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
-            this.textBox1 = new System.Windows.Forms.TextBox();
-            this.textBox2 = new System.Windows.Forms.TextBox();
-            this.textBox3 = new System.Windows.Forms.TextBox();
             this.TTNgTiem_Panel.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DSVacxinDaChon2_DataGridView)).BeginInit();
@@ -88,7 +88,33 @@ namespace GUI.GUI
             this.TTNgTiem_Panel.Name = "TTNgTiem_Panel";
             this.TTNgTiem_Panel.Size = new System.Drawing.Size(371, 330);
             this.TTNgTiem_Panel.TabIndex = 1;
-            this.TTNgTiem_Panel.Paint += new System.Windows.Forms.PaintEventHandler(this.TTNgTiem_Panel_Paint);
+            // 
+            // textBox3
+            // 
+            this.textBox3.Location = new System.Drawing.Point(99, 281);
+            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox3.Name = "textBox3";
+            this.textBox3.ReadOnly = true;
+            this.textBox3.Size = new System.Drawing.Size(250, 26);
+            this.textBox3.TabIndex = 18;
+            // 
+            // textBox2
+            // 
+            this.textBox2.Location = new System.Drawing.Point(99, 241);
+            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox2.Name = "textBox2";
+            this.textBox2.ReadOnly = true;
+            this.textBox2.Size = new System.Drawing.Size(250, 26);
+            this.textBox2.TabIndex = 17;
+            // 
+            // textBox1
+            // 
+            this.textBox1.Location = new System.Drawing.Point(99, 201);
+            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
+            this.textBox1.Name = "textBox1";
+            this.textBox1.ReadOnly = true;
+            this.textBox1.Size = new System.Drawing.Size(250, 26);
+            this.textBox1.TabIndex = 16;
             // 
             // label13
             // 
@@ -217,6 +243,81 @@ namespace GUI.GUI
             this.panel3.Size = new System.Drawing.Size(509, 408);
             this.panel3.TabIndex = 2;
             // 
+            // DSVacxinDaChon2_DataGridView
+            // 
+            this.DSVacxinDaChon2_DataGridView.AllowUserToAddRows = false;
+            this.DSVacxinDaChon2_DataGridView.AllowUserToDeleteRows = false;
+            this.DSVacxinDaChon2_DataGridView.AllowUserToOrderColumns = true;
+            this.DSVacxinDaChon2_DataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DSVacxinDaChon2_DataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
+            this.DSVacxinDaChon2_DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
+            this.DSVacxinDaChon2_DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
+            this.MaVX,
+            this.TenVX,
+            this.Ngua_Benh,
+            this.Gia,
+            this.soluong,
+            this.XoaVacXin});
+            this.DSVacxinDaChon2_DataGridView.Location = new System.Drawing.Point(0, 35);
+            this.DSVacxinDaChon2_DataGridView.Name = "DSVacxinDaChon2_DataGridView";
+            this.DSVacxinDaChon2_DataGridView.RowHeadersVisible = false;
+            this.DSVacxinDaChon2_DataGridView.RowHeadersWidth = 62;
+            this.DSVacxinDaChon2_DataGridView.RowTemplate.Height = 28;
+            this.DSVacxinDaChon2_DataGridView.Size = new System.Drawing.Size(509, 297);
+            this.DSVacxinDaChon2_DataGridView.TabIndex = 15;
+            // 
+            // MaVX
+            // 
+            this.MaVX.DataPropertyName = "MAVACXIN";
+            this.MaVX.HeaderText = "Mã vắc xin";
+            this.MaVX.MinimumWidth = 8;
+            this.MaVX.Name = "MaVX";
+            this.MaVX.Visible = false;
+            // 
+            // TenVX
+            // 
+            this.TenVX.DataPropertyName = "TENVACXIN";
+            this.TenVX.HeaderText = "Tên vắc xin";
+            this.TenVX.MinimumWidth = 8;
+            this.TenVX.Name = "TenVX";
+            this.TenVX.Resizable = System.Windows.Forms.DataGridViewTriState.True;
+            // 
+            // Ngua_Benh
+            // 
+            this.Ngua_Benh.DataPropertyName = "NGUABENH";
+            this.Ngua_Benh.HeaderText = "Ngừa bệnh";
+            this.Ngua_Benh.MinimumWidth = 8;
+            this.Ngua_Benh.Name = "Ngua_Benh";
+            // 
+            // Gia
+            // 
+            this.Gia.DataPropertyName = "GIABAN";
+            this.Gia.HeaderText = "Giá bán";
+            this.Gia.MinimumWidth = 8;
+            this.Gia.Name = "Gia";
+            // 
+            // soluong
+            // 
+            this.soluong.HeaderText = "Số lượng";
+            this.soluong.MinimumWidth = 8;
+            this.soluong.Name = "soluong";
+            // 
+            // XoaVacXin
+            // 
+            this.XoaVacXin.FillWeight = 50F;
+            this.XoaVacXin.HeaderText = "Xóa";
+            this.XoaVacXin.MinimumWidth = 8;
+            this.XoaVacXin.Name = "XoaVacXin";
+            this.XoaVacXin.Text = "X";
+            this.XoaVacXin.UseColumnTextForButtonValue = true;
+            // 
             // button1
             // 
             this.button1.BackColor = System.Drawing.SystemColors.Info;
@@ -226,6 +327,7 @@ namespace GUI.GUI
             this.button1.TabIndex = 14;
             this.button1.Text = "Xác nhận";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // ThanhTien_Label
             // 
@@ -259,82 +361,6 @@ namespace GUI.GUI
             this.label6.TabIndex = 10;
             this.label6.Text = "Danh sách vắc xin đã chọn";
             // 
-            // DSVacxinDaChon2_DataGridView
-            // 
-            this.DSVacxinDaChon2_DataGridView.AllowUserToAddRows = false;
-            this.DSVacxinDaChon2_DataGridView.AllowUserToDeleteRows = false;
-            this.DSVacxinDaChon2_DataGridView.AllowUserToOrderColumns = true;
-            this.DSVacxinDaChon2_DataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DSVacxinDaChon2_DataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
-            this.DSVacxinDaChon2_DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.DSVacxinDaChon2_DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
-            this.MaVX,
-            this.TenVX,
-            this.Ngua_Benh,
-            this.Gia,
-            this.soluong,
-            this.XoaVacXin});
-            this.DSVacxinDaChon2_DataGridView.Location = new System.Drawing.Point(0, 35);
-            this.DSVacxinDaChon2_DataGridView.Name = "DSVacxinDaChon2_DataGridView";
-            this.DSVacxinDaChon2_DataGridView.RowHeadersVisible = false;
-            this.DSVacxinDaChon2_DataGridView.RowHeadersWidth = 62;
-            this.DSVacxinDaChon2_DataGridView.RowTemplate.Height = 28;
-            this.DSVacxinDaChon2_DataGridView.Size = new System.Drawing.Size(509, 297);
-            this.DSVacxinDaChon2_DataGridView.TabIndex = 15;
-            this.DSVacxinDaChon2_DataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DSVacxinDaChon_DataGridView_CellContentClick);
-            // 
-            // XoaVacXin
-            // 
-            this.XoaVacXin.FillWeight = 50F;
-            this.XoaVacXin.HeaderText = "Xóa";
-            this.XoaVacXin.MinimumWidth = 8;
-            this.XoaVacXin.Name = "XoaVacXin";
-            this.XoaVacXin.Text = "X";
-            this.XoaVacXin.UseColumnTextForButtonValue = true;
-            // 
-            // soluong
-            // 
-            this.soluong.HeaderText = "Số lượng";
-            this.soluong.MinimumWidth = 8;
-            this.soluong.Name = "soluong";
-            // 
-            // Gia
-            // 
-            this.Gia.DataPropertyName = "GIABAN";
-            this.Gia.HeaderText = "Giá bán";
-            this.Gia.MinimumWidth = 8;
-            this.Gia.Name = "Gia";
-            // 
-            // Ngua_Benh
-            // 
-            this.Ngua_Benh.DataPropertyName = "NGUABENH";
-            this.Ngua_Benh.HeaderText = "Ngừa bệnh";
-            this.Ngua_Benh.MinimumWidth = 8;
-            this.Ngua_Benh.Name = "Ngua_Benh";
-            // 
-            // TenVX
-            // 
-            this.TenVX.DataPropertyName = "TENVACXIN";
-            this.TenVX.HeaderText = "Tên vắc xin";
-            this.TenVX.MinimumWidth = 8;
-            this.TenVX.Name = "TenVX";
-            this.TenVX.Resizable = System.Windows.Forms.DataGridViewTriState.True;
-            // 
-            // MaVX
-            // 
-            this.MaVX.DataPropertyName = "MAVACXIN";
-            this.MaVX.HeaderText = "Mã vắc xin";
-            this.MaVX.MinimumWidth = 8;
-            this.MaVX.Name = "MaVX";
-            this.MaVX.Visible = false;
-            // 
             // TGDK_Picker
             // 
             this.TGDK_Picker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
@@ -347,7 +373,6 @@ namespace GUI.GUI
             this.TGDK_Picker.Size = new System.Drawing.Size(340, 26);
             this.TGDK_Picker.TabIndex = 16;
             this.TGDK_Picker.Value = new System.DateTime(2022, 4, 19, 0, 0, 0, 0);
-            this.TGDK_Picker.ValueChanged += new System.EventHandler(this.TGDK_Picker_ValueChanged);
             // 
             // label9
             // 
@@ -358,34 +383,6 @@ namespace GUI.GUI
             this.label9.Size = new System.Drawing.Size(170, 20);
             this.label9.TabIndex = 15;
             this.label9.Text = "Thời gian đăng ký tiêm:";
-            this.label9.Click += new System.EventHandler(this.label9_Click);
-            // 
-            // textBox1
-            // 
-            this.textBox1.Location = new System.Drawing.Point(99, 201);
-            this.textBox1.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox1.Name = "textBox1";
-            this.textBox1.ReadOnly = true;
-            this.textBox1.Size = new System.Drawing.Size(250, 26);
-            this.textBox1.TabIndex = 16;
-            // 
-            // textBox2
-            // 
-            this.textBox2.Location = new System.Drawing.Point(99, 241);
-            this.textBox2.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox2.Name = "textBox2";
-            this.textBox2.ReadOnly = true;
-            this.textBox2.Size = new System.Drawing.Size(250, 26);
-            this.textBox2.TabIndex = 17;
-            // 
-            // textBox3
-            // 
-            this.textBox3.Location = new System.Drawing.Point(99, 281);
-            this.textBox3.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.textBox3.Name = "textBox3";
-            this.textBox3.ReadOnly = true;
-            this.textBox3.Size = new System.Drawing.Size(250, 26);
-            this.textBox3.TabIndex = 18;
             // 
             // XacNhanDatMuaGUI
             // 

@@ -5,13 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using GUI.DAO;
+using GUI.DTO;
 using System.Windows.Forms;
 
 namespace GUI.BUS
 {
     class DatMuaVacxinBUS
     {
-        public DataTable LayVacxinDaChon;
+
         public DatMuaVacxinBUS() { }
         public DataTable LayDSVacxinHT()
         {
@@ -21,6 +22,14 @@ namespace GUI.BUS
                 MessageBox.Show("Đã xảy ra lỗi! Không thể lấy danh sách vắc xin");
 
             return dao.LayDSVacxinHT();
+        }
+
+        
+ 
+
+        public void LoadTableVacxinNgoai(DataTable table, string maVX, string tenVX, string nguabenh, string gia, string SL)
+        {
+            table.Rows.Add(maVX, tenVX, nguabenh, gia, SL);
         }
 
         public DataTable LayDSGoiVacxinHT()
@@ -55,6 +64,12 @@ namespace GUI.BUS
             result[1] = $"{dataTable.Rows[0]["MOTA"].ToString()}";
 
             return result;
+        }
+
+        public int LuuThongTinVacxinNgoai(VacxinNgoaiDTO vacxinNgoai)
+        {
+            return VacxinNgoaiDAO.getInstance().LuuThongTinVacxinNgoai(vacxinNgoai);
+
         }
     }
 }

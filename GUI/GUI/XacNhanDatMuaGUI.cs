@@ -34,29 +34,10 @@ namespace GUI.GUI
 
         }
 
-        private void label9_Click(object sender, EventArgs e)
+        private void button1_Click(object sender, EventArgs e)
         {
-
-        }
-
-        private void TGDK_Picker_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void NgaySinhNT_Picker_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void TTNgTiem_Panel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void DSVacxinDaChon_DataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
-
+            (new ThanhToanGUI()).Show();
+            this.Close();
         }
     }
 }

@@ -34,10 +34,9 @@ namespace GUI.DTO
         public SqlCommand getInsertSqlCommand()
         {
             SqlCommand command = new SqlCommand(
-                @"INSERT VACXINNGOAI (MAVACXIN, TENVACXIN, LOAIVACXIN, HANGVACXIN)
-                  VALUES (@maVXN, @tenVXN, @loaiVXN, @hangSX); SELECT SCOPE_IDENTITY()");
+                @"INSERT INTO VACXINNGOAI (TENVACXIN, LOAIVACXIN, HANGVACXIN)
+                  VALUES (@tenVXN, @loaiVXN, @hangSX); SELECT SCOPE_IDENTITY()");
 
-            command.Parameters.Add(new SqlParameter("@maVXN", MaVacxinNgoai));
             command.Parameters.Add(new SqlParameter("@tenVXN", TenVacxinNgoai));
             command.Parameters.Add(new SqlParameter("@loaiVXN", LoaiVacxinNgoai));
             command.Parameters.Add(new SqlParameter("@hangSX", HangVacxinNgoai));
