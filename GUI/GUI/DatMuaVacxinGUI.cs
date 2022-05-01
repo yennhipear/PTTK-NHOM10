@@ -1,4 +1,5 @@
 ﻿using GUI.BUS;
+using GUI.GUI;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -20,7 +21,10 @@ namespace GUI.GUI
             DSVacXinHT_DataGridView.AutoGenerateColumns = false;
 
             dmvxBus = new DatMuaVacxinBUS();
-            DSVacXinHT_DataGridView.DataSource = dmvxBus.LayDSVacxinHT();
+            // DSVacXinHT_DataGridView.DataSource = dmvxBus.LayDSVacxinHT();
+            GoiVacxinHT_Datagridview.DataSource = dmvxBus.LayDSGoiVacxinHT();
+
+            GoiVacxinHT_Datagridview.CellClick += HienThiCTGoiVacxin;
 
             DSVacXinHT_DataGridView.CellClick += DSHT_ChiTiet_Click;
             DSVacXinHT_DataGridView.CellClick += DSHT_ThemVaoSLVacxin_Click;
@@ -39,10 +43,11 @@ namespace GUI.GUI
                 tong += long.Parse(row.Cells["Gia"].Value.ToString()) * long.Parse(row.Cells["soluong"].Value.ToString());
             }
 
-            label10.Text = tong.ToString();
-            label10.Visible = true;
+            ThanhTien_Label.Text = tong.ToString();
+            ThanhTien_Label.Visible = true;
         }
 
+      
 
         public void DSHT_ChiTiet_Click(Object sender, DataGridViewCellEventArgs e)
         {
@@ -62,6 +67,14 @@ namespace GUI.GUI
             }
         }
 
+        public void HienThiCTGoiVacxin(Object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.RowIndex >= 0)
+            {
+                String maGoiVacxin = ((DataGridView)sender).Rows[e.RowIndex].Cells[0].Value.ToString();
+                DSVacXinHT_DataGridView.DataSource = dmvxBus.LayCTGoiVacxinHT(maGoiVacxin);
+            }
+        }
 
         public void DSHT_ThemVaoSLVacxin_Click(Object sender, DataGridViewCellEventArgs e)
         {
@@ -140,6 +153,49 @@ namespace GUI.GUI
         private void button1_Click(object sender, EventArgs e)
         {
             (new DatVacXinKhac()).Show();
+        }
+
+        private void label4_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DatMuaVacxinGUI_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void DSVacxinDaChon_DataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void label5_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GoiVacxinHT_Datagridview_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void button2_Click(object sender, EventArgs e)
+        {
+            //dmvxBus.LayVacxinDaChon = (DataTable)DSVacxinDaChon_DataGridView.DataSource;
+            (new XacNhanDatMuaGUI(DSVacxinDaChon_DataGridView, long.Parse(ThanhTien_Label.Text))).Show();
+            this.Close();
+
         }
     }
 }

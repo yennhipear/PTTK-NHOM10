@@ -11,6 +11,7 @@ namespace GUI.BUS
 {
     class DatMuaVacxinBUS
     {
+        public DataTable LayVacxinDaChon;
         public DatMuaVacxinBUS() { }
         public DataTable LayDSVacxinHT()
         {
@@ -21,6 +22,23 @@ namespace GUI.BUS
 
             return dao.LayDSVacxinHT();
         }
+
+        public DataTable LayDSGoiVacxinHT()
+        {
+            VacxinDAO dao = new VacxinDAO();
+            DataTable dataTable = dao.LayDSGoiVacxinHT();
+
+            return dataTable;
+        }
+
+        public DataTable LayCTGoiVacxinHT(String maGoiVacxin)
+        {
+            VacxinDAO dao = new VacxinDAO();
+            DataTable dataTable = dao.LayCTGoiVacxinHT(maGoiVacxin);
+
+            return dataTable;
+        }
+
 
         public String[] LayCTVacxin(String maVacxin)
         {

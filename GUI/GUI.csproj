@@ -58,10 +58,12 @@
     <Compile Include="DAO\PhieuDangKyTiemChungDAO.cs" />
     <Compile Include="DAO\VacxinDAO.cs" />
     <Compile Include="DAO\LichLamViecDAO.cs" />
+    <Compile Include="DAO\VacxinNgoaiDAO.cs" />
     <Compile Include="DTO\ChiNhanhDTO.cs" />
     <Compile Include="DTO\CTPHIEUDKTC.cs" />
     <Compile Include="DTO\LichLamViecDTO.cs" />
     <Compile Include="DTO\LichRanhDTO.cs" />
+    <Compile Include="DTO\VacxinNgoaiDTO.cs" />
     <Compile Include="DTO\PhieuDangKyTiemChungDTO.cs" />
     <Compile Include="GUI\DangKyLichRanhGUI.cs">
       <SubType>Form</SubType>
@@ -150,6 +152,12 @@
     <EmbeddedResource Include="GUI\Menu.resx">
       <DependentUpon>Menu.cs</DependentUpon>
     </EmbeddedResource>
+    <Compile Include="GUI\XacNhanDatMuaGUI.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\XacNhanDatMuaGUI.Designer.cs">
+      <DependentUpon>XacNhanDatMuaGUI.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\XepLichLamViecGUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -184,6 +192,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\DuyetDSDatMua.resx">
       <DependentUpon>DuyetDSDatMua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\XacNhanDatMuaGUI.resx">
+      <DependentUpon>XacNhanDatMuaGUI.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\XepLichLamViecGUI.resx">
       <DependentUpon>XepLichLamViecGUI.cs</DependentUpon>

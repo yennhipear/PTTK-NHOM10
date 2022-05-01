@@ -100,6 +100,7 @@
             this.CTGoiVacxin_Datagridview.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.CTGoiVacxin_Datagridview.Size = new System.Drawing.Size(416, 239);
             this.CTGoiVacxin_Datagridview.TabIndex = 0;
+            this.CTGoiVacxin_Datagridview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.CTGoiVacxin_Datagridview_CellContentClick);
             // 
             // MaVacxin
             // 
@@ -151,6 +152,7 @@
             this.SLTiem.DataPropertyName = "SLTIEM";
             this.SLTiem.FillWeight = 50F;
             this.SLTiem.HeaderText = "Số lần tiêm";
+            this.SLTiem.MinimumWidth = 8;
             this.SLTiem.Name = "SLTiem";
             this.SLTiem.ReadOnly = true;
             // 
@@ -161,7 +163,7 @@
             this.label1.Location = new System.Drawing.Point(4, 15);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(220, 21);
+            this.label1.Size = new System.Drawing.Size(328, 32);
             this.label1.TabIndex = 1;
             this.label1.Text = "Danh sách vắc xin hệ thống";
             // 
@@ -238,6 +240,7 @@
             this.Chon_SLTiem.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Chon_SLTiem.FillWeight = 40F;
             this.Chon_SLTiem.HeaderText = "Số lần tiêm";
+            this.Chon_SLTiem.MinimumWidth = 8;
             this.Chon_SLTiem.Name = "Chon_SLTiem";
             // 
             // Chon_Xoa
@@ -245,6 +248,7 @@
             this.Chon_Xoa.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Chon_Xoa.FillWeight = 20F;
             this.Chon_Xoa.HeaderText = "";
+            this.Chon_Xoa.MinimumWidth = 8;
             this.Chon_Xoa.Name = "Chon_Xoa";
             this.Chon_Xoa.ReadOnly = true;
             this.Chon_Xoa.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -278,6 +282,7 @@
             this.GoiVacxinHT_Datagridview.RowsDefaultCellStyle = dataGridViewCellStyle7;
             this.GoiVacxinHT_Datagridview.Size = new System.Drawing.Size(370, 239);
             this.GoiVacxinHT_Datagridview.TabIndex = 4;
+            this.GoiVacxinHT_Datagridview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GoiVacxinHT_Datagridview_CellContentClick);
             // 
             // dataGridViewTextBoxColumn3
             // 
@@ -317,6 +322,7 @@
             this.Goi_SLTiem.DefaultCellStyle = dataGridViewCellStyle6;
             this.Goi_SLTiem.FillWeight = 40F;
             this.Goi_SLTiem.HeaderText = "Số lần tiêm";
+            this.Goi_SLTiem.MinimumWidth = 8;
             this.Goi_SLTiem.Name = "Goi_SLTiem";
             this.Goi_SLTiem.ReadOnly = true;
             // 
@@ -325,6 +331,7 @@
             this.ThemBtnCol.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.ThemBtnCol.FillWeight = 20F;
             this.ThemBtnCol.HeaderText = "";
+            this.ThemBtnCol.MinimumWidth = 8;
             this.ThemBtnCol.Name = "ThemBtnCol";
             this.ThemBtnCol.ReadOnly = true;
             this.ThemBtnCol.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -339,7 +346,7 @@
             this.label2.Location = new System.Drawing.Point(4, 280);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(212, 21);
+            this.label2.Size = new System.Drawing.Size(317, 32);
             this.label2.TabIndex = 2;
             this.label2.Text = "Danh sách vắc xin đã chọn";
             // 
@@ -365,7 +372,7 @@
             this.label5.Location = new System.Drawing.Point(4, 15);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(228, 21);
+            this.label5.Size = new System.Drawing.Size(342, 32);
             this.label5.TabIndex = 5;
             this.label5.Text = "Thông tin chi tiết gói vắc xin";
             // 
@@ -395,7 +402,7 @@
             this.MoTa_Label.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.MoTa_Label.Location = new System.Drawing.Point(3, 350);
             this.MoTa_Label.Name = "MoTa_Label";
-            this.MoTa_Label.Size = new System.Drawing.Size(54, 21);
+            this.MoTa_Label.Size = new System.Drawing.Size(82, 32);
             this.MoTa_Label.TabIndex = 2;
             this.MoTa_Label.Text = "Mô tả";
             this.MoTa_Label.Visible = false;
@@ -406,7 +413,7 @@
             this.HangSX_Label.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.HangSX_Label.Location = new System.Drawing.Point(3, 301);
             this.HangSX_Label.Name = "HangSX_Label";
-            this.HangSX_Label.Size = new System.Drawing.Size(74, 21);
+            this.HangSX_Label.Size = new System.Drawing.Size(112, 32);
             this.HangSX_Label.TabIndex = 1;
             this.HangSX_Label.Text = "Hãng SX";
             this.HangSX_Label.Visible = false;
@@ -418,7 +425,7 @@
             this.label3.Location = new System.Drawing.Point(4, 280);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(199, 21);
+            this.label3.Size = new System.Drawing.Size(298, 32);
             this.label3.TabIndex = 0;
             this.label3.Text = "Thông tin chi tiết vắc xin";
             // 
@@ -438,7 +445,7 @@
             this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label4.Location = new System.Drawing.Point(15, 558);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(96, 21);
+            this.label4.Size = new System.Drawing.Size(143, 32);
             this.label4.TabIndex = 5;
             this.label4.Text = "Thành tiền:";
             // 
@@ -449,7 +456,7 @@
             this.ThanhTien_Label.ForeColor = System.Drawing.Color.Maroon;
             this.ThanhTien_Label.Location = new System.Drawing.Point(117, 537);
             this.ThanhTien_Label.Name = "ThanhTien_Label";
-            this.ThanhTien_Label.Size = new System.Drawing.Size(120, 47);
+            this.ThanhTien_Label.Size = new System.Drawing.Size(181, 71);
             this.ThanhTien_Label.TabIndex = 6;
             this.ThanhTien_Label.Text = "label5";
             this.ThanhTien_Label.Visible = false;
@@ -467,7 +474,7 @@
             // 
             // DSVacxinGUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 32F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(831, 606);
             this.Controls.Add(this.button2);
@@ -480,6 +487,7 @@
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.Name = "DSVacxinGUI";
             this.Text = "Đăng ký tiêm chủng";
+            this.Load += new System.EventHandler(this.DSVacxinGUI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.CTGoiVacxin_Datagridview)).EndInit();
             this.panel1.ResumeLayout(false);
             this.panel1.PerformLayout();
