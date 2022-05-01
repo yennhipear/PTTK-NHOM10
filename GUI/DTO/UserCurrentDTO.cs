@@ -12,5 +12,7 @@ namespace GUI.DTO
 		private DateTime NGAYSINHKH;
 		// nhan vien
 		private String HOTEN, EMAIL, SDT, MACN;
+
+
 	}
 }

@@ -43,6 +43,7 @@ namespace GUI.BUS
                     //this.Hide();
                     f.StartPosition = FormStartPosition.CenterScreen;
                     f.ShowDialog();
+
                     //this.Close();
                 }
             }

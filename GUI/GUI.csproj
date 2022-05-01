@@ -56,6 +56,7 @@
     <Compile Include="DAO\ChiNhanhDAO.cs" />
     <Compile Include="DAO\DataProviderDAO.cs" />
     <Compile Include="DAO\LichRanhDAO.cs" />
+    <Compile Include="DAO\DangNhapDAO.cs" />
     <Compile Include="DAO\PhieuDangKyTiemChungDAO.cs" />
     <Compile Include="DAO\VacxinDAO.cs" />
     <Compile Include="DAO\LichLamViecDAO.cs" />
@@ -168,7 +169,7 @@
     </Compile>
     <Compile Include="GUI\XacNhanDatMuaGUI.Designer.cs">
       <DependentUpon>XacNhanDatMuaGUI.cs</DependentUpon>
-	</Compile>
+    </Compile>
     <Compile Include="GUI\ThanhToanGUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -210,10 +211,9 @@
     <EmbeddedResource Include="GUI\DuyetDSDatMua.resx">
       <DependentUpon>DuyetDSDatMua.cs</DependentUpon>
     </EmbeddedResource>
-
     <EmbeddedResource Include="GUI\XacNhanDatMuaGUI.resx">
       <DependentUpon>XacNhanDatMuaGUI.cs</DependentUpon>
-	</EmbeddedResource>
+    </EmbeddedResource>
     <EmbeddedResource Include="GUI\ThanhToanGUI.resx">
       <DependentUpon>ThanhToanGUI.cs</DependentUpon>
     </EmbeddedResource>
