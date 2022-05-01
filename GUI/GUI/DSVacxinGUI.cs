@@ -108,6 +108,19 @@ namespace GUI.GUI
             this.Close();
         }
 
-   
+        private void DSVacxinGUI_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GoiVacxinHT_Datagridview_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void CTGoiVacxin_Datagridview_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

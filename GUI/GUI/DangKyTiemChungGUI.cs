@@ -166,5 +166,15 @@ namespace GUI.GUI
             else
                 MessageBox.Show("Đã xảy ra lỗi. Không thể thực hiện đăng ký", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
+
+        private void TTNgTiem_Panel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void DSVacxinChon_Datagridview_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
     }
 }

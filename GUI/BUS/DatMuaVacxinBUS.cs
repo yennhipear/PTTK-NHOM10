@@ -5,12 +5,14 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Data;
 using GUI.DAO;
+using GUI.DTO;
 using System.Windows.Forms;
 
 namespace GUI.BUS
 {
     class DatMuaVacxinBUS
     {
+
         public DatMuaVacxinBUS() { }
         public DataTable LayDSVacxinHT()
         {
@@ -21,6 +23,31 @@ namespace GUI.BUS
 
             return dao.LayDSVacxinHT();
         }
+
+        
+ 
+
+        public void LoadTableVacxinNgoai(DataTable table, string maVX, string tenVX, string nguabenh, string gia, string SL)
+        {
+            table.Rows.Add(maVX, tenVX, nguabenh, gia, SL);
+        }
+
+        public DataTable LayDSGoiVacxinHT()
+        {
+            VacxinDAO dao = new VacxinDAO();
+            DataTable dataTable = dao.LayDSGoiVacxinHT();
+
+            return dataTable;
+        }
+
+        public DataTable LayCTGoiVacxinHT(String maGoiVacxin)
+        {
+            VacxinDAO dao = new VacxinDAO();
+            DataTable dataTable = dao.LayCTGoiVacxinHT(maGoiVacxin);
+
+            return dataTable;
+        }
+
 
         public String[] LayCTVacxin(String maVacxin)
         {
@@ -37,6 +64,12 @@ namespace GUI.BUS
             result[1] = $"{dataTable.Rows[0]["MOTA"].ToString()}";
 
             return result;
+        }
+
+        public int LuuThongTinVacxinNgoai(VacxinNgoaiDTO vacxinNgoai)
+        {
+            return VacxinNgoaiDAO.getInstance().LuuThongTinVacxinNgoai(vacxinNgoai);
+
         }
     }
 }
