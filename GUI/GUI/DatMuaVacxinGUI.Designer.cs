@@ -29,11 +29,11 @@ namespace GUI.GUI
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle7 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle10 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle9 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.label2 = new System.Windows.Forms.Label();
             this.DSVacXinHT_DataGridView = new System.Windows.Forms.DataGridView();
@@ -64,8 +64,8 @@ namespace GUI.GUI
             this.dataGridViewTextBoxColumn6 = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Goi_SLTiem = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.label9 = new System.Windows.Forms.Label();
-            this.button1 = new System.Windows.Forms.Button();
-            this.button2 = new System.Windows.Forms.Button();
+            this.DatVacxinKhac_Button = new System.Windows.Forms.Button();
+            this.DatMua_Button = new System.Windows.Forms.Button();
             this.ThanhTien_Label = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
@@ -104,14 +104,14 @@ namespace GUI.GUI
             this.DSVacXinHT_DataGridView.AllowUserToAddRows = false;
             this.DSVacXinHT_DataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
             this.DSVacXinHT_DataGridView.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            dataGridViewCellStyle6.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle6.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle6.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle6.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle6.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle6.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DSVacXinHT_DataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DSVacXinHT_DataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.DSVacXinHT_DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DSVacXinHT_DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MAVACXIN,
@@ -184,14 +184,14 @@ namespace GUI.GUI
             this.DSVacxinDaChon_DataGridView.AllowUserToDeleteRows = false;
             this.DSVacxinDaChon_DataGridView.AllowUserToOrderColumns = true;
             this.DSVacxinDaChon_DataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle7.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle7.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle7.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle7.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle7.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle7.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle7.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DSVacxinDaChon_DataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle7;
+            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DSVacxinDaChon_DataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle2;
             this.DSVacxinDaChon_DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DSVacxinDaChon_DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaVX,
@@ -341,8 +341,8 @@ namespace GUI.GUI
             // 
             this.GoiVacxinHT_Datagridview.AllowUserToAddRows = false;
             this.GoiVacxinHT_Datagridview.AllowUserToResizeRows = false;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GoiVacxinHT_Datagridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GoiVacxinHT_Datagridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.GoiVacxinHT_Datagridview.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.GoiVacxinHT_Datagridview.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
             this.GoiVacxinHT_Datagridview.ColumnHeadersHeight = 27;
@@ -357,8 +357,8 @@ namespace GUI.GUI
             this.GoiVacxinHT_Datagridview.Name = "GoiVacxinHT_Datagridview";
             this.GoiVacxinHT_Datagridview.RowHeadersVisible = false;
             this.GoiVacxinHT_Datagridview.RowHeadersWidth = 62;
-            dataGridViewCellStyle10.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.GoiVacxinHT_Datagridview.RowsDefaultCellStyle = dataGridViewCellStyle10;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.GoiVacxinHT_Datagridview.RowsDefaultCellStyle = dataGridViewCellStyle5;
             this.GoiVacxinHT_Datagridview.Size = new System.Drawing.Size(550, 251);
             this.GoiVacxinHT_Datagridview.TabIndex = 2;
             // 
@@ -396,8 +396,8 @@ namespace GUI.GUI
             // 
             this.Goi_SLTiem.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Goi_SLTiem.DataPropertyName = "SLTiem";
-            dataGridViewCellStyle9.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.Goi_SLTiem.DefaultCellStyle = dataGridViewCellStyle9;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Goi_SLTiem.DefaultCellStyle = dataGridViewCellStyle4;
             this.Goi_SLTiem.FillWeight = 63.9758F;
             this.Goi_SLTiem.HeaderText = "Số lần tiêm";
             this.Goi_SLTiem.MinimumWidth = 8;
@@ -415,34 +415,34 @@ namespace GUI.GUI
             this.label9.TabIndex = 6;
             this.label9.Text = "THÀNH TIỀN :";
             // 
-            // button1
+            // DatVacxinKhac_Button
             // 
-            this.button1.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.button1.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button1.Location = new System.Drawing.Point(714, 653);
-            this.button1.Name = "button1";
-            this.button1.Size = new System.Drawing.Size(210, 57);
-            this.button1.TabIndex = 7;
-            this.button1.Text = "Đặt vắc xin khác";
-            this.button1.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.button1.UseVisualStyleBackColor = true;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.DatVacxinKhac_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
+            this.DatVacxinKhac_Button.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DatVacxinKhac_Button.Location = new System.Drawing.Point(714, 653);
+            this.DatVacxinKhac_Button.Name = "DatVacxinKhac_Button";
+            this.DatVacxinKhac_Button.Size = new System.Drawing.Size(210, 57);
+            this.DatVacxinKhac_Button.TabIndex = 7;
+            this.DatVacxinKhac_Button.Text = "Đặt vắc xin khác";
+            this.DatVacxinKhac_Button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
+            this.DatVacxinKhac_Button.UseVisualStyleBackColor = true;
+            this.DatVacxinKhac_Button.Click += new System.EventHandler(this.DatVacxinKhac_Button_Click);
             // 
-            // button2
+            // DatMua_Button
             // 
-            this.button2.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.button2.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
-            this.button2.DialogResult = System.Windows.Forms.DialogResult.Retry;
-            this.button2.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.button2.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.button2.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.button2.Location = new System.Drawing.Point(930, 654);
-            this.button2.Name = "button2";
-            this.button2.Size = new System.Drawing.Size(192, 50);
-            this.button2.TabIndex = 8;
-            this.button2.Text = "Đặt mua";
-            this.button2.UseVisualStyleBackColor = false;
-            this.button2.Click += new System.EventHandler(this.button2_Click);
+            this.DatMua_Button.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
+            this.DatMua_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            this.DatMua_Button.DialogResult = System.Windows.Forms.DialogResult.Retry;
+            this.DatMua_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.DatMua_Button.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DatMua_Button.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
+            this.DatMua_Button.Location = new System.Drawing.Point(930, 654);
+            this.DatMua_Button.Name = "DatMua_Button";
+            this.DatMua_Button.Size = new System.Drawing.Size(192, 50);
+            this.DatMua_Button.TabIndex = 8;
+            this.DatMua_Button.Text = "Đặt mua";
+            this.DatMua_Button.UseVisualStyleBackColor = false;
+            this.DatMua_Button.Click += new System.EventHandler(this.DatMua_Button_Click);
             // 
             // ThanhTien_Label
             // 
@@ -482,8 +482,8 @@ namespace GUI.GUI
             this.ClientSize = new System.Drawing.Size(1133, 722);
             this.Controls.Add(this.panel3);
             this.Controls.Add(this.ThanhTien_Label);
-            this.Controls.Add(this.button2);
-            this.Controls.Add(this.button1);
+            this.Controls.Add(this.DatMua_Button);
+            this.Controls.Add(this.DatVacxinKhac_Button);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.panel2);
             this.Name = "DatMuaVacxinGUI";
@@ -516,8 +516,8 @@ namespace GUI.GUI
         private System.Windows.Forms.Label HangSX_Label;
         private System.Windows.Forms.Label MoTa_ND_Label;
         private System.Windows.Forms.Label label9;
-        private System.Windows.Forms.Button button1;
-        private System.Windows.Forms.Button button2;
+        private System.Windows.Forms.Button DatVacxinKhac_Button;
+        private System.Windows.Forms.Button DatMua_Button;
         private System.Windows.Forms.Label ThanhTien_Label;
         private System.Windows.Forms.DataGridViewTextBoxColumn MAVACXIN;
         private System.Windows.Forms.DataGridViewTextBoxColumn TENVACXIN;

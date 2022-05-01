@@ -327,7 +327,7 @@ namespace GUI.GUI
             this.button1.TabIndex = 14;
             this.button1.Text = "Xác nhận";
             this.button1.UseVisualStyleBackColor = false;
-            this.button1.Click += new System.EventHandler(this.button1_Click);
+            this.button1.Click += new System.EventHandler(this.Xacnhan_Button_Click);
             // 
             // ThanhTien_Label
             // 

@@ -21,13 +21,16 @@ namespace GUI.GUI
             InitializeComponent();
         }
 
-        private void button3_Click(object sender, EventArgs e)
+        private VacxinNgoaiDTO vxn;
+
+        private void ThemVacxinVaoDSChon_button_Click(object sender, EventArgs e)
         {
             string TenVXN, LoaiVXN, HangVXN;
             TenVXN = txtTenVacxin.Text;
             LoaiVXN = txtLoaiVacxin.Text;
             HangVXN = txtHangVacxin.Text;
 
+            string SoLuong = numericSoLuong.ToString();
 
             if (String.IsNullOrEmpty(TenVXN) || String.IsNullOrEmpty(LoaiVXN)
                     || String.IsNullOrEmpty(HangVXN))
@@ -37,10 +40,11 @@ namespace GUI.GUI
                 return;
             }
 
-            VacxinNgoaiDTO model = new VacxinNgoaiDTO(TenVXN, LoaiVXN, HangVXN);
+            vxn = new VacxinNgoaiDTO(TenVXN, LoaiVXN, HangVXN, SoLuong);
 
             DatMuaVacxinBUS bus = new DatMuaVacxinBUS();
-            int newID = bus.LuuThongTinVacxinNgoai(model);
+            int newID = bus.LuuThongTinVacxinNgoai(vxn);
+            vxn.MaVacxinNgoai = newID.ToString();
             if (newID > 0)
             {
                 MessageBox.Show("Thêm vacxin thành công!" , "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
@@ -49,11 +53,14 @@ namespace GUI.GUI
             else
                 MessageBox.Show("Đã xảy ra lỗi. Không thể thêm vacxin", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-
-            string SoLuong = numericSoLuong.ToString();
+         
 
         }
 
+        public VacxinNgoaiDTO LayThongTinVacxinNgoai()
+        { 
+            return vxn;
+        }
     
 
         private void txtTenVacxin_TextChanged(object sender, EventArgs e)

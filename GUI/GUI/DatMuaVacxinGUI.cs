@@ -162,7 +162,7 @@ namespace GUI.GUI
             }    
         }
 
-        private void button1_Click(object sender, EventArgs e)
+        private void DatVacxinKhac_Button_Click(object sender, EventArgs e)
         {
             DatVacXinKhac dvxk = new DatVacXinKhac();
             dvxk.Show();
@@ -170,7 +170,7 @@ namespace GUI.GUI
 
         }
 
-        private void button2_Click(object sender, EventArgs e)
+        private void DatMua_Button_Click(object sender, EventArgs e)
         { 
             (new XacNhanDatMuaGUI(DSVacxinDaChon_DataGridView, long.Parse(ThanhTien_Label.Text))).Show();
             this.Close();
