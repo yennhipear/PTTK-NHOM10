@@ -157,6 +157,7 @@
     </Compile>
     <Compile Include="GUI\XacNhanDatMuaGUI.Designer.cs">
       <DependentUpon>XacNhanDatMuaGUI.cs</DependentUpon>
+	</Compile>
     <Compile Include="GUI\ThanhToanGUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -201,6 +202,7 @@
 
     <EmbeddedResource Include="GUI\XacNhanDatMuaGUI.resx">
       <DependentUpon>XacNhanDatMuaGUI.cs</DependentUpon>
+	</EmbeddedResource>
     <EmbeddedResource Include="GUI\ThanhToanGUI.resx">
       <DependentUpon>ThanhToanGUI.cs</DependentUpon>
     </EmbeddedResource>
