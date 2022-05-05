@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label9 = new System.Windows.Forms.Label();
             this.label10 = new System.Windows.Forms.Label();
             this.DKNT_Checkbox = new System.Windows.Forms.CheckBox();
@@ -41,6 +41,7 @@
             this.TTKH_Panel = new System.Windows.Forms.Panel();
             this.GioiTinhKH_ComboBox = new System.Windows.Forms.ComboBox();
             this.label13 = new System.Windows.Forms.Label();
+            this.NgaySinhKH_Picker = new System.Windows.Forms.DateTimePicker();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.HoTenKH_TextBox = new System.Windows.Forms.TextBox();
@@ -54,6 +55,7 @@
             this.label8 = new System.Windows.Forms.Label();
             this.QuanHe_Combobox = new System.Windows.Forms.ComboBox();
             this.label11 = new System.Windows.Forms.Label();
+            this.NgaySinhNT_Picker = new System.Windows.Forms.DateTimePicker();
             this.label14 = new System.Windows.Forms.Label();
             this.label15 = new System.Windows.Forms.Label();
             this.HoTenNT_TextBox = new System.Windows.Forms.TextBox();
@@ -63,8 +65,6 @@
             this.label19 = new System.Windows.Forms.Label();
             this.SdtNT_TextBox = new System.Windows.Forms.TextBox();
             this.TGDK_Picker = new System.Windows.Forms.DateTimePicker();
-            this.NgaySinhNT_Picker = new System.Windows.Forms.DateTimePicker();
-            this.NgaySinhKH_Picker = new System.Windows.Forms.DateTimePicker();
             this.Chon_Ma = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Chon_Ten = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Chon_LanTiem = new System.Windows.Forms.DataGridViewTextBoxColumn();
@@ -126,13 +126,14 @@
             this.button2.TabIndex = 15;
             this.button2.Text = "Không thể đáp ứng";
             this.button2.UseVisualStyleBackColor = false;
+            this.button2.Click += new System.EventHandler(this.button2_Click);
             // 
             // DSVacxinChon_Datagridview
             // 
             this.DSVacxinChon_Datagridview.AllowUserToAddRows = false;
             this.DSVacxinChon_Datagridview.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DSVacxinChon_Datagridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DSVacxinChon_Datagridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.DSVacxinChon_Datagridview.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.DSVacxinChon_Datagridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DSVacxinChon_Datagridview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -146,8 +147,8 @@
             this.DSVacxinChon_Datagridview.Name = "DSVacxinChon_Datagridview";
             this.DSVacxinChon_Datagridview.RowHeadersVisible = false;
             this.DSVacxinChon_Datagridview.RowHeadersWidth = 62;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DSVacxinChon_Datagridview.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DSVacxinChon_Datagridview.RowsDefaultCellStyle = dataGridViewCellStyle4;
             this.DSVacxinChon_Datagridview.Size = new System.Drawing.Size(447, 539);
             this.DSVacxinChon_Datagridview.TabIndex = 14;
             // 
@@ -162,6 +163,7 @@
             this.button1.TabIndex = 14;
             this.button1.Text = "Duyệt phiếu";
             this.button1.UseVisualStyleBackColor = false;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label6
             // 
@@ -197,6 +199,7 @@
             // 
             this.GioiTinhKH_ComboBox.BackColor = System.Drawing.Color.White;
             this.GioiTinhKH_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.GioiTinhKH_ComboBox.Enabled = false;
             this.GioiTinhKH_ComboBox.FormattingEnabled = true;
             this.GioiTinhKH_ComboBox.Items.AddRange(new object[] {
             "Nam",
@@ -215,6 +218,20 @@
             this.label13.Size = new System.Drawing.Size(73, 21);
             this.label13.TabIndex = 15;
             this.label13.Text = "Giới tính:";
+            // 
+            // NgaySinhKH_Picker
+            // 
+            this.NgaySinhKH_Picker.Enabled = false;
+            this.NgaySinhKH_Picker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.NgaySinhKH_Picker.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.NgaySinhKH_Picker.Location = new System.Drawing.Point(89, 163);
+            this.NgaySinhKH_Picker.MaxDate = new System.DateTime(2022, 4, 15, 0, 0, 0, 0);
+            this.NgaySinhKH_Picker.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
+            this.NgaySinhKH_Picker.Name = "NgaySinhKH_Picker";
+            this.NgaySinhKH_Picker.ShowCheckBox = true;
+            this.NgaySinhKH_Picker.Size = new System.Drawing.Size(250, 29);
+            this.NgaySinhKH_Picker.TabIndex = 9;
+            this.NgaySinhKH_Picker.Value = new System.DateTime(2022, 4, 15, 0, 0, 0, 0);
             // 
             // label7
             // 
@@ -343,6 +360,7 @@
             // 
             this.QuanHe_Combobox.BackColor = System.Drawing.Color.White;
             this.QuanHe_Combobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.QuanHe_Combobox.Enabled = false;
             this.QuanHe_Combobox.FormattingEnabled = true;
             this.QuanHe_Combobox.Items.AddRange(new object[] {
             "Con",
@@ -363,6 +381,20 @@
             this.label11.Size = new System.Drawing.Size(67, 21);
             this.label11.TabIndex = 13;
             this.label11.Text = "Mối QH:";
+            // 
+            // NgaySinhNT_Picker
+            // 
+            this.NgaySinhNT_Picker.Enabled = false;
+            this.NgaySinhNT_Picker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
+            this.NgaySinhNT_Picker.ImeMode = System.Windows.Forms.ImeMode.NoControl;
+            this.NgaySinhNT_Picker.Location = new System.Drawing.Point(89, 163);
+            this.NgaySinhNT_Picker.MaxDate = new System.DateTime(2022, 4, 15, 0, 0, 0, 0);
+            this.NgaySinhNT_Picker.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
+            this.NgaySinhNT_Picker.Name = "NgaySinhNT_Picker";
+            this.NgaySinhNT_Picker.ShowCheckBox = true;
+            this.NgaySinhNT_Picker.Size = new System.Drawing.Size(250, 29);
+            this.NgaySinhNT_Picker.TabIndex = 9;
+            this.NgaySinhNT_Picker.Value = new System.DateTime(2022, 4, 15, 0, 0, 0, 0);
             // 
             // label14
             // 
@@ -456,39 +488,11 @@
             this.TGDK_Picker.TabIndex = 21;
             this.TGDK_Picker.Value = new System.DateTime(2022, 4, 19, 0, 0, 0, 0);
             // 
-            // NgaySinhNT_Picker
-            // 
-            this.NgaySinhNT_Picker.Enabled = false;
-            this.NgaySinhNT_Picker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.NgaySinhNT_Picker.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.NgaySinhNT_Picker.Location = new System.Drawing.Point(89, 163);
-            this.NgaySinhNT_Picker.MaxDate = new System.DateTime(2022, 4, 15, 0, 0, 0, 0);
-            this.NgaySinhNT_Picker.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
-            this.NgaySinhNT_Picker.Name = "NgaySinhNT_Picker";
-            this.NgaySinhNT_Picker.ShowCheckBox = true;
-            this.NgaySinhNT_Picker.Size = new System.Drawing.Size(250, 29);
-            this.NgaySinhNT_Picker.TabIndex = 9;
-            this.NgaySinhNT_Picker.Value = new System.DateTime(2022, 4, 15, 0, 0, 0, 0);
-            // 
-            // NgaySinhKH_Picker
-            // 
-            this.NgaySinhKH_Picker.Enabled = false;
-            this.NgaySinhKH_Picker.Format = System.Windows.Forms.DateTimePickerFormat.Custom;
-            this.NgaySinhKH_Picker.ImeMode = System.Windows.Forms.ImeMode.NoControl;
-            this.NgaySinhKH_Picker.Location = new System.Drawing.Point(89, 163);
-            this.NgaySinhKH_Picker.MaxDate = new System.DateTime(2022, 4, 15, 0, 0, 0, 0);
-            this.NgaySinhKH_Picker.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
-            this.NgaySinhKH_Picker.Name = "NgaySinhKH_Picker";
-            this.NgaySinhKH_Picker.ShowCheckBox = true;
-            this.NgaySinhKH_Picker.Size = new System.Drawing.Size(250, 29);
-            this.NgaySinhKH_Picker.TabIndex = 9;
-            this.NgaySinhKH_Picker.Value = new System.DateTime(2022, 4, 15, 0, 0, 0, 0);
-            // 
             // Chon_Ma
             // 
             this.Chon_Ma.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Chon_Ma.DataPropertyName = "MAGOIVACXIN";
-            this.Chon_Ma.FillWeight = 80F;
+            this.Chon_Ma.FillWeight = 50F;
             this.Chon_Ma.HeaderText = "Mã gói vắc xin";
             this.Chon_Ma.MinimumWidth = 8;
             this.Chon_Ma.Name = "Chon_Ma";
@@ -518,7 +522,7 @@
             this.ChiNhanh.HeaderText = "Chi nhánh";
             this.ChiNhanh.Name = "ChiNhanh";
             // 
-            // XuLyPhieuDKTC
+            // XuLyPhieuDKTCGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -532,7 +536,7 @@
             this.Controls.Add(this.TTKH_Panel);
             this.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "XuLyPhieuDKTC";
+            this.Name = "XuLyPhieuDKTCGUI";
             this.Text = "XuLyPhieuDKTC";
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();

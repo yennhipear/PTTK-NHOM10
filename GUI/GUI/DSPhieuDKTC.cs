@@ -36,6 +36,9 @@ namespace GUI.GUI
             }
         }
 
-
+        private void button1_Click(object sender, EventArgs e)
+        {
+            DSPhieuDKTC_Datagridview.DataSource = xuLyPhieuBUS.LayDSPhieuDKTC();
+        }
     }
 }

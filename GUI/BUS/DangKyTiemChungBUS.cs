@@ -53,6 +53,5 @@ namespace GUI.BUS
         {
             return PhieuDangKyTiemChungDAO.getInstance().LuuThongTinDangKy(phieuDangKy);
         }
-
     }
 }

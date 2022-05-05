@@ -8,7 +8,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-
+using GUI.DTO;
 
 namespace GUI
 {
@@ -17,6 +17,7 @@ namespace GUI
         public KH_Menu()
         {
             InitializeComponent();
+            Hello_Label.Text = $"Xin chào, {CurrentUser.HoTen}";
         }
 
         private void button1_Click(object sender, EventArgs e)

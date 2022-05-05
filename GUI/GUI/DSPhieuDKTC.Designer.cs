@@ -30,8 +30,12 @@
         {
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
             this.DSPhieuDKTC_Datagridview = new System.Windows.Forms.DataGridView();
+            this.MaPDK = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.MaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ThoiGianDK = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.TinhTrang = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.ChiTiet = new System.Windows.Forms.DataGridViewButtonColumn();
             this.label6 = new System.Windows.Forms.Label();
             this.label1 = new System.Windows.Forms.Label();
             this.textBox1 = new System.Windows.Forms.TextBox();
@@ -50,11 +54,6 @@
             this.button7 = new System.Windows.Forms.Button();
             this.button8 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.MaPDK = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.MaKH = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ThoiGianDK = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.TinhTrang = new System.Windows.Forms.DataGridViewTextBoxColumn();
-            this.ChiTiet = new System.Windows.Forms.DataGridViewButtonColumn();
             ((System.ComponentModel.ISupportInitialize)(this.DSPhieuDKTC_Datagridview)).BeginInit();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -73,22 +72,50 @@
             this.ThoiGianDK,
             this.TinhTrang,
             this.ChiTiet});
-            dataGridViewCellStyle2.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleLeft;
-            dataGridViewCellStyle2.BackColor = System.Drawing.SystemColors.Window;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle2.ForeColor = System.Drawing.SystemColors.ControlText;
-            dataGridViewCellStyle2.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle2.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle2.WrapMode = System.Windows.Forms.DataGridViewTriState.False;
-            this.DSPhieuDKTC_Datagridview.DefaultCellStyle = dataGridViewCellStyle2;
             this.DSPhieuDKTC_Datagridview.Location = new System.Drawing.Point(23, 127);
             this.DSPhieuDKTC_Datagridview.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.DSPhieuDKTC_Datagridview.Name = "DSPhieuDKTC_Datagridview";
             this.DSPhieuDKTC_Datagridview.RowHeadersVisible = false;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DSPhieuDKTC_Datagridview.RowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DSPhieuDKTC_Datagridview.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.DSPhieuDKTC_Datagridview.Size = new System.Drawing.Size(617, 398);
             this.DSPhieuDKTC_Datagridview.TabIndex = 0;
+            // 
+            // MaPDK
+            // 
+            this.MaPDK.DataPropertyName = "MaPDK";
+            this.MaPDK.HeaderText = "Mã phiếu ĐK";
+            this.MaPDK.Name = "MaPDK";
+            this.MaPDK.ReadOnly = true;
+            // 
+            // MaKH
+            // 
+            this.MaKH.DataPropertyName = "MaKH";
+            this.MaKH.HeaderText = "Mã KH";
+            this.MaKH.Name = "MaKH";
+            this.MaKH.ReadOnly = true;
+            // 
+            // ThoiGianDK
+            // 
+            this.ThoiGianDK.DataPropertyName = "THOIGIANDK";
+            this.ThoiGianDK.HeaderText = "Thời gian";
+            this.ThoiGianDK.Name = "ThoiGianDK";
+            this.ThoiGianDK.ReadOnly = true;
+            // 
+            // TinhTrang
+            // 
+            this.TinhTrang.DataPropertyName = "TINHTRANG";
+            this.TinhTrang.HeaderText = "Tình trạng";
+            this.TinhTrang.Name = "TinhTrang";
+            this.TinhTrang.ReadOnly = true;
+            // 
+            // ChiTiet
+            // 
+            this.ChiTiet.HeaderText = "Chi tiết";
+            this.ChiTiet.Name = "ChiTiet";
+            this.ChiTiet.ReadOnly = true;
+            this.ChiTiet.Text = "Chi tiết";
+            this.ChiTiet.UseColumnTextForButtonValue = true;
             // 
             // label6
             // 
@@ -140,6 +167,7 @@
             this.button1.TabIndex = 16;
             this.button1.Text = "Lọc";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // label12
             // 
@@ -280,43 +308,7 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(253, 37);
             this.flowLayoutPanel1.TabIndex = 29;
             // 
-            // MaPDK
-            // 
-            this.MaPDK.DataPropertyName = "MaPDK";
-            this.MaPDK.HeaderText = "Mã phiếu ĐK";
-            this.MaPDK.Name = "MaPDK";
-            this.MaPDK.ReadOnly = true;
-            // 
-            // MaKH
-            // 
-            this.MaKH.DataPropertyName = "MaKH";
-            this.MaKH.HeaderText = "Mã KH";
-            this.MaKH.Name = "MaKH";
-            this.MaKH.ReadOnly = true;
-            // 
-            // ThoiGianDK
-            // 
-            this.ThoiGianDK.DataPropertyName = "THOIGIANDK";
-            this.ThoiGianDK.HeaderText = "Thời gian";
-            this.ThoiGianDK.Name = "ThoiGianDK";
-            this.ThoiGianDK.ReadOnly = true;
-            // 
-            // TinhTrang
-            // 
-            this.TinhTrang.DataPropertyName = "TINHTRANG";
-            this.TinhTrang.HeaderText = "Tình trạng";
-            this.TinhTrang.Name = "TinhTrang";
-            this.TinhTrang.ReadOnly = true;
-            // 
-            // ChiTiet
-            // 
-            this.ChiTiet.HeaderText = "Chi tiết";
-            this.ChiTiet.Name = "ChiTiet";
-            this.ChiTiet.ReadOnly = true;
-            this.ChiTiet.Text = "Chi tiết";
-            this.ChiTiet.UseColumnTextForButtonValue = true;
-            // 
-            // DSPhieuDKTC
+            // DSPhieuDKTCGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 21F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
@@ -335,7 +327,7 @@
             this.Controls.Add(this.DSPhieuDKTC_Datagridview);
             this.Font = new System.Drawing.Font("Segoe UI", 12F);
             this.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
-            this.Name = "DSPhieuDKTC";
+            this.Name = "DSPhieuDKTCGUI";
             this.Text = "DSPhieuDKTC";
             ((System.ComponentModel.ISupportInitialize)(this.DSPhieuDKTC_Datagridview)).EndInit();
             this.flowLayoutPanel1.ResumeLayout(false);
