@@ -36,8 +36,8 @@ namespace GUI.GUI
 
         private void Xacnhan_Button_Click(object sender, EventArgs e)
         {
-            (new ThanhToanGUI()).Show();
-            this.Close();
+            //(new ThanhToanGUI()).Show();
+            //this.Close();
         }
     }
 }
