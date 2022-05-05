@@ -17,17 +17,7 @@ namespace GUI
         {
             InitializeComponent();
         }
-
-        private void label1_Click(object sender, EventArgs e)
-        {
-
-        }
-
-        private void passTxt_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
+    
         private void btn_DangNhap_Click(object sender, EventArgs e)
         {
             String username = tbUsername.Text;
@@ -37,37 +27,22 @@ namespace GUI
             {
                 MessageBox.Show("Vui lòng nhập thông tin đăng nhập.");
             }
-            else if (BUS.DangNhapBUS.Instance.NV_username_pass_existed(username, password) == false)
+            else if (BUS.DangNhapBUS.Instance.Login("NV", username, password) == false)
             {
                 MessageBox.Show("Thông tin đăng nhập sai.");
             }
             else
             {
-                try
-                {
-                    BUS.DangNhapBUS.Instance.Login(username, password);
-                    this.Close();
-                }
-                catch (Exception ex)
-                {
-                    MessageBox.Show(ex.Message);
-                }
+                Menu f = new Menu();
+                this.Close();
+                f.StartPosition = FormStartPosition.CenterScreen;
+                f.ShowDialog();
             }
         }
 
         private void btnDangKy_Click(object sender, EventArgs e)
         {
             (new DangKyTaiKhoanGUI()).Show();
-        }
-
-        private void DangNhapGUI_Load(object sender, EventArgs e)
-        {
-
-        }
-
-        private void panel1_Paint(object sender, PaintEventArgs e)
-        {
-
         }
     }
 }

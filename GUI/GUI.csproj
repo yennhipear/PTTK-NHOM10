@@ -67,7 +67,7 @@
     <Compile Include="DTO\LichRanhDTO.cs" />
     <Compile Include="DTO\VacxinNgoaiDTO.cs" />
     <Compile Include="DTO\PhieuDangKyTiemChungDTO.cs" />
-    <Compile Include="DTO\UserCurrentDTO.cs" />
+    <Compile Include="DTO\CurrentUser.cs" />
     <Compile Include="GUI\DangKyLichRanhGUI.cs">
       <SubType>Form</SubType>
     </Compile>

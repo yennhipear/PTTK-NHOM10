@@ -105,7 +105,7 @@ namespace GUI.GUI
             DateTime NgayDK, NgSinhNT;
             List<CTPHIEUDKTC> DsCT = new List<CTPHIEUDKTC>();
 
-            MaKH = "1"; //TODO: Lấy mã của KH đang đăng nhập
+            MaKH = CurrentUser.Ma;
             HoTenNT = HoTenNT_TextBox.Text;
             CMNDNT = CMNDNT_TextBox.Text;
             DiaChiNT = DiaChiNT_TextBox.Text;
@@ -165,16 +165,6 @@ namespace GUI.GUI
             }
             else
                 MessageBox.Show("Đã xảy ra lỗi. Không thể thực hiện đăng ký", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
-        }
-
-        private void TTNgTiem_Panel_Paint(object sender, PaintEventArgs e)
-        {
-
-        }
-
-        private void DSVacxinChon_Datagridview_CellContentClick_1(object sender, DataGridViewCellEventArgs e)
-        {
-
-        }
+        }        
     }
 }
