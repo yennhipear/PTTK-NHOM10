@@ -83,6 +83,7 @@
             this.Hello_Label.TabIndex = 0;
             this.Hello_Label.Text = "Xin chào, ";
             this.Hello_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Hello_Label.Click += new System.EventHandler(this.Hello_Label_Click);
             // 
             // button5
             // 
@@ -90,14 +91,14 @@
             this.button5.Location = new System.Drawing.Point(13, 177);
             this.button5.Margin = new System.Windows.Forms.Padding(3, 4, 3, 4);
             this.button5.Name = "button5";
-            this.button5.Size = new System.Drawing.Size(173, 58);
+            this.button5.Size = new System.Drawing.Size(350, 58);
             this.button5.TabIndex = 2;
             this.button5.Text = "Cài đặt";
             this.button5.UseVisualStyleBackColor = true;
             // 
             // KH_Menu
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 36F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(379, 258);
             this.Controls.Add(this.flowLayoutPanel1);

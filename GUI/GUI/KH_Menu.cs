@@ -34,5 +34,10 @@ namespace GUI
         {
             (new DSPhieuDKTCGUI()).Show();
         }
+
+        private void Hello_Label_Click(object sender, EventArgs e)
+        {
+
+        }
     }
 }
