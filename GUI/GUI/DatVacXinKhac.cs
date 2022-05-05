@@ -57,10 +57,10 @@ namespace GUI.GUI
 
         }
 
-        public VacxinNgoaiDTO LayThongTinVacxinNgoai()
-        { 
-            return vxn;
-        }
+        //public VacxinNgoaiDTO LayThongTinVacxinNgoai()
+        //{ 
+        //    return vxn;
+        //}
     
 
         private void txtTenVacxin_TextChanged(object sender, EventArgs e)

@@ -54,6 +54,7 @@
     <Compile Include="BUS\XepLichLamViecBUS.cs" />
     <Compile Include="BUS\XuLyPhieuDKTCBUS.cs" />
     <Compile Include="DAO\ChiNhanhDAO.cs" />
+    <Compile Include="DAO\DangKiTaiKhoanDAO.cs" />
     <Compile Include="DAO\DataProviderDAO.cs" />
     <Compile Include="DAO\LichRanhDAO.cs" />
     <Compile Include="DAO\DangNhapDAO.cs" />
