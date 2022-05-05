@@ -1,4 +1,5 @@
 ﻿using GUI.BUS;
+using GUI.DTO;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -13,7 +14,6 @@ namespace GUI.GUI
 {
     public partial class DangKyLichRanhGUI : Form
     {
-        private int userID = 2;
         private int week;
         private DateTime firstDay = DateTime.Parse("2022-4-11");
         private DateTime curDay = DateTime.Today;
@@ -88,7 +88,7 @@ namespace GUI.GUI
         {
             DialogResult choose = MessageBox.Show("Xác nhận đăng ký?", "Xác nhận", MessageBoxButtons.YesNo);
             if (choose == DialogResult.Yes) {
-                if(DangKyLichRanhBUS.dangKyLichRanh(userID, dklrDGV))
+                if(DangKyLichRanhBUS.dangKyLichRanh(Int32.Parse(CurrentUser.Ma), dklrDGV))
                 {
                     MessageBox.Show("Đăng ký thành công", "Thông báo", MessageBoxButtons.OK);
                     this.Close();
