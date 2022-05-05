@@ -70,7 +70,7 @@ namespace GUI
 
         public bool checkNameandGender(string c)
         {
-            return Regex.IsMatch(c, "^[a-zA-Z]{2,100}$");
+            return Regex.IsMatch(c, "^[0-9]{2,100}$");
         }
 
         public bool checkSDT (string sdt)
@@ -83,18 +83,20 @@ namespace GUI
             return Regex.IsMatch(cmnd, "^[0-9]{10,12}$");
         }
 
+        DAO.DangKiTaiKhoanDAO DangKiTaiKhoan = new DAO.DangKiTaiKhoanDAO();
         private void signUpBtn_Click(object sender, EventArgs e)
         {
-            string username     = tb_usename.Text;
-            string password     = tb_pass.Text;
-            string confirmPass  = tb_confirmpass.Text;
-            string name         = tb_name.Text;
-            string gender       = tb_gender.Text;
-            string cmnd         = tb_cmnd.Text;
-            string sdt          = tb_sdt.Text;
-            string email        = tb_email.Text;
-            string diachi       = tb_diachi.Text;
-
+            string username     = tb_usename.Text.ToString();
+            string password     = tb_pass.Text.ToString();
+            string confirmPass  = tb_confirmpass.Text.ToString();
+            string name         = tb_name.Text.ToString();
+            string gender       = tb_gender.Text.ToString();
+            string cmnd         = tb_cmnd.Text.ToString();
+            string sdt          = tb_sdt.Text.ToString();
+            string email        = tb_email.Text.ToString();
+            string diachi       = tb_diachi.Text.ToString();
+            DateTime ngaysinh   = bithday.Value;
+    
             if (!checkAccount(username))
             {
                 MessageBox.Show("Vui lòng nhập tên tài khoản dài 6-24 kí tự, với các kí tự là chữ cái viết hoa, viết thường và số!");
@@ -110,12 +112,12 @@ namespace GUI
                 MessageBox.Show("Vui lòng xác nhận lại mật khẩu!");
                 return;
             }
-            if (!checkNameandGender(name))
+            if (checkNameandGender(name))
             {
                 MessageBox.Show("Vui lòng nhập họ tên với các kí tự là chữ cái viết hoa, viết thường!");
                 return;
             }
-            if (!checkNameandGender(gender))
+            if (checkNameandGender(gender))
             {
                 MessageBox.Show("Vui lòng nhập lại giới tính!");
                 return;
@@ -135,7 +137,24 @@ namespace GUI
                 MessageBox.Show("Vui lòng nhập lại email!");
                 return;
             } 
-
+            if(DangKiTaiKhoan.TaiKhoans("Select * from KHACHHANG where EMAILKH = '"+ email + "'").Count != 0)
+            {
+                MessageBox.Show("Email này đã được đăng kí!");
+                return;
+            }
+            try
+            {
+                string query = "INSERT INTO KHACHHANG(HOTENKH, DIACHIKH, GIOITINHKH, EMAILKH, CMNDKH, NGAYSINHKH, SDTKH, USERNAME, PASS) VALUES ('" + name +"','"+ diachi + "','" + gender + "','" + email + "','" + cmnd + "','" + ngaysinh + "','" + sdt + "','" + username + "','" + password + "')";
+                DangKiTaiKhoan.Command(query);
+                if (MessageBox.Show("Đăng kí thành công! Bạn có muốn đăng nhập không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Information) == DialogResult.Yes)
+                {
+                    this.Close();
+                }
+            }
+            catch 
+            {
+                MessageBox.Show("Tên tài khoản đã được đăng kí!");
+            }
         }
     }
 }

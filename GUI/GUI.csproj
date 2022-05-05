@@ -66,6 +66,7 @@
     <Compile Include="DTO\CTPHIEUDKTC.cs" />
     <Compile Include="DTO\LichLamViecDTO.cs" />
     <Compile Include="DTO\LichRanhDTO.cs" />
+    <Compile Include="DTO\TaiKhoanDTO.cs" />
     <Compile Include="DTO\VacxinNgoaiDTO.cs" />
     <Compile Include="DTO\PhieuDangKyTiemChungDTO.cs" />
     <Compile Include="DTO\CurrentUser.cs" />

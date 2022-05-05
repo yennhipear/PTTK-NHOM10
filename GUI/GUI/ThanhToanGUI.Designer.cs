@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.ThanhTien_Label = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -69,14 +69,14 @@
             // 
             // ThanhTien_Label
             // 
-            this.ThanhTien_Label.AutoSize = true;
             this.ThanhTien_Label.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ThanhTien_Label.ForeColor = System.Drawing.Color.Maroon;
-            this.ThanhTien_Label.Location = new System.Drawing.Point(606, 460);
+            this.ThanhTien_Label.Location = new System.Drawing.Point(523, 460);
             this.ThanhTien_Label.Name = "ThanhTien_Label";
-            this.ThanhTien_Label.Size = new System.Drawing.Size(120, 47);
+            this.ThanhTien_Label.Size = new System.Drawing.Size(208, 47);
             this.ThanhTien_Label.TabIndex = 15;
             this.ThanhTien_Label.Text = "label5";
+            this.ThanhTien_Label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             this.ThanhTien_Label.Visible = false;
             // 
             // label8
@@ -268,7 +268,7 @@
             this.comboBox2.Items.AddRange(new object[] {
             "Theo đợt",
             "Toàn bộ"});
-            this.comboBox2.Location = new System.Drawing.Point(3, 161);
+            this.comboBox2.Location = new System.Drawing.Point(3, 153);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(337, 25);
             this.comboBox2.TabIndex = 21;
@@ -276,7 +276,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(3, 141);
+            this.label9.Location = new System.Drawing.Point(3, 133);
             this.label9.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(101, 17);
@@ -312,7 +312,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(3, 85);
+            this.label11.Location = new System.Drawing.Point(3, 81);
             this.label11.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(132, 17);
@@ -329,7 +329,7 @@
             "Tiền mặt",
             "Thẻ Visa",
             "MoMo"});
-            this.comboBox3.Location = new System.Drawing.Point(3, 105);
+            this.comboBox3.Location = new System.Drawing.Point(3, 101);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(337, 25);
             this.comboBox3.TabIndex = 23;
@@ -402,8 +402,8 @@
             // 
             this.DSVacxinChon_Datagridview.AllowUserToAddRows = false;
             this.DSVacxinChon_Datagridview.AllowUserToResizeRows = false;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DSVacxinChon_Datagridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DSVacxinChon_Datagridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.DSVacxinChon_Datagridview.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.DSVacxinChon_Datagridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DSVacxinChon_Datagridview.Location = new System.Drawing.Point(368, 65);
@@ -412,8 +412,8 @@
             this.DSVacxinChon_Datagridview.Name = "DSVacxinChon_Datagridview";
             this.DSVacxinChon_Datagridview.RowHeadersVisible = false;
             this.DSVacxinChon_Datagridview.RowHeadersWidth = 62;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DSVacxinChon_Datagridview.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DSVacxinChon_Datagridview.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.DSVacxinChon_Datagridview.Size = new System.Drawing.Size(363, 188);
             this.DSVacxinChon_Datagridview.TabIndex = 26;
             // 

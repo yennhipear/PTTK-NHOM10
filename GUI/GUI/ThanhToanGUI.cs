@@ -48,6 +48,7 @@ namespace GUI.GUI
         private void button1_Click(object sender, EventArgs e)
         {
             MessageBox.Show("Đăng ký thành công. Mã phiếu đăng ký của bạn: " + MaPhieu, "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Close();
         }
     }
 }
