@@ -61,9 +61,11 @@ namespace GUI.GUI
             {
              
                 string maVacxin = row.Cells["MaVX"].Value.ToString();
-                string SoLuong = row.Cells["soluong"].Value.ToString();
+                //string SoLuong = row.Cells["soluong"].Value.ToString();
 
-                int SL = Int32.Parse(SoLuong);
+                //int SL = Int32.Parse(SoLuong);
+                int SL = Convert.ToInt32(row.Cells["soluong"].Value);
+
                 CTPHIEUDMVX ct = new CTPHIEUDMVX(maVacxin, SL);
                 DsCT.Add(ct);
             }
@@ -71,16 +73,16 @@ namespace GUI.GUI
             PhieuDatMuaVacxinDTO model = new PhieuDatMuaVacxinDTO(MaKH, NgayDM, DsCT, TinhTrang);
 
             DatMuaVacxinBUS bus = new DatMuaVacxinBUS();
-            // int newID = bus.LuuThongTinDatMua(model);
-            int newID = 6;
+            //int newID = bus.LuuThongTinDatMua(model);
+            int newID = 9;
             if (newID > 0)
             {
-                MessageBox.Show("Đặt mua thành công. Mã phiếu đặt mua của bạn: " + newID.ToString(), "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                (new ThanhToanGUI(DSVacxinDaChon2_DataGridView, long.Parse(ThanhTien_Label.Text), "DMVX")).Show();
+                MessageBox.Show("Đặt mua thành công");
+                (new ThanhToanGUI(DSVacxinDaChon2_DataGridView, long.Parse(ThanhTien_Label.Text), "DMVX", newID.ToString())).Show();
                 this.Close();
             }
             else
-                MessageBox.Show("Đã xảy ra lỗi. Không thể đặt mua", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
+                MessageBox.Show("Đã xảy ra lỗi. Không thể thực hiện đặt mua", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
         }
 
         private void TGDK_Picker_ValueChanged(object sender, EventArgs e)

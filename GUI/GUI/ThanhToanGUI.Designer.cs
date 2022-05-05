@@ -73,11 +73,7 @@
             this.ThanhTien_Label.ForeColor = System.Drawing.Color.Maroon;
             this.ThanhTien_Label.Location = new System.Drawing.Point(523, 460);
             this.ThanhTien_Label.Name = "ThanhTien_Label";
-<<<<<<< Updated upstream
-            this.ThanhTien_Label.Size = new System.Drawing.Size(208, 47);
-=======
-            this.ThanhTien_Label.Size = new System.Drawing.Size(181, 71);
->>>>>>> Stashed changes
+            this.ThanhTien_Label.Size = new System.Drawing.Size(100, 23);
             this.ThanhTien_Label.TabIndex = 15;
             this.ThanhTien_Label.Text = "label5";
             this.ThanhTien_Label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -272,11 +268,7 @@
             this.comboBox2.Items.AddRange(new object[] {
             "Theo đợt",
             "Toàn bộ"});
-<<<<<<< Updated upstream
-            this.comboBox2.Location = new System.Drawing.Point(3, 153);
-=======
-            this.comboBox2.Location = new System.Drawing.Point(346, 3);
->>>>>>> Stashed changes
+            this.comboBox2.Location = new System.Drawing.Point(346, 39);
             this.comboBox2.Name = "comboBox2";
             this.comboBox2.Size = new System.Drawing.Size(337, 36);
             this.comboBox2.TabIndex = 21;
@@ -284,11 +276,7 @@
             // label9
             // 
             this.label9.AutoSize = true;
-<<<<<<< Updated upstream
-            this.label9.Location = new System.Drawing.Point(3, 133);
-=======
-            this.label9.Location = new System.Drawing.Point(3, 180);
->>>>>>> Stashed changes
+            this.label9.Location = new System.Drawing.Point(346, 8);
             this.label9.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
             this.label9.Name = "label9";
             this.label9.Size = new System.Drawing.Size(152, 28);
@@ -324,11 +312,7 @@
             // label11
             // 
             this.label11.AutoSize = true;
-<<<<<<< Updated upstream
-            this.label11.Location = new System.Drawing.Point(3, 81);
-=======
-            this.label11.Location = new System.Drawing.Point(3, 110);
->>>>>>> Stashed changes
+            this.label11.Location = new System.Drawing.Point(3, 118);
             this.label11.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
             this.label11.Name = "label11";
             this.label11.Size = new System.Drawing.Size(201, 28);
@@ -345,11 +329,7 @@
             "Tiền mặt",
             "Thẻ Visa",
             "MoMo"});
-<<<<<<< Updated upstream
-            this.comboBox3.Location = new System.Drawing.Point(3, 101);
-=======
-            this.comboBox3.Location = new System.Drawing.Point(3, 141);
->>>>>>> Stashed changes
+            this.comboBox3.Location = new System.Drawing.Point(3, 149);
             this.comboBox3.Name = "comboBox3";
             this.comboBox3.Size = new System.Drawing.Size(337, 36);
             this.comboBox3.TabIndex = 23;
@@ -434,11 +414,7 @@
             this.DSVacxinChon_Datagridview.RowHeadersWidth = 62;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DSVacxinChon_Datagridview.RowsDefaultCellStyle = dataGridViewCellStyle2;
-<<<<<<< Updated upstream
-            this.DSVacxinChon_Datagridview.Size = new System.Drawing.Size(363, 188);
-=======
-            this.DSVacxinChon_Datagridview.Size = new System.Drawing.Size(358, 188);
->>>>>>> Stashed changes
+            this.DSVacxinChon_Datagridview.Size = new System.Drawing.Size(240, 150);
             this.DSVacxinChon_Datagridview.TabIndex = 26;
             // 
             // ThanhToanGUI
