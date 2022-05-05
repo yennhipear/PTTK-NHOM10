@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle4 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.ThanhTien_Label = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.label6 = new System.Windows.Forms.Label();
@@ -72,7 +72,7 @@
             this.ThanhTien_Label.AutoSize = true;
             this.ThanhTien_Label.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ThanhTien_Label.ForeColor = System.Drawing.Color.Maroon;
-            this.ThanhTien_Label.Location = new System.Drawing.Point(606, 455);
+            this.ThanhTien_Label.Location = new System.Drawing.Point(606, 460);
             this.ThanhTien_Label.Name = "ThanhTien_Label";
             this.ThanhTien_Label.Size = new System.Drawing.Size(120, 47);
             this.ThanhTien_Label.TabIndex = 15;
@@ -83,7 +83,7 @@
             // 
             this.label8.AutoSize = true;
             this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label8.Location = new System.Drawing.Point(362, 476);
+            this.label8.Location = new System.Drawing.Point(359, 481);
             this.label8.Name = "label8";
             this.label8.Size = new System.Drawing.Size(158, 21);
             this.label8.TabIndex = 14;
@@ -123,6 +123,7 @@
             // 
             this.GioiTinhKH_ComboBox.BackColor = System.Drawing.Color.White;
             this.GioiTinhKH_ComboBox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.GioiTinhKH_ComboBox.Enabled = false;
             this.GioiTinhKH_ComboBox.FormattingEnabled = true;
             this.GioiTinhKH_ComboBox.Items.AddRange(new object[] {
             "Nam",
@@ -238,6 +239,7 @@
             // 
             this.DichVu_Combobox.BackColor = System.Drawing.Color.White;
             this.DichVu_Combobox.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
+            this.DichVu_Combobox.Enabled = false;
             this.DichVu_Combobox.FormattingEnabled = true;
             this.DichVu_Combobox.Items.AddRange(new object[] {
             "Đăng ký tiêm chủng",
@@ -292,7 +294,7 @@
             this.flowLayoutPanel1.FlowDirection = System.Windows.Forms.FlowDirection.TopDown;
             this.flowLayoutPanel1.Location = new System.Drawing.Point(12, 261);
             this.flowLayoutPanel1.Name = "flowLayoutPanel1";
-            this.flowLayoutPanel1.Size = new System.Drawing.Size(345, 225);
+            this.flowLayoutPanel1.Size = new System.Drawing.Size(345, 197);
             this.flowLayoutPanel1.TabIndex = 22;
             // 
             // label10
@@ -349,7 +351,7 @@
             this.Dot,
             this.SoTien,
             this.Ngay});
-            this.dataGridView1.Location = new System.Drawing.Point(363, 292);
+            this.dataGridView1.Location = new System.Drawing.Point(368, 292);
             this.dataGridView1.Name = "dataGridView1";
             this.dataGridView1.RowHeadersWidth = 82;
             this.dataGridView1.Size = new System.Drawing.Size(363, 155);
@@ -386,19 +388,20 @@
             // 
             // button1
             // 
-            this.button1.Location = new System.Drawing.Point(614, 527);
+            this.button1.Location = new System.Drawing.Point(614, 526);
             this.button1.Name = "button1";
             this.button1.Size = new System.Drawing.Size(112, 31);
             this.button1.TabIndex = 25;
             this.button1.Text = "Xác nhận";
             this.button1.UseVisualStyleBackColor = true;
+            this.button1.Click += new System.EventHandler(this.button1_Click);
             // 
             // DSVacxinChon_Datagridview
             // 
             this.DSVacxinChon_Datagridview.AllowUserToAddRows = false;
             this.DSVacxinChon_Datagridview.AllowUserToResizeRows = false;
-            dataGridViewCellStyle3.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DSVacxinChon_Datagridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DSVacxinChon_Datagridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.DSVacxinChon_Datagridview.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.DSVacxinChon_Datagridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DSVacxinChon_Datagridview.Location = new System.Drawing.Point(368, 65);
@@ -407,16 +410,16 @@
             this.DSVacxinChon_Datagridview.Name = "DSVacxinChon_Datagridview";
             this.DSVacxinChon_Datagridview.RowHeadersVisible = false;
             this.DSVacxinChon_Datagridview.RowHeadersWidth = 62;
-            dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DSVacxinChon_Datagridview.RowsDefaultCellStyle = dataGridViewCellStyle4;
-            this.DSVacxinChon_Datagridview.Size = new System.Drawing.Size(358, 188);
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DSVacxinChon_Datagridview.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            this.DSVacxinChon_Datagridview.Size = new System.Drawing.Size(363, 188);
             this.DSVacxinChon_Datagridview.TabIndex = 26;
             // 
             // ThanhToanGUI
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(738, 569);
+            this.ClientSize = new System.Drawing.Size(750, 569);
             this.Controls.Add(this.DSVacxinChon_Datagridview);
             this.Controls.Add(this.button1);
             this.Controls.Add(this.dataGridView1);

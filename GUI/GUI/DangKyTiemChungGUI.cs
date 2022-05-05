@@ -156,12 +156,12 @@ namespace GUI.GUI
             PhieuDangKyTiemChungDTO model = new PhieuDangKyTiemChungDTO(MaKH, HoTenNT, CMNDNT, DiaChiNT, GioiTinhNT, SDTNT, QUANHE, NgayDK, NgSinhNT, DsCT, TinhTrang);
 
             DangKyTiemChungBUS bus = new DangKyTiemChungBUS();
-            //int newID = bus.LuuThongTinDangKy(model);
-            int newID = 10;
+            int newID = bus.LuuThongTinDangKy(model);
+            //int newID = 10;
             if (newID > 0)
             {
-                MessageBox.Show("Đăng ký thành công. Mã phiếu đăng ký của bạn: " + newID.ToString(), "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
-                (new ThanhToanGUI(DSVacxinChon_Datagridview, long.Parse(ThanhTien_Label.Text), "DKTC")).Show();
+                //MessageBox.Show("Đăng ký thành công. Mã phiếu đăng ký của bạn: " + newID.ToString(), "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                (new ThanhToanGUI(DSVacxinChon_Datagridview, long.Parse(ThanhTien_Label.Text), "DKTC", newID.ToString())).Show();
                 this.Close();
             }
             else
