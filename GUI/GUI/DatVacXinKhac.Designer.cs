@@ -121,7 +121,6 @@ namespace GUI.GUI
             this.numericSoLuong.Name = "numericSoLuong";
             this.numericSoLuong.Size = new System.Drawing.Size(306, 26);
             this.numericSoLuong.TabIndex = 12;
-            this.numericSoLuong.ValueChanged += new System.EventHandler(this.numericUpDown1_ValueChanged);
             // 
             // button3
             // 

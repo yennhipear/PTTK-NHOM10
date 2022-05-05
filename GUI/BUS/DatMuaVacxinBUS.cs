@@ -71,5 +71,10 @@ namespace GUI.BUS
             return VacxinNgoaiDAO.getInstance().LuuThongTinVacxinNgoai(vacxinNgoai);
 
         }
+
+        public int LuuThongTinDatMua(PhieuDatMuaVacxinDTO phieuDatMua)
+        {
+            return PhieuDatMuaVacxinDAO.getInstance().LuuThongTinDatMua(phieuDatMua);
+        }
     }
 }

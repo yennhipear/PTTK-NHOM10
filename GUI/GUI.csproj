@@ -59,13 +59,16 @@
     <Compile Include="DAO\LichRanhDAO.cs" />
     <Compile Include="DAO\DangNhapDAO.cs" />
     <Compile Include="DAO\PhieuDangKyTiemChungDAO.cs" />
+    <Compile Include="DAO\PhieuDatMuaVacxinDAO.cs" />
     <Compile Include="DAO\VacxinDAO.cs" />
     <Compile Include="DAO\LichLamViecDAO.cs" />
     <Compile Include="DAO\VacxinNgoaiDAO.cs" />
     <Compile Include="DTO\ChiNhanhDTO.cs" />
     <Compile Include="DTO\CTPHIEUDKTC.cs" />
+    <Compile Include="DTO\CTPHIEUDMVX.cs" />
     <Compile Include="DTO\LichLamViecDTO.cs" />
     <Compile Include="DTO\LichRanhDTO.cs" />
+    <Compile Include="DTO\PhieuDatMuaVacxinDTO.cs" />
     <Compile Include="DTO\TaiKhoanDTO.cs" />
     <Compile Include="DTO\VacxinNgoaiDTO.cs" />
     <Compile Include="DTO\PhieuDangKyTiemChungDTO.cs" />

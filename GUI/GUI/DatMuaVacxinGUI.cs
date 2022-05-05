@@ -9,22 +9,14 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GUI.DTO;
 
 namespace GUI.GUI
 {
     public partial class DatMuaVacxinGUI : Form
     {
         DatMuaVacxinBUS dmvxBus;
-        public DataTable TableVacxinNgoai()
-        {
-            DataTable table = new DataTable();
-            table.Columns.Add("MaVXN", typeof(string));
-            table.Columns.Add("TenVXN", typeof(string));
-            table.Columns.Add("NguaBenh", typeof(string));
-            table.Columns.Add("GiaBan", typeof(string));
-            table.Columns.Add("SoLuong", typeof(string));
-            return table;
-        }
+        bool DatVXN = false;
 
         public DatMuaVacxinGUI()
         {
@@ -32,7 +24,7 @@ namespace GUI.GUI
             DSVacXinHT_DataGridView.AutoGenerateColumns = false;
 
             dmvxBus = new DatMuaVacxinBUS();
-     
+          
             GoiVacxinHT_Datagridview.DataSource = dmvxBus.LayDSGoiVacxinHT();
 
             GoiVacxinHT_Datagridview.CellClick += HienThiCTGoiVacxin;
@@ -48,14 +40,21 @@ namespace GUI.GUI
 
         private void HienThiTongTien()
         {
-            long tong = 0;
-
-            foreach (DataGridViewRow row in DSVacxinDaChon_DataGridView.Rows)
+            if (this.DatVXN == false)
             {
-                tong += long.Parse(row.Cells["Gia"].Value.ToString()) * long.Parse(row.Cells["soluong"].Value.ToString());
+                long tong = 0;
+                foreach (DataGridViewRow row in DSVacxinDaChon_DataGridView.Rows)
+                {
+                    tong += long.Parse(row.Cells["Gia"].Value.ToString()) * long.Parse(row.Cells["soluong"].Value.ToString());
+                }
+
+                ThanhTien_Label.Text = tong.ToString();
+            }
+            else
+            {
+                ThanhTien_Label.Text = "CHƯA XÁC ĐỊNH";
             }
 
-            ThanhTien_Label.Text = tong.ToString();
             ThanhTien_Label.Visible = true;
         }
 
@@ -165,15 +164,38 @@ namespace GUI.GUI
         private void DatVacxinKhac_Button_Click(object sender, EventArgs e)
         {
             DatVacXinKhac dvxk = new DatVacXinKhac();
-            dvxk.Show();
-            DataTable vxnTable = TableVacxinNgoai();
+            dvxk.DataSent += Dvxk_DataSent;
 
+            dvxk.ShowDialog();
         }
+
+        private void Dvxk_DataSent(VacxinNgoaiDTO vxn)
+        {
+            this.DSVacxinDaChon_DataGridView.Rows.Add(vxn.MaVacxinNgoai, vxn.TenVacxinNgoai, "", "", vxn.SLVacxinNgoai);
+            this.DatVXN = true;
+            HienThiTongTien();
+        }
+
 
         private void DatMua_Button_Click(object sender, EventArgs e)
         { 
-            (new XacNhanDatMuaGUI(DSVacxinDaChon_DataGridView, long.Parse(ThanhTien_Label.Text))).Show();
+            (new XacNhanDatMuaGUI(DSVacxinDaChon_DataGridView,ThanhTien_Label.Text)).Show();
             this.Close();
+
+        }
+
+        private void panel1_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
+
+        private void MoTa_ND_Label_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DatMuaVacxinGUI_Load(object sender, EventArgs e)
+        {
 
         }
     }

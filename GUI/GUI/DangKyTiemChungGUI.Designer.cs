@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
             this.label1 = new System.Windows.Forms.Label();
             this.HoTenNT_TextBox = new System.Windows.Forms.TextBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -236,6 +236,7 @@
             this.QH_ComboBox.Name = "QH_ComboBox";
             this.QH_ComboBox.Size = new System.Drawing.Size(250, 40);
             this.QH_ComboBox.TabIndex = 14;
+            this.QH_ComboBox.SelectedIndexChanged += new System.EventHandler(this.QH_ComboBox_SelectedIndexChanged);
             // 
             // label12
             // 
@@ -288,6 +289,7 @@
             this.TGDK_Picker.Size = new System.Drawing.Size(340, 39);
             this.TGDK_Picker.TabIndex = 14;
             this.TGDK_Picker.Value = new System.DateTime(2022, 4, 19, 0, 0, 0, 0);
+            this.TGDK_Picker.ValueChanged += new System.EventHandler(this.TGDK_Picker_ValueChanged);
             // 
             // label9
             // 
@@ -315,8 +317,8 @@
             // 
             this.DSVacxinChon_Datagridview.AllowUserToAddRows = false;
             this.DSVacxinChon_Datagridview.AllowUserToResizeRows = false;
-            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DSVacxinChon_Datagridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
+            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DSVacxinChon_Datagridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
             this.DSVacxinChon_Datagridview.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.DSVacxinChon_Datagridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DSVacxinChon_Datagridview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
@@ -331,8 +333,8 @@
             this.DSVacxinChon_Datagridview.Name = "DSVacxinChon_Datagridview";
             this.DSVacxinChon_Datagridview.RowHeadersVisible = false;
             this.DSVacxinChon_Datagridview.RowHeadersWidth = 62;
-            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DSVacxinChon_Datagridview.RowsDefaultCellStyle = dataGridViewCellStyle2;
+            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DSVacxinChon_Datagridview.RowsDefaultCellStyle = dataGridViewCellStyle6;
             this.DSVacxinChon_Datagridview.Size = new System.Drawing.Size(447, 389);
             this.DSVacxinChon_Datagridview.TabIndex = 14;
             // 
@@ -425,6 +427,7 @@
             this.label11.TabIndex = 16;
             this.label11.Text = "Trường hợp bạn đang đăng ký tiêm chủng cho người thân, xin hãy nhập đầy đủ thông " +
     "tin của người được tiêm.";
+            this.label11.Click += new System.EventHandler(this.label11_Click);
             // 
             // label14
             // 
@@ -433,7 +436,7 @@
             this.label14.Location = new System.Drawing.Point(270, 9);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(191, 25);
+            this.label14.Size = new System.Drawing.Size(293, 40);
             this.label14.TabIndex = 15;
             this.label14.Text = "Đăng ký tiêm chủng";
             // 

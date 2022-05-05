@@ -29,6 +29,7 @@ namespace GUI.GUI
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(DatMuaVacxinGUI));
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle3 = new System.Windows.Forms.DataGridViewCellStyle();
@@ -69,35 +70,26 @@ namespace GUI.GUI
             this.ThanhTien_Label = new System.Windows.Forms.Label();
             this.panel3 = new System.Windows.Forms.Panel();
             this.label5 = new System.Windows.Forms.Label();
+            this.panel4 = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.DSVacXinHT_DataGridView)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.DSVacxinDaChon_DataGridView)).BeginInit();
             this.panel1.SuspendLayout();
             this.panel2.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.GoiVacxinHT_Datagridview)).BeginInit();
             this.panel3.SuspendLayout();
+            this.panel4.SuspendLayout();
             this.SuspendLayout();
             // 
             // label1
             // 
-            this.label1.AutoSize = true;
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.ImageAlign = System.Drawing.ContentAlignment.TopCenter;
-            this.label1.Location = new System.Drawing.Point(80, 31);
+            resources.ApplyResources(this.label1, "label1");
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(443, 32);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "DANH SÁCH GÓI VẮC XIN HỆ THỐNG";
             this.label1.UseMnemonic = false;
             // 
             // label2
             // 
-            this.label2.AutoSize = true;
-            this.label2.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label2.Location = new System.Drawing.Point(89, 347);
+            resources.ApplyResources(this.label2, "label2");
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(408, 32);
-            this.label2.TabIndex = 1;
-            this.label2.Text = "THÔNG TIN CHI TIẾT GÓI VẮC XIN";
             // 
             // DSVacXinHT_DataGridView
             // 
@@ -120,50 +112,41 @@ namespace GUI.GUI
             this.GIABAN,
             this.btnSoLuong,
             this.GiamSL});
-            this.DSVacXinHT_DataGridView.Location = new System.Drawing.Point(1, 391);
+            resources.ApplyResources(this.DSVacXinHT_DataGridView, "DSVacXinHT_DataGridView");
             this.DSVacXinHT_DataGridView.Name = "DSVacXinHT_DataGridView";
             this.DSVacXinHT_DataGridView.RowHeadersVisible = false;
-            this.DSVacXinHT_DataGridView.RowHeadersWidth = 62;
             this.DSVacXinHT_DataGridView.RowTemplate.Height = 28;
-            this.DSVacXinHT_DataGridView.Size = new System.Drawing.Size(553, 251);
-            this.DSVacXinHT_DataGridView.TabIndex = 5;
             // 
             // MAVACXIN
             // 
             this.MAVACXIN.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.MAVACXIN.DataPropertyName = "MAVACXIN";
-            this.MAVACXIN.HeaderText = "Mã vắc xin";
-            this.MAVACXIN.MinimumWidth = 8;
+            resources.ApplyResources(this.MAVACXIN, "MAVACXIN");
             this.MAVACXIN.Name = "MAVACXIN";
-            this.MAVACXIN.Visible = false;
             // 
             // TENVACXIN
             // 
             this.TENVACXIN.DataPropertyName = "TENVACXIN";
-            this.TENVACXIN.HeaderText = "Tên vắc xin";
-            this.TENVACXIN.MinimumWidth = 8;
+            resources.ApplyResources(this.TENVACXIN, "TENVACXIN");
             this.TENVACXIN.Name = "TENVACXIN";
             // 
             // NGUABENH
             // 
             this.NGUABENH.DataPropertyName = "NGUABENH";
-            this.NGUABENH.HeaderText = "Ngừa bệnh";
-            this.NGUABENH.MinimumWidth = 8;
+            resources.ApplyResources(this.NGUABENH, "NGUABENH");
             this.NGUABENH.Name = "NGUABENH";
             // 
             // GIABAN
             // 
             this.GIABAN.DataPropertyName = "GIABAN";
-            this.GIABAN.HeaderText = "Giá bán";
-            this.GIABAN.MinimumWidth = 8;
+            resources.ApplyResources(this.GIABAN, "GIABAN");
             this.GIABAN.Name = "GIABAN";
             // 
             // btnSoLuong
             // 
             this.btnSoLuong.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.btnSoLuong.FillWeight = 50F;
-            this.btnSoLuong.HeaderText = "+";
-            this.btnSoLuong.MinimumWidth = 8;
+            resources.ApplyResources(this.btnSoLuong, "btnSoLuong");
             this.btnSoLuong.Name = "btnSoLuong";
             this.btnSoLuong.Text = "+";
             this.btnSoLuong.UseColumnTextForButtonValue = true;
@@ -172,8 +155,7 @@ namespace GUI.GUI
             // 
             this.GiamSL.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.GiamSL.FillWeight = 50F;
-            this.GiamSL.HeaderText = "-";
-            this.GiamSL.MinimumWidth = 8;
+            resources.ApplyResources(this.GiamSL, "GiamSL");
             this.GiamSL.Name = "GiamSL";
             this.GiamSL.Text = "-";
             this.GiamSL.UseColumnTextForButtonValue = true;
@@ -200,55 +182,45 @@ namespace GUI.GUI
             this.Gia,
             this.soluong,
             this.XoaVacXin});
-            this.DSVacxinDaChon_DataGridView.Location = new System.Drawing.Point(9, 76);
+            resources.ApplyResources(this.DSVacxinDaChon_DataGridView, "DSVacxinDaChon_DataGridView");
             this.DSVacxinDaChon_DataGridView.Name = "DSVacxinDaChon_DataGridView";
             this.DSVacxinDaChon_DataGridView.RowHeadersVisible = false;
-            this.DSVacxinDaChon_DataGridView.RowHeadersWidth = 62;
             this.DSVacxinDaChon_DataGridView.RowTemplate.Height = 28;
-            this.DSVacxinDaChon_DataGridView.Size = new System.Drawing.Size(545, 251);
-            this.DSVacxinDaChon_DataGridView.TabIndex = 3;
             // 
             // MaVX
             // 
             this.MaVX.DataPropertyName = "MAVACXIN";
-            this.MaVX.HeaderText = "Mã vắc xin";
-            this.MaVX.MinimumWidth = 8;
+            resources.ApplyResources(this.MaVX, "MaVX");
             this.MaVX.Name = "MaVX";
-            this.MaVX.Visible = false;
             // 
             // TenVX
             // 
             this.TenVX.DataPropertyName = "TENVACXIN";
-            this.TenVX.HeaderText = "Tên vắc xin";
-            this.TenVX.MinimumWidth = 8;
+            resources.ApplyResources(this.TenVX, "TenVX");
             this.TenVX.Name = "TenVX";
             this.TenVX.Resizable = System.Windows.Forms.DataGridViewTriState.True;
             // 
             // Ngua_Benh
             // 
             this.Ngua_Benh.DataPropertyName = "NGUABENH";
-            this.Ngua_Benh.HeaderText = "Ngừa bệnh";
-            this.Ngua_Benh.MinimumWidth = 8;
+            resources.ApplyResources(this.Ngua_Benh, "Ngua_Benh");
             this.Ngua_Benh.Name = "Ngua_Benh";
             // 
             // Gia
             // 
             this.Gia.DataPropertyName = "GIABAN";
-            this.Gia.HeaderText = "Giá bán";
-            this.Gia.MinimumWidth = 8;
+            resources.ApplyResources(this.Gia, "Gia");
             this.Gia.Name = "Gia";
             // 
             // soluong
             // 
-            this.soluong.HeaderText = "Số lượng";
-            this.soluong.MinimumWidth = 8;
+            resources.ApplyResources(this.soluong, "soluong");
             this.soluong.Name = "soluong";
             // 
             // XoaVacXin
             // 
             this.XoaVacXin.FillWeight = 50F;
-            this.XoaVacXin.HeaderText = "Xóa";
-            this.XoaVacXin.MinimumWidth = 8;
+            resources.ApplyResources(this.XoaVacXin, "XoaVacXin");
             this.XoaVacXin.Name = "XoaVacXin";
             this.XoaVacXin.Text = "X";
             this.XoaVacXin.UseColumnTextForButtonValue = true;
@@ -261,70 +233,40 @@ namespace GUI.GUI
             this.panel1.Controls.Add(this.HangSX_Label);
             this.panel1.Controls.Add(this.label4);
             this.panel1.Controls.Add(this.label3);
-            this.panel1.Location = new System.Drawing.Point(0, 333);
+            resources.ApplyResources(this.panel1, "panel1");
             this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(554, 302);
-            this.panel1.TabIndex = 4;
+            this.panel1.Paint += new System.Windows.Forms.PaintEventHandler(this.panel1_Paint);
             // 
             // MoTa_ND_Label
             // 
-            this.MoTa_ND_Label.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MoTa_ND_Label.Location = new System.Drawing.Point(89, 152);
+            resources.ApplyResources(this.MoTa_ND_Label, "MoTa_ND_Label");
             this.MoTa_ND_Label.Name = "MoTa_ND_Label";
-            this.MoTa_ND_Label.Size = new System.Drawing.Size(460, 133);
-            this.MoTa_ND_Label.TabIndex = 5;
-            this.MoTa_ND_Label.Text = "label8";
-            this.MoTa_ND_Label.Visible = false;
+            this.MoTa_ND_Label.Click += new System.EventHandler(this.MoTa_ND_Label_Click);
             // 
             // HangSX_ND_Label
             // 
-            this.HangSX_ND_Label.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HangSX_ND_Label.Location = new System.Drawing.Point(111, 55);
+            resources.ApplyResources(this.HangSX_ND_Label, "HangSX_ND_Label");
             this.HangSX_ND_Label.Name = "HangSX_ND_Label";
-            this.HangSX_ND_Label.Size = new System.Drawing.Size(438, 84);
-            this.HangSX_ND_Label.TabIndex = 4;
-            this.HangSX_ND_Label.Text = "label7";
-            this.HangSX_ND_Label.Visible = false;
             // 
             // MoTa_Label
             // 
-            this.MoTa_Label.AutoSize = true;
-            this.MoTa_Label.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.MoTa_Label.Location = new System.Drawing.Point(4, 148);
+            resources.ApplyResources(this.MoTa_Label, "MoTa_Label");
             this.MoTa_Label.Name = "MoTa_Label";
-            this.MoTa_Label.Size = new System.Drawing.Size(79, 28);
-            this.MoTa_Label.TabIndex = 3;
-            this.MoTa_Label.Text = "Mô tả: ";
-            this.MoTa_Label.Visible = false;
             // 
             // HangSX_Label
             // 
-            this.HangSX_Label.AutoSize = true;
-            this.HangSX_Label.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.HangSX_Label.Location = new System.Drawing.Point(4, 55);
+            resources.ApplyResources(this.HangSX_Label, "HangSX_Label");
             this.HangSX_Label.Name = "HangSX_Label";
-            this.HangSX_Label.Size = new System.Drawing.Size(97, 28);
-            this.HangSX_Label.TabIndex = 2;
-            this.HangSX_Label.Text = "Hãng SX:";
-            this.HangSX_Label.Visible = false;
             // 
             // label4
             // 
-            this.label4.AutoSize = true;
-            this.label4.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label4.Location = new System.Drawing.Point(136, 14);
+            resources.ApplyResources(this.label4, "label4");
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(301, 32);
-            this.label4.TabIndex = 1;
-            this.label4.Text = "Thông tin chi tiết Vắc xin";
             // 
             // label3
             // 
-            this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(112, 14);
+            resources.ApplyResources(this.label3, "label3");
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(0, 20);
-            this.label3.TabIndex = 0;
             // 
             // panel2
             // 
@@ -332,10 +274,8 @@ namespace GUI.GUI
             this.panel2.Controls.Add(this.DSVacXinHT_DataGridView);
             this.panel2.Controls.Add(this.label2);
             this.panel2.Controls.Add(this.label1);
-            this.panel2.Location = new System.Drawing.Point(12, 12);
+            resources.ApplyResources(this.panel2, "panel2");
             this.panel2.Name = "panel2";
-            this.panel2.Size = new System.Drawing.Size(554, 642);
-            this.panel2.TabIndex = 5;
             // 
             // GoiVacxinHT_Datagridview
             // 
@@ -345,40 +285,32 @@ namespace GUI.GUI
             this.GoiVacxinHT_Datagridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle3;
             this.GoiVacxinHT_Datagridview.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.GoiVacxinHT_Datagridview.ColumnHeadersBorderStyle = System.Windows.Forms.DataGridViewHeaderBorderStyle.Single;
-            this.GoiVacxinHT_Datagridview.ColumnHeadersHeight = 27;
+            resources.ApplyResources(this.GoiVacxinHT_Datagridview, "GoiVacxinHT_Datagridview");
             this.GoiVacxinHT_Datagridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
             this.GoiVacxinHT_Datagridview.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.dataGridViewTextBoxColumn3,
             this.dataGridViewTextBoxColumn4,
             this.dataGridViewTextBoxColumn6,
             this.Goi_SLTiem});
-            this.GoiVacxinHT_Datagridview.Location = new System.Drawing.Point(1, 76);
-            this.GoiVacxinHT_Datagridview.MinimumSize = new System.Drawing.Size(0, 100);
             this.GoiVacxinHT_Datagridview.Name = "GoiVacxinHT_Datagridview";
             this.GoiVacxinHT_Datagridview.RowHeadersVisible = false;
-            this.GoiVacxinHT_Datagridview.RowHeadersWidth = 62;
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GoiVacxinHT_Datagridview.RowsDefaultCellStyle = dataGridViewCellStyle5;
-            this.GoiVacxinHT_Datagridview.Size = new System.Drawing.Size(550, 251);
-            this.GoiVacxinHT_Datagridview.TabIndex = 2;
             // 
             // dataGridViewTextBoxColumn3
             // 
             this.dataGridViewTextBoxColumn3.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dataGridViewTextBoxColumn3.DataPropertyName = "MAGOIVACXIN";
             this.dataGridViewTextBoxColumn3.FillWeight = 80F;
-            this.dataGridViewTextBoxColumn3.HeaderText = "Mã gói vắc xin";
-            this.dataGridViewTextBoxColumn3.MinimumWidth = 8;
+            resources.ApplyResources(this.dataGridViewTextBoxColumn3, "dataGridViewTextBoxColumn3");
             this.dataGridViewTextBoxColumn3.Name = "dataGridViewTextBoxColumn3";
             this.dataGridViewTextBoxColumn3.ReadOnly = true;
-            this.dataGridViewTextBoxColumn3.Visible = false;
             // 
             // dataGridViewTextBoxColumn4
             // 
             this.dataGridViewTextBoxColumn4.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dataGridViewTextBoxColumn4.DataPropertyName = "TENGOIVACXIN";
-            this.dataGridViewTextBoxColumn4.HeaderText = "Tên gói vắc xin";
-            this.dataGridViewTextBoxColumn4.MinimumWidth = 8;
+            resources.ApplyResources(this.dataGridViewTextBoxColumn4, "dataGridViewTextBoxColumn4");
             this.dataGridViewTextBoxColumn4.Name = "dataGridViewTextBoxColumn4";
             this.dataGridViewTextBoxColumn4.ReadOnly = true;
             // 
@@ -387,8 +319,7 @@ namespace GUI.GUI
             this.dataGridViewTextBoxColumn6.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.dataGridViewTextBoxColumn6.DataPropertyName = "GIABAN";
             this.dataGridViewTextBoxColumn6.FillWeight = 80F;
-            this.dataGridViewTextBoxColumn6.HeaderText = "Giá";
-            this.dataGridViewTextBoxColumn6.MinimumWidth = 8;
+            resources.ApplyResources(this.dataGridViewTextBoxColumn6, "dataGridViewTextBoxColumn6");
             this.dataGridViewTextBoxColumn6.Name = "dataGridViewTextBoxColumn6";
             this.dataGridViewTextBoxColumn6.ReadOnly = true;
             // 
@@ -399,95 +330,72 @@ namespace GUI.GUI
             dataGridViewCellStyle4.Font = new System.Drawing.Font("Segoe UI", 8.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.Goi_SLTiem.DefaultCellStyle = dataGridViewCellStyle4;
             this.Goi_SLTiem.FillWeight = 63.9758F;
-            this.Goi_SLTiem.HeaderText = "Số lần tiêm";
-            this.Goi_SLTiem.MinimumWidth = 8;
+            resources.ApplyResources(this.Goi_SLTiem, "Goi_SLTiem");
             this.Goi_SLTiem.Name = "Goi_SLTiem";
             this.Goi_SLTiem.ReadOnly = true;
             // 
             // label9
             // 
-            this.label9.AutoSize = true;
-            this.label9.Font = new System.Drawing.Font("Segoe UI", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.label9, "label9");
             this.label9.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.label9.Location = new System.Drawing.Point(5, 676);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(146, 28);
-            this.label9.TabIndex = 6;
-            this.label9.Text = "THÀNH TIỀN :";
             // 
             // DatVacxinKhac_Button
             // 
-            this.DatVacxinKhac_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Center;
-            this.DatVacxinKhac_Button.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DatVacxinKhac_Button.Location = new System.Drawing.Point(714, 653);
+            this.DatVacxinKhac_Button.BackColor = System.Drawing.SystemColors.Info;
+            resources.ApplyResources(this.DatVacxinKhac_Button, "DatVacxinKhac_Button");
+            this.DatVacxinKhac_Button.ForeColor = System.Drawing.SystemColors.ControlText;
             this.DatVacxinKhac_Button.Name = "DatVacxinKhac_Button";
-            this.DatVacxinKhac_Button.Size = new System.Drawing.Size(210, 57);
-            this.DatVacxinKhac_Button.TabIndex = 7;
-            this.DatVacxinKhac_Button.Text = "Đặt vắc xin khác";
-            this.DatVacxinKhac_Button.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
-            this.DatVacxinKhac_Button.UseVisualStyleBackColor = true;
+            this.DatVacxinKhac_Button.UseVisualStyleBackColor = false;
             this.DatVacxinKhac_Button.Click += new System.EventHandler(this.DatVacxinKhac_Button_Click);
             // 
             // DatMua_Button
             // 
             this.DatMua_Button.BackColor = System.Drawing.SystemColors.GradientInactiveCaption;
-            this.DatMua_Button.BackgroundImageLayout = System.Windows.Forms.ImageLayout.None;
+            resources.ApplyResources(this.DatMua_Button, "DatMua_Button");
             this.DatMua_Button.DialogResult = System.Windows.Forms.DialogResult.Retry;
-            this.DatMua_Button.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.DatMua_Button.Font = new System.Drawing.Font("Segoe UI Semibold", 10F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DatMua_Button.ForeColor = System.Drawing.SystemColors.ActiveCaptionText;
-            this.DatMua_Button.Location = new System.Drawing.Point(930, 654);
             this.DatMua_Button.Name = "DatMua_Button";
-            this.DatMua_Button.Size = new System.Drawing.Size(192, 50);
-            this.DatMua_Button.TabIndex = 8;
-            this.DatMua_Button.Text = "Đặt mua";
             this.DatMua_Button.UseVisualStyleBackColor = false;
             this.DatMua_Button.Click += new System.EventHandler(this.DatMua_Button_Click);
             // 
             // ThanhTien_Label
             // 
-            this.ThanhTien_Label.Font = new System.Drawing.Font("Segoe UI", 20F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            resources.ApplyResources(this.ThanhTien_Label, "ThanhTien_Label");
             this.ThanhTien_Label.ForeColor = System.Drawing.Color.Red;
-            this.ThanhTien_Label.Location = new System.Drawing.Point(157, 657);
             this.ThanhTien_Label.Name = "ThanhTien_Label";
-            this.ThanhTien_Label.Size = new System.Drawing.Size(188, 53);
-            this.ThanhTien_Label.TabIndex = 9;
-            this.ThanhTien_Label.Text = "label10";
-            this.ThanhTien_Label.TextAlign = System.Drawing.ContentAlignment.MiddleLeft;
             // 
             // panel3
             // 
             this.panel3.Controls.Add(this.label5);
             this.panel3.Controls.Add(this.panel1);
             this.panel3.Controls.Add(this.DSVacxinDaChon_DataGridView);
-            this.panel3.Location = new System.Drawing.Point(572, 12);
+            resources.ApplyResources(this.panel3, "panel3");
             this.panel3.Name = "panel3";
-            this.panel3.Size = new System.Drawing.Size(554, 636);
-            this.panel3.TabIndex = 10;
             // 
             // label5
             // 
-            this.label5.AutoSize = true;
-            this.label5.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label5.Location = new System.Drawing.Point(98, 31);
+            resources.ApplyResources(this.label5, "label5");
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(381, 32);
-            this.label5.TabIndex = 6;
-            this.label5.Text = "DANH SÁCH VẮC XIN ĐÃ CHỌN";
+            // 
+            // panel4
+            // 
+            this.panel4.Controls.Add(this.ThanhTien_Label);
+            this.panel4.Controls.Add(this.DatMua_Button);
+            this.panel4.Controls.Add(this.label9);
+            this.panel4.Controls.Add(this.DatVacxinKhac_Button);
+            resources.ApplyResources(this.panel4, "panel4");
+            this.panel4.Name = "panel4";
             // 
             // DatMuaVacxinGUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(9F, 20F);
+            resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1133, 722);
+            this.Controls.Add(this.panel4);
             this.Controls.Add(this.panel3);
-            this.Controls.Add(this.ThanhTien_Label);
-            this.Controls.Add(this.DatMua_Button);
-            this.Controls.Add(this.DatVacxinKhac_Button);
-            this.Controls.Add(this.label9);
             this.Controls.Add(this.panel2);
             this.Name = "DatMuaVacxinGUI";
-            this.Text = "DatMuaVacxin";
+            this.Load += new System.EventHandler(this.DatMuaVacxinGUI_Load);
             ((System.ComponentModel.ISupportInitialize)(this.DSVacXinHT_DataGridView)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.DSVacxinDaChon_DataGridView)).EndInit();
             this.panel1.ResumeLayout(false);
@@ -497,8 +405,9 @@ namespace GUI.GUI
             ((System.ComponentModel.ISupportInitialize)(this.GoiVacxinHT_Datagridview)).EndInit();
             this.panel3.ResumeLayout(false);
             this.panel3.PerformLayout();
+            this.panel4.ResumeLayout(false);
+            this.panel4.PerformLayout();
             this.ResumeLayout(false);
-            this.PerformLayout();
 
         }
 
@@ -539,5 +448,6 @@ namespace GUI.GUI
         private System.Windows.Forms.DataGridViewTextBoxColumn dataGridViewTextBoxColumn6;
         private System.Windows.Forms.DataGridViewTextBoxColumn Goi_SLTiem;
         public System.Windows.Forms.DataGridView DSVacxinDaChon_DataGridView;
+        private System.Windows.Forms.Panel panel4;
     }
 }

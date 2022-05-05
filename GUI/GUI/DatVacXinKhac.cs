@@ -14,6 +14,7 @@ using System.Data.SqlClient;
 
 namespace GUI.GUI
 {
+    public delegate void DataSentHandler(VacxinNgoaiDTO vxn);
     public partial class DatVacXinKhac : Form
     {
         public DatVacXinKhac()
@@ -21,8 +22,10 @@ namespace GUI.GUI
             InitializeComponent();
         }
 
-        private VacxinNgoaiDTO vxn;
 
+        public event DataSentHandler DataSent;
+        public VacxinNgoaiDTO vxn;
+       // public bool datvxn = false;
         private void ThemVacxinVaoDSChon_button_Click(object sender, EventArgs e)
         {
             string TenVXN, LoaiVXN, HangVXN;
@@ -48,29 +51,14 @@ namespace GUI.GUI
             if (newID > 0)
             {
                 MessageBox.Show("Thêm vacxin thành công!" , "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                //datvxn = true;
                 this.Close();
             }
             else
                 MessageBox.Show("Đã xảy ra lỗi. Không thể thêm vacxin", "Lỗi", MessageBoxButtons.OK, MessageBoxIcon.Error);
 
-         
-
+            this.DataSent(vxn);
         }
 
-        //public VacxinNgoaiDTO LayThongTinVacxinNgoai()
-        //{ 
-        //    return vxn;
-        //}
-    
-
-        private void txtTenVacxin_TextChanged(object sender, EventArgs e)
-        {
-
-        }
-
-        private void numericUpDown1_ValueChanged(object sender, EventArgs e)
-        {
-
-        }
     }
 }

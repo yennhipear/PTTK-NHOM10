@@ -14,21 +14,23 @@ namespace GUI.DTO
         public String TenVacxinNgoai { get; set; }
         public String LoaiVacxinNgoai { get; set; }
         public String HangVacxinNgoai { get; set; }
-      
-        public VacxinNgoaiDTO(string MaVXNgoai, string TenVXNgoai, string LoaiVXNgoai, string HangVXNgoai)
+        public String SLVacxinNgoai { get; set; }
+
+        public VacxinNgoaiDTO(string MaVXNgoai, string TenVXNgoai, string LoaiVXNgoai, string HangVXNgoai, string SoLuong)
         {
             MaVacxinNgoai = MaVXNgoai;
             TenVacxinNgoai = TenVXNgoai;
             LoaiVacxinNgoai = LoaiVXNgoai;
             HangVacxinNgoai = HangVXNgoai;
-
+            SLVacxinNgoai = SoLuong;
         }
 
-        public VacxinNgoaiDTO(string TenVXNgoai, string LoaiVXNgoai, string HangVXNgoai)
+        public VacxinNgoaiDTO(string TenVXNgoai, string LoaiVXNgoai, string HangVXNgoai, string SoLuong)
         {
             TenVacxinNgoai = TenVXNgoai;
             LoaiVacxinNgoai = LoaiVXNgoai;
             HangVacxinNgoai = HangVXNgoai;
+            SLVacxinNgoai = SoLuong;
         }
         
         public SqlCommand getInsertSqlCommand()
