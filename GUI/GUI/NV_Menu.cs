@@ -7,6 +7,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
+using GUI.DTO;
 
 namespace GUI.GUI
 {
@@ -15,18 +16,9 @@ namespace GUI.GUI
         public NV_Menu()
         {
             InitializeComponent();
+            Hello_Label.Text = $"Xin chào, {CurrentUser.HoTen}";
         }
-
-        private void DKTC_Button_Click(object sender, EventArgs e)
-        {
-            (new DSVacxinGUI()).Show();
-        }
-
-        private void DatMuaVacxin_Button_Click(object sender, EventArgs e)
-        {
-            (new DatMuaVacxinGUI()).Show();
-        }
-
+       
         private void XepLich_Button_Click(object sender, EventArgs e)
         {
             (new XepLichLamViecGUI()).Show();

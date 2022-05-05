@@ -15,9 +15,11 @@ namespace GUI.GUI
     public partial class XuLyPhieuDKTCGUI : Form
     {
         private XuLyPhieuDKTCBUS xuLyPhieuDKTCBUS;
+        private String MaPDK;
         public XuLyPhieuDKTCGUI(String maPDK)
         {
             InitializeComponent();
+            MaPDK = maPDK;
             NgaySinhNT_Picker.CustomFormat = "dd/MM/yyyy";
             NgaySinhKH_Picker.CustomFormat = "dd/MM/yyyy";
             TGDK_Picker.CustomFormat = "dd/MM/yyyy";
@@ -50,6 +52,16 @@ namespace GUI.GUI
             DSVacxinChon_Datagridview.DataSource = xuLyPhieuDKTCBUS.LayCTPhieuDKTC(maPDK);
         }
 
+        private void button1_Click(object sender, EventArgs e)
+        {
+            xuLyPhieuDKTCBUS.CapNhatTinhTrangPhieu(MaPDK, "Đã duyệt");
+            this.Close();
+        }
 
+        private void button2_Click(object sender, EventArgs e)
+        {
+            xuLyPhieuDKTCBUS.CapNhatTinhTrangPhieu(MaPDK, "Không thể đáp ứng");
+            this.Close();
+        }
     }
 }

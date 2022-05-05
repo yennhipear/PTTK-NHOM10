@@ -26,6 +26,10 @@ namespace GUI.BUS
         {
             return PhieuDangKyTiemChungDAO.getInstance().LayCTPhieuDKTC(maPDK);
         }
+        public int CapNhatTinhTrangPhieu(String maPDK, String tinhTrang)
+        {
+            return PhieuDangKyTiemChungDAO.getInstance().CapNhatTinhTrangPhieu(maPDK, tinhTrang);
+        }
 
     }
 }

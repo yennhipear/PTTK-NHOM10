@@ -25,7 +25,7 @@ namespace GUI.DAO
 
         public DataTable LayDSPhieuDKTC()
         {
-            DataTable result = DataProviderDAO.getInstance().ExecuteQuery(new SqlCommand("Select MAVACXIN,TENVACXIN,LOAIVACXIN,HANGVACXIN from PHIEUDANGKYTIEMCHUNG"));
+            DataTable result = DataProviderDAO.getInstance().ExecuteQuery(new SqlCommand("Select MAPDK,MAKH,THOIGIANDK,TINHTRANG from PHIEUDANGKYTIEMCHUNG"));
             return result;
         }
 
@@ -146,5 +146,12 @@ namespace GUI.DAO
             }
         }
 
+        public int CapNhatTinhTrangPhieu(String maPDK, String tinhTrang)
+        {
+            SqlCommand command = new SqlCommand("UPDATE PHIEUDANGKYTIEMCHUNG SET TINHTRANG = @tinhTrang WHERE MaPDK = @maPDK");
+            command.Parameters.Add(new SqlParameter("@maPDK", maPDK));
+            command.Parameters.Add(new SqlParameter("@tinhTrang", tinhTrang));
+            return DataProviderDAO.getInstance().ExecuteNonQuery(command);
+        }
     }
 }

@@ -39,14 +39,14 @@ namespace GUI
                         MessageBox.Show("Thông tin đăng nhập sai.");
                     else
                     {
-                        MessageBox.Show("Nhân viên đăng nhập");
+                        //MessageBox.Show("Nhân viên đăng nhập");
                         GUI.NV_Menu f = new GUI.NV_Menu();
                         this.Hide();
                         f.ShowDialog();
                     }
                 } else
                 {
-                    MessageBox.Show("Khách hàng đăng nhập");
+                    //MessageBox.Show("Khách hàng đăng nhập");
                     KH_Menu f = new KH_Menu();
                     this.Hide();
                     f.ShowDialog();

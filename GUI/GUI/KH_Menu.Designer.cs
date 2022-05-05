@@ -31,7 +31,7 @@
             this.button1 = new System.Windows.Forms.Button();
             this.btnDatMuaVacxin = new System.Windows.Forms.Button();
             this.flowLayoutPanel1 = new System.Windows.Forms.FlowLayoutPanel();
-            this.label1 = new System.Windows.Forms.Label();
+            this.Hello_Label = new System.Windows.Forms.Label();
             this.button5 = new System.Windows.Forms.Button();
             this.flowLayoutPanel1.SuspendLayout();
             this.SuspendLayout();
@@ -62,7 +62,7 @@
             // 
             // flowLayoutPanel1
             // 
-            this.flowLayoutPanel1.Controls.Add(this.label1);
+            this.flowLayoutPanel1.Controls.Add(this.Hello_Label);
             this.flowLayoutPanel1.Controls.Add(this.button1);
             this.flowLayoutPanel1.Controls.Add(this.btnDatMuaVacxin);
             this.flowLayoutPanel1.Controls.Add(this.button5);
@@ -74,15 +74,15 @@
             this.flowLayoutPanel1.Size = new System.Drawing.Size(377, 258);
             this.flowLayoutPanel1.TabIndex = 4;
             // 
-            // label1
+            // Hello_Label
             // 
-            this.label1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.label1.Location = new System.Drawing.Point(13, 10);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(350, 97);
-            this.label1.TabIndex = 0;
-            this.label1.Text = "Xin chào, ";
-            this.label1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
+            this.Hello_Label.Font = new System.Drawing.Font("Segoe UI", 14.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.Hello_Label.Location = new System.Drawing.Point(13, 10);
+            this.Hello_Label.Name = "Hello_Label";
+            this.Hello_Label.Size = new System.Drawing.Size(350, 97);
+            this.Hello_Label.TabIndex = 0;
+            this.Hello_Label.Text = "Xin chào, ";
+            this.Hello_Label.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
             // 
             // button5
             // 
@@ -116,7 +116,7 @@
         private System.Windows.Forms.Button button1;
         private System.Windows.Forms.Button btnDatMuaVacxin;
         private System.Windows.Forms.FlowLayoutPanel flowLayoutPanel1;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label Hello_Label;
         private System.Windows.Forms.Button button5;
     }
 }
