@@ -46,5 +46,15 @@ namespace GUI
         {
 
         }
+
+        private void dateTimePicker1_ValueChanged(object sender, EventArgs e)
+        {
+
+        }
+
+        private void btnPanel_Paint(object sender, PaintEventArgs e)
+        {
+
+        }
     }
 }

@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle5 = new System.Windows.Forms.DataGridViewCellStyle();
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle6 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle2 = new System.Windows.Forms.DataGridViewCellStyle();
             this.ThanhTien_Label = new System.Windows.Forms.Label();
             this.label8 = new System.Windows.Forms.Label();
             this.DSVacxinChon_Datagridview = new System.Windows.Forms.DataGridView();
@@ -61,10 +61,10 @@
             this.comboBox3 = new System.Windows.Forms.ComboBox();
             this.label12 = new System.Windows.Forms.Label();
             this.dataGridView1 = new System.Windows.Forms.DataGridView();
-            this.label14 = new System.Windows.Forms.Label();
             this.Dot = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.SoTien = new System.Windows.Forms.DataGridViewTextBoxColumn();
             this.Ngay = new System.Windows.Forms.DataGridViewTextBoxColumn();
+            this.label14 = new System.Windows.Forms.Label();
             this.button1 = new System.Windows.Forms.Button();
             ((System.ComponentModel.ISupportInitialize)(this.DSVacxinChon_Datagridview)).BeginInit();
             this.TTKH_Panel.SuspendLayout();
@@ -79,7 +79,7 @@
             this.ThanhTien_Label.ForeColor = System.Drawing.Color.Maroon;
             this.ThanhTien_Label.Location = new System.Drawing.Point(606, 455);
             this.ThanhTien_Label.Name = "ThanhTien_Label";
-            this.ThanhTien_Label.Size = new System.Drawing.Size(120, 47);
+            this.ThanhTien_Label.Size = new System.Drawing.Size(239, 93);
             this.ThanhTien_Label.TabIndex = 15;
             this.ThanhTien_Label.Text = "label5";
             this.ThanhTien_Label.Visible = false;
@@ -90,7 +90,7 @@
             this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(362, 476);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(158, 21);
+            this.label8.Size = new System.Drawing.Size(311, 45);
             this.label8.TabIndex = 14;
             this.label8.Text = "Thành tiền đợt này:";
             // 
@@ -98,8 +98,8 @@
             // 
             this.DSVacxinChon_Datagridview.AllowUserToAddRows = false;
             this.DSVacxinChon_Datagridview.AllowUserToResizeRows = false;
-            dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DSVacxinChon_Datagridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle5;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DSVacxinChon_Datagridview.AlternatingRowsDefaultCellStyle = dataGridViewCellStyle1;
             this.DSVacxinChon_Datagridview.AutoSizeRowsMode = System.Windows.Forms.DataGridViewAutoSizeRowsMode.AllCells;
             this.DSVacxinChon_Datagridview.ColumnHeadersHeight = 50;
             this.DSVacxinChon_Datagridview.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.DisableResizing;
@@ -115,8 +115,8 @@
             this.DSVacxinChon_Datagridview.Name = "DSVacxinChon_Datagridview";
             this.DSVacxinChon_Datagridview.RowHeadersVisible = false;
             this.DSVacxinChon_Datagridview.RowHeadersWidth = 62;
-            dataGridViewCellStyle6.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.DSVacxinChon_Datagridview.RowsDefaultCellStyle = dataGridViewCellStyle6;
+            dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.DSVacxinChon_Datagridview.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.DSVacxinChon_Datagridview.Size = new System.Drawing.Size(361, 188);
             this.DSVacxinChon_Datagridview.TabIndex = 16;
             // 
@@ -155,6 +155,7 @@
             this.Chon_SLTiem.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Chon_SLTiem.FillWeight = 40F;
             this.Chon_SLTiem.HeaderText = "Số lần tiêm";
+            this.Chon_SLTiem.MinimumWidth = 10;
             this.Chon_SLTiem.Name = "Chon_SLTiem";
             // 
             // Chon_Xoa
@@ -162,6 +163,7 @@
             this.Chon_Xoa.AutoSizeMode = System.Windows.Forms.DataGridViewAutoSizeColumnMode.Fill;
             this.Chon_Xoa.FillWeight = 20F;
             this.Chon_Xoa.HeaderText = "";
+            this.Chon_Xoa.MinimumWidth = 10;
             this.Chon_Xoa.Name = "Chon_Xoa";
             this.Chon_Xoa.ReadOnly = true;
             this.Chon_Xoa.Resizable = System.Windows.Forms.DataGridViewTriState.True;
@@ -176,7 +178,7 @@
             this.label6.Location = new System.Drawing.Point(308, 7);
             this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(113, 25);
+            this.label6.Size = new System.Drawing.Size(224, 51);
             this.label6.TabIndex = 18;
             this.label6.Text = "Thanh toán";
             // 
@@ -210,7 +212,7 @@
             "Khác"});
             this.GioiTinhKH_ComboBox.Location = new System.Drawing.Point(89, 183);
             this.GioiTinhKH_ComboBox.Name = "GioiTinhKH_ComboBox";
-            this.GioiTinhKH_ComboBox.Size = new System.Drawing.Size(250, 25);
+            this.GioiTinhKH_ComboBox.Size = new System.Drawing.Size(250, 44);
             this.GioiTinhKH_ComboBox.TabIndex = 16;
             // 
             // label13
@@ -218,7 +220,7 @@
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(-1, 186);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(59, 17);
+            this.label13.Size = new System.Drawing.Size(119, 36);
             this.label13.TabIndex = 15;
             this.label13.Text = "Giới tính:";
             // 
@@ -232,7 +234,7 @@
             this.NgaySinhKH_Picker.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
             this.NgaySinhKH_Picker.Name = "NgaySinhKH_Picker";
             this.NgaySinhKH_Picker.ShowCheckBox = true;
-            this.NgaySinhKH_Picker.Size = new System.Drawing.Size(250, 25);
+            this.NgaySinhKH_Picker.Size = new System.Drawing.Size(250, 42);
             this.NgaySinhKH_Picker.TabIndex = 9;
             this.NgaySinhKH_Picker.Value = new System.DateTime(2022, 4, 15, 0, 0, 0, 0);
             // 
@@ -243,7 +245,7 @@
             this.label7.Location = new System.Drawing.Point(-2, 0);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(177, 21);
+            this.label7.Size = new System.Drawing.Size(347, 45);
             this.label7.TabIndex = 12;
             this.label7.Text = "Thông tin khách hàng";
             // 
@@ -253,7 +255,7 @@
             this.label5.Location = new System.Drawing.Point(-1, 147);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(69, 17);
+            this.label5.Size = new System.Drawing.Size(135, 36);
             this.label5.TabIndex = 8;
             this.label5.Text = "Ngày sinh:";
             // 
@@ -263,7 +265,7 @@
             this.HoTenKH_TextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.HoTenKH_TextBox.Name = "HoTenKH_TextBox";
             this.HoTenKH_TextBox.ReadOnly = true;
-            this.HoTenKH_TextBox.Size = new System.Drawing.Size(250, 25);
+            this.HoTenKH_TextBox.Size = new System.Drawing.Size(250, 42);
             this.HoTenKH_TextBox.TabIndex = 1;
             // 
             // label1
@@ -272,7 +274,7 @@
             this.label1.Location = new System.Drawing.Point(-1, 32);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(50, 17);
+            this.label1.Size = new System.Drawing.Size(99, 36);
             this.label1.TabIndex = 0;
             this.label1.Text = "Họ tên:";
             // 
@@ -282,7 +284,7 @@
             this.DiaChiKH_TextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.DiaChiKH_TextBox.Name = "DiaChiKH_TextBox";
             this.DiaChiKH_TextBox.ReadOnly = true;
-            this.DiaChiKH_TextBox.Size = new System.Drawing.Size(250, 25);
+            this.DiaChiKH_TextBox.Size = new System.Drawing.Size(250, 42);
             this.DiaChiKH_TextBox.TabIndex = 5;
             // 
             // label2
@@ -291,7 +293,7 @@
             this.label2.Location = new System.Drawing.Point(-1, 68);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(30, 17);
+            this.label2.Size = new System.Drawing.Size(59, 36);
             this.label2.TabIndex = 2;
             this.label2.Text = "Sđt:";
             // 
@@ -301,7 +303,7 @@
             this.label3.Location = new System.Drawing.Point(-1, 107);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(50, 17);
+            this.label3.Size = new System.Drawing.Size(98, 36);
             this.label3.TabIndex = 4;
             this.label3.Text = "Địa chỉ:";
             // 
@@ -311,7 +313,7 @@
             this.SdtKH_TextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.SdtKH_TextBox.Name = "SdtKH_TextBox";
             this.SdtKH_TextBox.ReadOnly = true;
-            this.SdtKH_TextBox.Size = new System.Drawing.Size(250, 25);
+            this.SdtKH_TextBox.Size = new System.Drawing.Size(250, 42);
             this.SdtKH_TextBox.TabIndex = 3;
             // 
             // comboBox1
@@ -322,18 +324,18 @@
             this.comboBox1.Items.AddRange(new object[] {
             "Đăng ký tiêm chủng",
             "Đặt mua vắc xin"});
-            this.comboBox1.Location = new System.Drawing.Point(3, 49);
+            this.comboBox1.Location = new System.Drawing.Point(3, 137);
             this.comboBox1.Name = "comboBox1";
-            this.comboBox1.Size = new System.Drawing.Size(337, 25);
+            this.comboBox1.Size = new System.Drawing.Size(337, 44);
             this.comboBox1.TabIndex = 18;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 29);
+            this.label4.Location = new System.Drawing.Point(3, 98);
             this.label4.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(50, 17);
+            this.label4.Size = new System.Drawing.Size(100, 36);
             this.label4.TabIndex = 17;
             this.label4.Text = "Dịch vụ";
             // 
@@ -345,18 +347,18 @@
             this.comboBox2.Items.AddRange(new object[] {
             "Theo đợt",
             "Toàn bộ"});
-            this.comboBox2.Location = new System.Drawing.Point(3, 161);
+            this.comboBox2.Location = new System.Drawing.Point(346, 141);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(337, 25);
+            this.comboBox2.Size = new System.Drawing.Size(337, 44);
             this.comboBox2.TabIndex = 21;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(3, 141);
+            this.label9.Location = new System.Drawing.Point(346, 102);
             this.label9.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(101, 17);
+            this.label9.Size = new System.Drawing.Size(200, 36);
             this.label9.TabIndex = 20;
             this.label9.Text = "Loại thanh toán:";
             // 
@@ -382,17 +384,17 @@
             this.label10.Location = new System.Drawing.Point(4, 0);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(172, 21);
+            this.label10.Size = new System.Drawing.Size(270, 90);
             this.label10.TabIndex = 17;
             this.label10.Text = "Thông tin thanh toán";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(3, 85);
+            this.label11.Location = new System.Drawing.Point(346, 8);
             this.label11.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(132, 17);
+            this.label11.Size = new System.Drawing.Size(266, 36);
             this.label11.TabIndex = 22;
             this.label11.Text = "Hình thức thanh toán:";
             // 
@@ -405,9 +407,9 @@
             "Tiền mặt",
             "Thẻ Visa",
             "MoMo"});
-            this.comboBox3.Location = new System.Drawing.Point(3, 105);
+            this.comboBox3.Location = new System.Drawing.Point(346, 47);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(337, 25);
+            this.comboBox3.Size = new System.Drawing.Size(337, 44);
             this.comboBox3.TabIndex = 23;
             // 
             // label12
@@ -417,7 +419,7 @@
             this.label12.Location = new System.Drawing.Point(364, 39);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(142, 21);
+            this.label12.Size = new System.Drawing.Size(279, 45);
             this.label12.TabIndex = 17;
             this.label12.Text = "Thông tin vắc xin";
             // 
@@ -431,8 +433,27 @@
             this.Ngay});
             this.dataGridView1.Location = new System.Drawing.Point(363, 292);
             this.dataGridView1.Name = "dataGridView1";
+            this.dataGridView1.RowHeadersWidth = 82;
             this.dataGridView1.Size = new System.Drawing.Size(363, 155);
             this.dataGridView1.TabIndex = 23;
+            // 
+            // Dot
+            // 
+            this.Dot.HeaderText = "Đợt";
+            this.Dot.MinimumWidth = 10;
+            this.Dot.Name = "Dot";
+            // 
+            // SoTien
+            // 
+            this.SoTien.HeaderText = "Thành tiền";
+            this.SoTien.MinimumWidth = 10;
+            this.SoTien.Name = "SoTien";
+            // 
+            // Ngay
+            // 
+            this.Ngay.HeaderText = "Hạn thanh toán ";
+            this.Ngay.MinimumWidth = 10;
+            this.Ngay.Name = "Ngay";
             // 
             // label14
             // 
@@ -441,24 +462,9 @@
             this.label14.Location = new System.Drawing.Point(364, 261);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(202, 21);
+            this.label14.Size = new System.Drawing.Size(399, 45);
             this.label14.TabIndex = 24;
             this.label14.Text = "Thông tin đợt thanh toán";
-            // 
-            // Dot
-            // 
-            this.Dot.HeaderText = "Đợt";
-            this.Dot.Name = "Dot";
-            // 
-            // SoTien
-            // 
-            this.SoTien.HeaderText = "Thành tiền";
-            this.SoTien.Name = "SoTien";
-            // 
-            // Ngay
-            // 
-            this.Ngay.HeaderText = "Hạn thanh toán ";
-            this.Ngay.Name = "Ngay";
             // 
             // button1
             // 
@@ -471,7 +477,7 @@
             // 
             // ThanhToanGUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(14F, 36F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(738, 569);
             this.Controls.Add(this.button1);

@@ -25,7 +25,7 @@ namespace GUI.DAO
 
         public DataTable LayDSPhieuDKTC()
         {
-            DataTable result = DataProviderDAO.getInstance().ExecuteQuery(new SqlCommand("Select MAPDK, MAKH, THOIGIANDK, TINHTRANG from PHIEUDANGKYTIEMCHUNG"));
+            DataTable result = DataProviderDAO.getInstance().ExecuteQuery(new SqlCommand("Select MAVACXIN,TENVACXIN,LOAIVACXIN,HANGVACXIN from PHIEUDANGKYTIEMCHUNG"));
             return result;
         }
 
