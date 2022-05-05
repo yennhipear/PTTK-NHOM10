@@ -94,7 +94,7 @@ namespace GUI.GUI
             }
         }
 
-        private void GiamHo_Checkbox_CheckedChanged(object sender, EventArgs e)
+        private void DKChoNguoiThan_Checkbox_CheckedChanged(object sender, EventArgs e)
         {
            TTNgTiem_Panel.Enabled = DKNT_Checkbox.Checked;
         }

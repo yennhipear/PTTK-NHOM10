@@ -274,7 +274,7 @@
             this.DKNT_Checkbox.Size = new System.Drawing.Size(15, 14);
             this.DKNT_Checkbox.TabIndex = 13;
             this.DKNT_Checkbox.UseVisualStyleBackColor = true;
-            this.DKNT_Checkbox.CheckedChanged += new System.EventHandler(this.GiamHo_Checkbox_CheckedChanged);
+            this.DKNT_Checkbox.CheckedChanged += new System.EventHandler(this.DKChoNguoiThan_Checkbox_CheckedChanged);
             // 
             // TGDK_Picker
             // 

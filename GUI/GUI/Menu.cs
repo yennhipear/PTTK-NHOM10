@@ -47,7 +47,7 @@ namespace GUI
 
         private void button4_Click(object sender, EventArgs e)
         {
-            (new DSPhieuDKTC()).Show();
+            (new DSPhieuDKTCGUI()).Show();
         }
     }
 }
