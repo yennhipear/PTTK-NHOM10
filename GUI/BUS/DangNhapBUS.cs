@@ -6,8 +6,11 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using System.Data.SqlClient;
 using System.Security.Cryptography;
+using System.Configuration;
 
 using GUI.DAO;
+using GUI.DTO;
+using System.Data;
 
 namespace GUI.BUS
 {
@@ -26,85 +29,85 @@ namespace GUI.BUS
             }
         }
 
-        public void Login(String username, String password)
-        {
-            try
-            {
-                SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
-                builder.UserID = username;
-                builder.Password = password;
-                builder.DataSource = "local";
-                builder.InitialCatalog = "DB_HeThongDangKyTiemChung";
-                builder.IntegratedSecurity = false;
+        //public bool Login(String username, String password)
+        //{
+        //    try
+        //    {
+        //        SqlConnectionStringBuilder builder = new SqlConnectionStringBuilder();
+        //        builder.UserID = username;
+        //        builder.Password = password;
+        //        builder.DataSource = "local";
+        //        builder.InitialCatalog = "DB_HeThongDangKyTiemChung";
+        //        builder.IntegratedSecurity = false;
 
-                using (SqlConnection con = new SqlConnection(builder.ConnectionString))
-                {
-                    Menu f = new Menu();
-                    //this.Hide();
-                    f.StartPosition = FormStartPosition.CenterScreen;
-                    f.ShowDialog();
+        //        using (SqlConnection con = new SqlConnection(builder.ConnectionString))
+        //        {
+        //            KH_layThongTin(username, con);
+        //            return true;                    
+        //        }
+        //    }
+        //    catch (Exception ex)
+        //    {
+        //        MessageBox.Show(ex.Message);
+        //        return false;
+        //        //throw new Exception(ex.Message);
+        //    }
+        //}
 
-                    //this.Close();
-                }
-            }
-            catch (Exception ex)
-            {
-                throw new Exception(ex.Message);
-            }
-        }
-
-        public bool KH_username_pass_existed(String username, String password)
+        public bool Login(String type, String username, String password)
         {
             bool flag = false;
-            SqlConnection conn = new SqlConnection(@"Data Source = YENNHILE\SQLEXPRESS; Initial Catalog = DB_HeThongDangKyTiemChung; Integrated Security = True");
-            if (username != "" )
+            String table = (type == "NV") ? "NHANVIEN" : "KHACHHANG";
+            using (SqlConnection con = new SqlConnection(ConfigurationManager.ConnectionStrings["SQLConnectionString"].ConnectionString))
             {
-                conn.Open();
+                con.Open();
                 //kiem tra username co trong data hong
-                string sql = "select username, pass from KHACHHANG where USERNAME='" +username+ "' and PASS='" +password+ "'";
-                SqlCommand cmd = new SqlCommand(sql, conn);
-                SqlDataReader data = cmd.ExecuteReader();
+                SqlCommand cmd = new SqlCommand($"select * from {table} where USERNAME= @username and PASS= @pass", con);
+                cmd.Parameters.Add(new SqlParameter("@username", username));
+                cmd.Parameters.Add(new SqlParameter("@pass", password));
 
-                if (data.Read() == true)
+                DataTable result = new DataTable();
+                SqlDataAdapter sqlDaDH = new SqlDataAdapter(cmd);
+                sqlDaDH.Fill(result);
+
+                if (result.Rows.Count > 0)
                 {
-                    //Console.WriteLine(HashString(password)+"n");
+                    if (type == "KH")
+                        KH_layThongTin(result);
+                    else NV_layThongTin(result);
                     flag = true;
-                    return flag;
                 }
-            }
-            else
-            {
-                MessageBox.Show("Đăng nhập thất bại!");
-                flag = false;
-            }
+                else
+                {
+                    flag = false;
+                }
+                con.Close();
+            }           
             return flag;
         }
-
-        public bool NV_username_pass_existed(String username, String password)
+        
+        private void KH_layThongTin(DataTable queryResult)
         {
-            bool flag = false;
-            SqlConnection conn = new SqlConnection(@"Data Source = YENNHILE\SQLEXPRESS; Initial Catalog = DB_HeThongDangKyTiemChung; Integrated Security = True");
-            if (username != "")
-            {
-                conn.Open();
-                //kiem tra username co trong data hong
-                string sql = "select username, pass from NHANVIEN where USERNAME='" + username + "' and PASS='" + password + "'";
-                SqlCommand cmd = new SqlCommand(sql, conn);
-                SqlDataReader data = cmd.ExecuteReader();
-
-                if (data.Read() == true)
-                {
-                    //Console.WriteLine(HashString(password)+"n");
-                    flag = true;
-                    return flag;
-                }
-            }
-            else
-            {
-                MessageBox.Show("Đăng nhập thất bại!");
-                flag = false;
-            }
-            return flag;
+            CurrentUser.Ma = queryResult.Rows[0]["MAKH"].ToString();
+            CurrentUser.HoTen = queryResult.Rows[0]["HOTENKH"].ToString();
+            CurrentUser.DiaChi = queryResult.Rows[0]["DIACHIKH"].ToString();
+            CurrentUser.GioiTinh = queryResult.Rows[0]["GIOITINHKH"].ToString();
+            CurrentUser.Email = queryResult.Rows[0]["EMAILKH"].ToString();
+            CurrentUser.Cmnd = queryResult.Rows[0]["CMNDKH"].ToString();
+            CurrentUser.NgaySinh = DateTime.Parse(queryResult.Rows[0]["NGAYSINHKH"].ToString());
+            CurrentUser.Sdt = queryResult.Rows[0]["SDTKH"].ToString();
+            CurrentUser.Username = queryResult.Rows[0]["USERNAME"].ToString();
+            CurrentUser.isNhanVien = false;            
+        }
+         
+        private void NV_layThongTin(DataTable queryResult)
+        {
+            CurrentUser.Ma = queryResult.Rows[0]["MANHANVIEN"].ToString();
+            CurrentUser.HoTen = queryResult.Rows[0]["HOTEN"].ToString();
+            CurrentUser.Email = queryResult.Rows[0]["EMAIL"].ToString();
+            CurrentUser.Sdt = queryResult.Rows[0]["SDT"].ToString();
+            CurrentUser.Username = queryResult.Rows[0]["USERNAME"].ToString();
+            CurrentUser.isNhanVien = true;
         }
 
         // dont delete!

@@ -12,10 +12,10 @@ using GUI.DTO;
 
 namespace GUI.GUI
 {
-    public partial class XuLyPhieuDKTC : Form
+    public partial class XuLyPhieuDKTCGUI : Form
     {
         private XuLyPhieuDKTCBUS xuLyPhieuDKTCBUS;
-        public XuLyPhieuDKTC(String maPDK)
+        public XuLyPhieuDKTCGUI(String maPDK)
         {
             InitializeComponent();
             NgaySinhNT_Picker.CustomFormat = "dd/MM/yyyy";

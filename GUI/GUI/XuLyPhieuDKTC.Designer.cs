@@ -1,6 +1,6 @@
 ﻿namespace GUI.GUI
 {
-    partial class XuLyPhieuDKTC
+    partial class XuLyPhieuDKTCGUI
     {
         /// <summary>
         /// Required designer variable.

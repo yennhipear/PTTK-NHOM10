@@ -12,11 +12,11 @@ using GUI.BUS;
 
 namespace GUI.GUI
 {
-    public partial class DSPhieuDKTC : Form
+    public partial class DSPhieuDKTCGUI : Form
     {
         private XuLyPhieuDKTCBUS xuLyPhieuBUS;
 
-        public DSPhieuDKTC()
+        public DSPhieuDKTCGUI()
         {
             InitializeComponent();
             DSPhieuDKTC_Datagridview.AutoGenerateColumns = false;
@@ -32,7 +32,7 @@ namespace GUI.GUI
             if (e.RowIndex >= 0 && e.ColumnIndex == DSPhieuDKTC_Datagridview.Columns["ChiTiet"].Index)
             {
                 String maPDKTC = DSPhieuDKTC_Datagridview.Rows[e.RowIndex].Cells["MaPDK"].Value.ToString();
-                (new XuLyPhieuDKTC(maPDKTC)).Show();
+                (new XuLyPhieuDKTCGUI(maPDKTC)).Show();
             }
         }
 

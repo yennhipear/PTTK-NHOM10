@@ -197,7 +197,6 @@
             this.TTNgTiem_Panel.Name = "TTNgTiem_Panel";
             this.TTNgTiem_Panel.Size = new System.Drawing.Size(343, 313);
             this.TTNgTiem_Panel.TabIndex = 0;
-            this.TTNgTiem_Panel.Paint += new System.Windows.Forms.PaintEventHandler(this.TTNgTiem_Panel_Paint);
             // 
             // GioiTinh_ComboBox
             // 
@@ -275,7 +274,7 @@
             this.DKNT_Checkbox.Size = new System.Drawing.Size(22, 21);
             this.DKNT_Checkbox.TabIndex = 13;
             this.DKNT_Checkbox.UseVisualStyleBackColor = true;
-            this.DKNT_Checkbox.CheckedChanged += new System.EventHandler(this.GiamHo_Checkbox_CheckedChanged);
+            this.DKNT_Checkbox.CheckedChanged += new System.EventHandler(this.DKChoNguoiThan_Checkbox_CheckedChanged);
             // 
             // TGDK_Picker
             // 
@@ -336,7 +335,6 @@
             this.DSVacxinChon_Datagridview.RowsDefaultCellStyle = dataGridViewCellStyle2;
             this.DSVacxinChon_Datagridview.Size = new System.Drawing.Size(447, 389);
             this.DSVacxinChon_Datagridview.TabIndex = 14;
-            this.DSVacxinChon_Datagridview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DSVacxinChon_Datagridview_CellContentClick_1);
             // 
             // Chon_Ma
             // 

@@ -1,6 +1,6 @@
 ﻿namespace GUI.GUI
 {
-    partial class DSPhieuDKTC
+    partial class DSPhieuDKTCGUI
     {
         /// <summary>
         /// Required designer variable.

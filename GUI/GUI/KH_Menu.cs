@@ -12,9 +12,9 @@ using System.Windows.Forms;
 
 namespace GUI
 {
-    public partial class Menu : Form
+    public partial class KH_Menu : Form
     {
-        public Menu()
+        public KH_Menu()
         {
             InitializeComponent();
         }
@@ -24,30 +24,14 @@ namespace GUI
             (new DSVacxinGUI()).Show();
         }
 
-        private void button2_Click(object sender, EventArgs e)
-        {
-            (new DangKyLichRanhGUI()).Show();
-        }
-
-        private void button3_Click(object sender, EventArgs e)
-        {
-            (new XepLichLamViecGUI()).Show();
-        }
-
         private void btnDatMuaVacxin_Click(object sender, EventArgs e)
         {
             (new DatMuaVacxinGUI()).Show();
         }
 
-    
-        private void Menu_Load(object sender, EventArgs e)
-        {
-
-        }
-
         private void button4_Click(object sender, EventArgs e)
         {
-            (new DSPhieuDKTC()).Show();
+            (new DSPhieuDKTCGUI()).Show();
         }
     }
 }

@@ -68,7 +68,7 @@
     <Compile Include="DTO\LichRanhDTO.cs" />
     <Compile Include="DTO\VacxinNgoaiDTO.cs" />
     <Compile Include="DTO\PhieuDangKyTiemChungDTO.cs" />
-    <Compile Include="DTO\UserCurrentDTO.cs" />
+    <Compile Include="DTO\CurrentUser.cs" />
     <Compile Include="GUI\DangKyLichRanhGUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -93,23 +93,14 @@
     <Compile Include="GUI\DangKyTiemChungGUI.Designer.cs">
       <DependentUpon>DangKyTiemChungGUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\NVDangNhapGUI.cs">
+    <Compile Include="GUI\DangNhapGUI.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\NVDangNhapGUI.Designer.cs">
-      <DependentUpon>NVDangNhapGUI.cs</DependentUpon>
+    <Compile Include="GUI\DangNhapGUI.Designer.cs">
+      <DependentUpon>DangNhapGUI.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\KHDangNhapGUI.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="GUI\KHDangNhapGUI.Designer.cs">
-      <DependentUpon>KHDangNhapGUI.cs</DependentUpon>
-    </Compile>
-    <EmbeddedResource Include="GUI\NVDangNhapGUI.resx">
-      <DependentUpon>NVDangNhapGUI.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="GUI\KHDangNhapGUI.resx">
-      <DependentUpon>KHDangNhapGUI.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\DangNhapGUI.resx">
+      <DependentUpon>DangNhapGUI.cs</DependentUpon>
     </EmbeddedResource>
     <Compile Include="GUI\DatMuaVacxinGUI.cs">
       <SubType>Form</SubType>
@@ -153,18 +144,24 @@
     <Compile Include="GUI\DuyetDSDatMua.Designer.cs">
       <DependentUpon>DuyetDSDatMua.cs</DependentUpon>
     </Compile>
-    <Compile Include="GUI\Menu.cs">
+    <Compile Include="GUI\KH_Menu.cs">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="GUI\Menu.Designer.cs">
-      <DependentUpon>Menu.cs</DependentUpon>
+    <Compile Include="GUI\KH_Menu.Designer.cs">
+      <DependentUpon>KH_Menu.cs</DependentUpon>
     </Compile>
     <EmbeddedResource Include="GUI\DSPhieuDKTC.resx">
       <DependentUpon>DSPhieuDKTC.cs</DependentUpon>
     </EmbeddedResource>
-    <EmbeddedResource Include="GUI\Menu.resx">
-      <DependentUpon>Menu.cs</DependentUpon>
+    <EmbeddedResource Include="GUI\KH_Menu.resx">
+      <DependentUpon>KH_Menu.cs</DependentUpon>
     </EmbeddedResource>
+    <Compile Include="GUI\NV_Menu.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="GUI\NV_Menu.Designer.cs">
+      <DependentUpon>NV_Menu.cs</DependentUpon>
+    </Compile>
     <Compile Include="GUI\XacNhanDatMuaGUI.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -211,6 +208,9 @@
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\DuyetDSDatMua.resx">
       <DependentUpon>DuyetDSDatMua.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="GUI\NV_Menu.resx">
+      <DependentUpon>NV_Menu.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="GUI\XacNhanDatMuaGUI.resx">
       <DependentUpon>XacNhanDatMuaGUI.cs</DependentUpon>

@@ -8,7 +8,7 @@ using System.Data.SqlClient;
 
 namespace GUI.DTO
 {
-    class VacxinNgoaiDTO
+    public class VacxinNgoaiDTO
     {
         public String MaVacxinNgoai { get; set; }
         public String TenVacxinNgoai { get; set; }
