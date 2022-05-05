@@ -13,9 +13,11 @@ namespace GUI.GUI
 {
     public partial class ThanhToanGUI : Form
     {
-        public ThanhToanGUI(DataGridView dsChon, long TongTien, String dichVu)
+        String MaPhieu;
+        public ThanhToanGUI(DataGridView dsChon, long TongTien, String dichVu, String maPhieu)
         {
             InitializeComponent();
+            MaPhieu = maPhieu;
             // Copy data từ datagridview được truyền vào vô datagridview của form này         
             foreach (DataGridViewColumn dgvc in dsChon.Columns)
             {
@@ -42,6 +44,11 @@ namespace GUI.GUI
             GioiTinhKH_ComboBox.Text = CurrentUser.GioiTinh;
             DichVu_Combobox.Text = (dichVu == "DKTC" ? "Đăng ký tiêm chủng" : "Đặt mua vắc xin");
         }
-        
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+            MessageBox.Show("Đăng ký thành công. Mã phiếu đăng ký của bạn: " + MaPhieu, "Thành công", MessageBoxButtons.OK, MessageBoxIcon.Information);
+            this.Close();
+        }
     }
 }
