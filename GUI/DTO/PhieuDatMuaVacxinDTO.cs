@@ -16,7 +16,7 @@ namespace GUI.DTO
         public String DiaChiKH { get; set; }
         public String GioiTinhKH { get; set; }
         public String SDTKH { get; set; }
-        public string EmailKH { get; set; }
+        public String EmailKH { get; set; }
         public DateTime NgayDM { get; set; }
         public DateTime NgSinhKH { get; set; }
         public List<CTPHIEUDMVX> DsCT { get; set; }

@@ -61,10 +61,10 @@ namespace GUI.GUI
             {
              
                 string maVacxin = row.Cells["MaVX"].Value.ToString();
-                //string SoLuong = row.Cells["soluong"].Value.ToString();
+                string SoLuong = row.Cells["soluong"].Value.ToString();
 
-                //int SL = Int32.Parse(SoLuong);
-                int SL = Convert.ToInt32(row.Cells["soluong"].Value);
+                int SL = Int32.Parse(SoLuong);
+                //int SL = Convert.ToInt32(row.Cells["soluong"].Value);
 
                 CTPHIEUDMVX ct = new CTPHIEUDMVX(maVacxin, SL);
                 DsCT.Add(ct);
@@ -78,7 +78,7 @@ namespace GUI.GUI
             if (newID > 0)
             {
                 MessageBox.Show("Đặt mua thành công");
-                (new ThanhToanGUI(DSVacxinDaChon2_DataGridView, long.Parse(ThanhTien_Label.Text), "DMVX", newID.ToString())).Show();
+               // (new ThanhToanGUI(DSVacxinDaChon2_DataGridView, long.Parse(ThanhTien_Label.Text), "DMVX", newID.ToString())).Show();
                 this.Close();
             }
             else

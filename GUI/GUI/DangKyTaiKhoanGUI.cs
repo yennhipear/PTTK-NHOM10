@@ -104,7 +104,7 @@ namespace GUI
             }
             if (!checkAccount(password))
             {
-                MessageBox.Show("Vui lòng nhập tên tài khoản dài 6-24 kí tự, với các kí tự là chữ cái viết hoa, viết thường và số!");
+                MessageBox.Show("Vui lòng nhập mật khẩu dài 6-24 kí tự, với các kí tự là chữ cái viết hoa, viết thường và số!");
                 return;
             }
             if (confirmPass != password)
@@ -155,6 +155,11 @@ namespace GUI
             {
                 MessageBox.Show("Tên tài khoản đã được đăng kí!");
             }
+        }
+
+        private void tb_pass_TextChanged(object sender, EventArgs e)
+        {
+
         }
     }
 }
