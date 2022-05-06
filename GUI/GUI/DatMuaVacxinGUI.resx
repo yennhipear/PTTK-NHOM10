@@ -129,10 +129,14 @@
     <value>TopCenter</value>
   </data>
   <data name="label1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>79, 0</value>
+    <value>53, 0</value>
+  </data>
+  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
+  <data name="label1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="label1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>443, 32</value>
+    <value>290, 21</value>
   </data>
   <data name="label1.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -159,10 +163,13 @@
     <value>Segoe UI, 12pt, style=Bold</value>
   </data>
   <data name="label2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>88, 316</value>
+    <value>59, 205</value>
+  </data>
+  <data name="label2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="label2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>408, 32</value>
+    <value>265, 21</value>
   </data>
   <data name="label2.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -240,13 +247,16 @@
     <value>8</value>
   </data>
   <data name="DSVacXinHT_DataGridView.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 360</value>
+    <value>0, 234</value>
+  </data>
+  <data name="DSVacXinHT_DataGridView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="DSVacXinHT_DataGridView.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>62</value>
   </data>
   <data name="DSVacXinHT_DataGridView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>553, 251</value>
+    <value>369, 163</value>
   </data>
   <data name="DSVacXinHT_DataGridView.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -321,13 +331,16 @@
     <value>8</value>
   </data>
   <data name="DSVacxinDaChon_DataGridView.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 45</value>
+    <value>3, 29</value>
+  </data>
+  <data name="DSVacxinDaChon_DataGridView.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="DSVacxinDaChon_DataGridView.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>62</value>
   </data>
   <data name="DSVacxinDaChon_DataGridView.Size" type="System.Drawing.Size, System.Drawing">
-    <value>545, 251</value>
+    <value>363, 163</value>
   </data>
   <data name="DSVacxinDaChon_DataGridView.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -348,10 +361,13 @@
     <value>Segoe UI, 10pt</value>
   </data>
   <data name="MoTa_ND_Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>94, 159</value>
+    <value>63, 103</value>
+  </data>
+  <data name="MoTa_ND_Label.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="MoTa_ND_Label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>460, 136</value>
+    <value>307, 88</value>
   </data>
   <data name="MoTa_ND_Label.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -378,10 +394,13 @@
     <value>Segoe UI, 10pt</value>
   </data>
   <data name="HangSX_ND_Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>111, 55</value>
+    <value>74, 36</value>
+  </data>
+  <data name="HangSX_ND_Label.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="HangSX_ND_Label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>438, 84</value>
+    <value>292, 55</value>
   </data>
   <data name="HangSX_ND_Label.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -411,10 +430,13 @@
     <value>Segoe UI, 10pt, style=Bold</value>
   </data>
   <data name="MoTa_Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 148</value>
+    <value>3, 96</value>
+  </data>
+  <data name="MoTa_Label.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="MoTa_Label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>79, 28</value>
+    <value>56, 19</value>
   </data>
   <data name="MoTa_Label.TabIndex" type="System.Int32, mscorlib">
     <value>3</value>
@@ -444,10 +466,13 @@
     <value>Segoe UI, 10pt, style=Bold</value>
   </data>
   <data name="HangSX_Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>4, 55</value>
+    <value>3, 36</value>
+  </data>
+  <data name="HangSX_Label.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="HangSX_Label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>97, 28</value>
+    <value>70, 19</value>
   </data>
   <data name="HangSX_Label.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -477,10 +502,13 @@
     <value>Segoe UI, 12pt, style=Bold</value>
   </data>
   <data name="label4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>136, 14</value>
+    <value>91, 9</value>
+  </data>
+  <data name="label4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="label4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>301, 32</value>
+    <value>201, 21</value>
   </data>
   <data name="label4.TabIndex" type="System.Int32, mscorlib">
     <value>1</value>
@@ -504,10 +532,13 @@
     <value>True</value>
   </data>
   <data name="label3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>112, 14</value>
+    <value>75, 9</value>
+  </data>
+  <data name="label3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="label3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>0, 20</value>
+    <value>0, 13</value>
   </data>
   <data name="label3.TabIndex" type="System.Int32, mscorlib">
     <value>0</value>
@@ -525,10 +556,13 @@
     <value>5</value>
   </data>
   <data name="panel1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>3, 302</value>
+    <value>2, 196</value>
+  </data>
+  <data name="panel1.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="panel1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>554, 306</value>
+    <value>369, 199</value>
   </data>
   <data name="panel1.TabIndex" type="System.Int32, mscorlib">
     <value>4</value>
@@ -588,16 +622,19 @@
     <value>8</value>
   </data>
   <data name="GoiVacxinHT_Datagridview.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 45</value>
+    <value>0, 29</value>
+  </data>
+  <data name="GoiVacxinHT_Datagridview.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="GoiVacxinHT_Datagridview.MinimumSize" type="System.Drawing.Size, System.Drawing">
-    <value>0, 100</value>
+    <value>0, 65</value>
   </data>
   <data name="GoiVacxinHT_Datagridview.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>62</value>
   </data>
   <data name="GoiVacxinHT_Datagridview.Size" type="System.Drawing.Size, System.Drawing">
-    <value>550, 251</value>
+    <value>367, 163</value>
   </data>
   <data name="GoiVacxinHT_Datagridview.TabIndex" type="System.Int32, mscorlib">
     <value>2</value>
@@ -615,10 +652,13 @@
     <value>0</value>
   </data>
   <data name="panel2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>12, 12</value>
+    <value>8, 8</value>
+  </data>
+  <data name="panel2.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="panel2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>554, 608</value>
+    <value>369, 395</value>
   </data>
   <data name="panel2.TabIndex" type="System.Int32, mscorlib">
     <value>5</value>
@@ -642,10 +682,13 @@
     <value>Segoe UI, 10pt, style=Bold</value>
   </data>
   <data name="label9.Location" type="System.Drawing.Point, System.Drawing">
-    <value>-1, 18</value>
+    <value>-1, 12</value>
+  </data>
+  <data name="label9.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="label9.Size" type="System.Drawing.Size, System.Drawing">
-    <value>146, 28</value>
+    <value>102, 19</value>
   </data>
   <data name="label9.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -665,7 +708,6 @@
   <data name="&gt;&gt;label9.ZOrder" xml:space="preserve">
     <value>2</value>
   </data>
-  <assembly alias="System.Windows.Forms" name="System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089" />
   <data name="DatVacxinKhac_Button.BackgroundImageLayout" type="System.Windows.Forms.ImageLayout, System.Windows.Forms">
     <value>Center</value>
   </data>
@@ -676,10 +718,13 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="DatVacxinKhac_Button.Location" type="System.Drawing.Point, System.Drawing">
-    <value>559, 7</value>
+    <value>373, 5</value>
+  </data>
+  <data name="DatVacxinKhac_Button.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="DatVacxinKhac_Button.Size" type="System.Drawing.Size, System.Drawing">
-    <value>252, 50</value>
+    <value>168, 32</value>
   </data>
   <data name="DatVacxinKhac_Button.TabIndex" type="System.Int32, mscorlib">
     <value>7</value>
@@ -709,10 +754,13 @@
     <value>Segoe UI Semibold, 10pt, style=Bold</value>
   </data>
   <data name="DatMua_Button.Location" type="System.Drawing.Point, System.Drawing">
-    <value>859, 7</value>
+    <value>573, 5</value>
+  </data>
+  <data name="DatMua_Button.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="DatMua_Button.Size" type="System.Drawing.Size, System.Drawing">
-    <value>254, 50</value>
+    <value>169, 32</value>
   </data>
   <data name="DatMua_Button.TabIndex" type="System.Int32, mscorlib">
     <value>8</value>
@@ -736,10 +784,13 @@
     <value>Segoe UI, 18pt, style=Bold</value>
   </data>
   <data name="ThanhTien_Label.Location" type="System.Drawing.Point, System.Drawing">
-    <value>144, 0</value>
+    <value>96, 0</value>
+  </data>
+  <data name="ThanhTien_Label.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="ThanhTien_Label.Size" type="System.Drawing.Size, System.Drawing">
-    <value>409, 53</value>
+    <value>273, 34</value>
   </data>
   <data name="ThanhTien_Label.TabIndex" type="System.Int32, mscorlib">
     <value>9</value>
@@ -749,6 +800,9 @@
   </data>
   <data name="ThanhTien_Label.TextAlign" type="System.Drawing.ContentAlignment, System.Drawing">
     <value>MiddleLeft</value>
+  </data>
+  <data name="ThanhTien_Label.Visible" type="System.Boolean, mscorlib">
+    <value>False</value>
   </data>
   <data name="&gt;&gt;ThanhTien_Label.Name" xml:space="preserve">
     <value>ThanhTien_Label</value>
@@ -769,10 +823,13 @@
     <value>Segoe UI, 12pt, style=Bold</value>
   </data>
   <data name="label5.Location" type="System.Drawing.Point, System.Drawing">
-    <value>93, 0</value>
+    <value>62, 0</value>
+  </data>
+  <data name="label5.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 0, 2, 0</value>
   </data>
   <data name="label5.Size" type="System.Drawing.Size, System.Drawing">
-    <value>381, 32</value>
+    <value>250, 21</value>
   </data>
   <data name="label5.TabIndex" type="System.Int32, mscorlib">
     <value>6</value>
@@ -793,10 +850,13 @@
     <value>0</value>
   </data>
   <data name="panel3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>572, 12</value>
+    <value>381, 8</value>
+  </data>
+  <data name="panel3.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="panel3.Size" type="System.Drawing.Size, System.Drawing">
-    <value>554, 608</value>
+    <value>369, 395</value>
   </data>
   <data name="panel3.TabIndex" type="System.Int32, mscorlib">
     <value>10</value>
@@ -814,10 +874,13 @@
     <value>1</value>
   </data>
   <data name="panel4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>16, 626</value>
+    <value>11, 407</value>
+  </data>
+  <data name="panel4.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="panel4.Size" type="System.Drawing.Size, System.Drawing">
-    <value>1113, 67</value>
+    <value>742, 44</value>
   </data>
   <data name="panel4.TabIndex" type="System.Int32, mscorlib">
     <value>11</value>
@@ -838,10 +901,13 @@
     <value>True</value>
   </metadata>
   <data name="$this.AutoScaleDimensions" type="System.Drawing.SizeF, System.Drawing">
-    <value>9, 20</value>
+    <value>6, 13</value>
   </data>
   <data name="$this.ClientSize" type="System.Drawing.Size, System.Drawing">
-    <value>1134, 700</value>
+    <value>756, 455</value>
+  </data>
+  <data name="$this.Margin" type="System.Windows.Forms.Padding, System.Windows.Forms">
+    <value>2, 2, 2, 2</value>
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>DatMuaVacxin</value>
