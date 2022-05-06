@@ -71,9 +71,9 @@
             // 
             this.ThanhTien_Label.Font = new System.Drawing.Font("Segoe UI", 26.25F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.ThanhTien_Label.ForeColor = System.Drawing.Color.Maroon;
-            this.ThanhTien_Label.Location = new System.Drawing.Point(523, 460);
+            this.ThanhTien_Label.Location = new System.Drawing.Point(523, 462);
             this.ThanhTien_Label.Name = "ThanhTien_Label";
-            this.ThanhTien_Label.Size = new System.Drawing.Size(100, 23);
+            this.ThanhTien_Label.Size = new System.Drawing.Size(203, 42);
             this.ThanhTien_Label.TabIndex = 15;
             this.ThanhTien_Label.Text = "label5";
             this.ThanhTien_Label.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
@@ -85,7 +85,7 @@
             this.label8.Font = new System.Drawing.Font("Segoe UI", 12F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.label8.Location = new System.Drawing.Point(359, 481);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(237, 32);
+            this.label8.Size = new System.Drawing.Size(158, 21);
             this.label8.TabIndex = 14;
             this.label8.Text = "Thành tiền đợt này:";
             // 
@@ -96,7 +96,7 @@
             this.label6.Location = new System.Drawing.Point(308, 7);
             this.label6.Margin = new System.Windows.Forms.Padding(5, 0, 5, 0);
             this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(173, 40);
+            this.label6.Size = new System.Drawing.Size(113, 25);
             this.label6.TabIndex = 18;
             this.label6.Text = "Thanh toán";
             // 
@@ -131,7 +131,7 @@
             "Khác"});
             this.GioiTinhKH_ComboBox.Location = new System.Drawing.Point(89, 183);
             this.GioiTinhKH_ComboBox.Name = "GioiTinhKH_ComboBox";
-            this.GioiTinhKH_ComboBox.Size = new System.Drawing.Size(250, 36);
+            this.GioiTinhKH_ComboBox.Size = new System.Drawing.Size(250, 25);
             this.GioiTinhKH_ComboBox.TabIndex = 16;
             // 
             // label13
@@ -139,7 +139,7 @@
             this.label13.AutoSize = true;
             this.label13.Location = new System.Drawing.Point(-1, 186);
             this.label13.Name = "label13";
-            this.label13.Size = new System.Drawing.Size(91, 28);
+            this.label13.Size = new System.Drawing.Size(59, 17);
             this.label13.TabIndex = 15;
             this.label13.Text = "Giới tính:";
             // 
@@ -153,7 +153,7 @@
             this.NgaySinhKH_Picker.MinDate = new System.DateTime(2000, 1, 1, 0, 0, 0, 0);
             this.NgaySinhKH_Picker.Name = "NgaySinhKH_Picker";
             this.NgaySinhKH_Picker.ShowCheckBox = true;
-            this.NgaySinhKH_Picker.Size = new System.Drawing.Size(250, 33);
+            this.NgaySinhKH_Picker.Size = new System.Drawing.Size(250, 25);
             this.NgaySinhKH_Picker.TabIndex = 9;
             this.NgaySinhKH_Picker.Value = new System.DateTime(2022, 4, 15, 0, 0, 0, 0);
             // 
@@ -164,7 +164,7 @@
             this.label7.Location = new System.Drawing.Point(-2, 0);
             this.label7.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(263, 32);
+            this.label7.Size = new System.Drawing.Size(177, 21);
             this.label7.TabIndex = 12;
             this.label7.Text = "Thông tin khách hàng";
             // 
@@ -174,7 +174,7 @@
             this.label5.Location = new System.Drawing.Point(-1, 147);
             this.label5.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(103, 28);
+            this.label5.Size = new System.Drawing.Size(69, 17);
             this.label5.TabIndex = 8;
             this.label5.Text = "Ngày sinh:";
             // 
@@ -184,7 +184,7 @@
             this.HoTenKH_TextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.HoTenKH_TextBox.Name = "HoTenKH_TextBox";
             this.HoTenKH_TextBox.ReadOnly = true;
-            this.HoTenKH_TextBox.Size = new System.Drawing.Size(250, 33);
+            this.HoTenKH_TextBox.Size = new System.Drawing.Size(250, 25);
             this.HoTenKH_TextBox.TabIndex = 1;
             // 
             // label1
@@ -193,7 +193,7 @@
             this.label1.Location = new System.Drawing.Point(-1, 32);
             this.label1.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(75, 28);
+            this.label1.Size = new System.Drawing.Size(50, 17);
             this.label1.TabIndex = 0;
             this.label1.Text = "Họ tên:";
             // 
@@ -203,7 +203,7 @@
             this.DiaChiKH_TextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.DiaChiKH_TextBox.Name = "DiaChiKH_TextBox";
             this.DiaChiKH_TextBox.ReadOnly = true;
-            this.DiaChiKH_TextBox.Size = new System.Drawing.Size(250, 33);
+            this.DiaChiKH_TextBox.Size = new System.Drawing.Size(250, 25);
             this.DiaChiKH_TextBox.TabIndex = 5;
             // 
             // label2
@@ -212,7 +212,7 @@
             this.label2.Location = new System.Drawing.Point(-1, 68);
             this.label2.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(46, 28);
+            this.label2.Size = new System.Drawing.Size(30, 17);
             this.label2.TabIndex = 2;
             this.label2.Text = "Sđt:";
             // 
@@ -222,7 +222,7 @@
             this.label3.Location = new System.Drawing.Point(-1, 107);
             this.label3.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(75, 28);
+            this.label3.Size = new System.Drawing.Size(50, 17);
             this.label3.TabIndex = 4;
             this.label3.Text = "Địa chỉ:";
             // 
@@ -232,7 +232,7 @@
             this.SdtKH_TextBox.Margin = new System.Windows.Forms.Padding(4, 5, 4, 5);
             this.SdtKH_TextBox.Name = "SdtKH_TextBox";
             this.SdtKH_TextBox.ReadOnly = true;
-            this.SdtKH_TextBox.Size = new System.Drawing.Size(250, 33);
+            this.SdtKH_TextBox.Size = new System.Drawing.Size(250, 25);
             this.SdtKH_TextBox.TabIndex = 3;
             // 
             // DichVu_Combobox
@@ -244,18 +244,18 @@
             this.DichVu_Combobox.Items.AddRange(new object[] {
             "Đăng ký tiêm chủng",
             "Đặt mua vắc xin"});
-            this.DichVu_Combobox.Location = new System.Drawing.Point(3, 71);
+            this.DichVu_Combobox.Location = new System.Drawing.Point(3, 49);
             this.DichVu_Combobox.Name = "DichVu_Combobox";
-            this.DichVu_Combobox.Size = new System.Drawing.Size(337, 36);
+            this.DichVu_Combobox.Size = new System.Drawing.Size(337, 25);
             this.DichVu_Combobox.TabIndex = 18;
             // 
             // label4
             // 
             this.label4.AutoSize = true;
-            this.label4.Location = new System.Drawing.Point(3, 40);
+            this.label4.Location = new System.Drawing.Point(3, 29);
             this.label4.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
             this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(77, 28);
+            this.label4.Size = new System.Drawing.Size(50, 17);
             this.label4.TabIndex = 17;
             this.label4.Text = "Dịch vụ";
             // 
@@ -263,23 +263,22 @@
             // 
             this.comboBox2.BackColor = System.Drawing.Color.White;
             this.comboBox2.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox2.Enabled = false;
             this.comboBox2.FormattingEnabled = true;
             this.comboBox2.Items.AddRange(new object[] {
             "Theo đợt",
             "Toàn bộ"});
-            this.comboBox2.Location = new System.Drawing.Point(346, 39);
+            this.comboBox2.Location = new System.Drawing.Point(3, 153);
             this.comboBox2.Name = "comboBox2";
-            this.comboBox2.Size = new System.Drawing.Size(337, 36);
+            this.comboBox2.Size = new System.Drawing.Size(337, 25);
             this.comboBox2.TabIndex = 21;
             // 
             // label9
             // 
             this.label9.AutoSize = true;
-            this.label9.Location = new System.Drawing.Point(346, 8);
+            this.label9.Location = new System.Drawing.Point(3, 133);
             this.label9.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(152, 28);
+            this.label9.Size = new System.Drawing.Size(101, 17);
             this.label9.TabIndex = 20;
             this.label9.Text = "Loại thanh toán:";
             // 
@@ -305,17 +304,17 @@
             this.label10.Location = new System.Drawing.Point(4, 0);
             this.label10.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label10.Name = "label10";
-            this.label10.Size = new System.Drawing.Size(257, 32);
+            this.label10.Size = new System.Drawing.Size(172, 21);
             this.label10.TabIndex = 17;
             this.label10.Text = "Thông tin thanh toán";
             // 
             // label11
             // 
             this.label11.AutoSize = true;
-            this.label11.Location = new System.Drawing.Point(3, 118);
+            this.label11.Location = new System.Drawing.Point(3, 81);
             this.label11.Margin = new System.Windows.Forms.Padding(3, 8, 3, 0);
             this.label11.Name = "label11";
-            this.label11.Size = new System.Drawing.Size(201, 28);
+            this.label11.Size = new System.Drawing.Size(132, 17);
             this.label11.TabIndex = 22;
             this.label11.Text = "Hình thức thanh toán:";
             // 
@@ -323,15 +322,14 @@
             // 
             this.comboBox3.BackColor = System.Drawing.Color.White;
             this.comboBox3.DropDownStyle = System.Windows.Forms.ComboBoxStyle.DropDownList;
-            this.comboBox3.Enabled = false;
             this.comboBox3.FormattingEnabled = true;
             this.comboBox3.Items.AddRange(new object[] {
             "Tiền mặt",
             "Thẻ Visa",
             "MoMo"});
-            this.comboBox3.Location = new System.Drawing.Point(3, 149);
+            this.comboBox3.Location = new System.Drawing.Point(3, 101);
             this.comboBox3.Name = "comboBox3";
-            this.comboBox3.Size = new System.Drawing.Size(337, 36);
+            this.comboBox3.Size = new System.Drawing.Size(337, 25);
             this.comboBox3.TabIndex = 23;
             // 
             // label12
@@ -341,7 +339,7 @@
             this.label12.Location = new System.Drawing.Point(364, 39);
             this.label12.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label12.Name = "label12";
-            this.label12.Size = new System.Drawing.Size(213, 32);
+            this.label12.Size = new System.Drawing.Size(142, 21);
             this.label12.TabIndex = 17;
             this.label12.Text = "Thông tin vắc xin";
             // 
@@ -384,7 +382,7 @@
             this.label14.Location = new System.Drawing.Point(364, 261);
             this.label14.Margin = new System.Windows.Forms.Padding(4, 0, 4, 0);
             this.label14.Name = "label14";
-            this.label14.Size = new System.Drawing.Size(303, 32);
+            this.label14.Size = new System.Drawing.Size(202, 21);
             this.label14.TabIndex = 24;
             this.label14.Text = "Thông tin đợt thanh toán";
             // 
@@ -414,12 +412,12 @@
             this.DSVacxinChon_Datagridview.RowHeadersWidth = 62;
             dataGridViewCellStyle2.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.DSVacxinChon_Datagridview.RowsDefaultCellStyle = dataGridViewCellStyle2;
-            this.DSVacxinChon_Datagridview.Size = new System.Drawing.Size(240, 150);
+            this.DSVacxinChon_Datagridview.Size = new System.Drawing.Size(363, 182);
             this.DSVacxinChon_Datagridview.TabIndex = 26;
             // 
             // ThanhToanGUI
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(11F, 28F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(7F, 17F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(750, 569);
             this.Controls.Add(this.DSVacxinChon_Datagridview);
