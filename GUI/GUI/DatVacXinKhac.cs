@@ -33,7 +33,7 @@ namespace GUI.GUI
             LoaiVXN = txtLoaiVacxin.Text;
             HangVXN = txtHangVacxin.Text;
 
-            string SoLuong = numericSoLuong.ToString();
+            string SoLuong = numericSoLuong.Value.ToString();
 
             if (String.IsNullOrEmpty(TenVXN) || String.IsNullOrEmpty(LoaiVXN)
                     || String.IsNullOrEmpty(HangVXN))
