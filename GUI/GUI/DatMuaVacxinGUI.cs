@@ -178,8 +178,13 @@ namespace GUI.GUI
 
 
         private void DatMua_Button_Click(object sender, EventArgs e)
-        { 
-            (new XacNhanDatMuaGUI(DSVacxinDaChon_DataGridView,ThanhTien_Label.Text)).Show();
+        {
+            if (DSVacxinDaChon_DataGridView.Rows.Count == 0)
+            {
+                MessageBox.Show("Vui lòng chọn ít nhất một gói vắc xin.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                return;
+            }
+            (new XacNhanDatMuaGUI(DSVacxinDaChon_DataGridView, ThanhTien_Label.Text)).Show();
             this.Close();
 
         }
@@ -195,6 +200,16 @@ namespace GUI.GUI
         }
 
         private void DatMuaVacxinGUI_Load(object sender, EventArgs e)
+        {
+
+        }
+
+        private void GoiVacxinHT_Datagridview_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void DSVacxinDaChon_DataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

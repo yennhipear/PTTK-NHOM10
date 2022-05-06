@@ -186,6 +186,7 @@ namespace GUI.GUI
             this.DSVacxinDaChon_DataGridView.Name = "DSVacxinDaChon_DataGridView";
             this.DSVacxinDaChon_DataGridView.RowHeadersVisible = false;
             this.DSVacxinDaChon_DataGridView.RowTemplate.Height = 28;
+            this.DSVacxinDaChon_DataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DSVacxinDaChon_DataGridView_CellContentClick);
             // 
             // MaVX
             // 
@@ -296,6 +297,7 @@ namespace GUI.GUI
             this.GoiVacxinHT_Datagridview.RowHeadersVisible = false;
             dataGridViewCellStyle5.Font = new System.Drawing.Font("Segoe UI", 9.75F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.GoiVacxinHT_Datagridview.RowsDefaultCellStyle = dataGridViewCellStyle5;
+            this.GoiVacxinHT_Datagridview.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.GoiVacxinHT_Datagridview_CellContentClick);
             // 
             // dataGridViewTextBoxColumn3
             // 

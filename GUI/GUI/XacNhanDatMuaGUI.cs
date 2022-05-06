@@ -42,10 +42,27 @@ namespace GUI.GUI
 
             TGDM_Picker.Value = DateTime.Today;
 
+            DSVacxinDaChon2_DataGridView.CellClick += DSDC_XoaVacxin_Click;
+        }
+
+        public void DSDC_XoaVacxin_Click(Object sender, DataGridViewCellEventArgs e)
+        {
+            if (e.ColumnIndex == DSVacxinDaChon2_DataGridView.Columns["XoaVacXin"].Index && e.RowIndex >= 0)
+            {
+                DSVacxinDaChon2_DataGridView.Rows.RemoveAt(e.RowIndex);
+            }
         }
 
         private void Xacnhan_Button_Click(object sender, EventArgs e)
         {
+            if (DSVacxinDaChon2_DataGridView.Rows.Count == 0)
+            {
+                MessageBox.Show("Vui lòng chọn ít nhất một gói vắc xin.", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Information);
+                this.Close();
+                DatMuaVacxinGUI datmua = new DatMuaVacxinGUI();
+                datmua.Show();
+                return;
+            }
 
             String MaKH, TinhTrang;
             DateTime NgayDM;
@@ -91,6 +108,11 @@ namespace GUI.GUI
         }
 
         private void label7_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void DSVacxinDaChon2_DataGridView_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
 
         }

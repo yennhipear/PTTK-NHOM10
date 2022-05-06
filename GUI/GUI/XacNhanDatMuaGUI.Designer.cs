@@ -29,12 +29,13 @@ namespace GUI.GUI
         /// </summary>
         private void InitializeComponent()
         {
-            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle8 = new System.Windows.Forms.DataGridViewCellStyle();
+            System.Windows.Forms.DataGridViewCellStyle dataGridViewCellStyle1 = new System.Windows.Forms.DataGridViewCellStyle();
             this.TTNgTiem_Panel = new System.Windows.Forms.Panel();
             this.GioiTinh_TextBox = new System.Windows.Forms.TextBox();
             this.Email_TextBox = new System.Windows.Forms.TextBox();
             this.NgaySinh_TextBox = new System.Windows.Forms.TextBox();
             this.label13 = new System.Windows.Forms.Label();
+            this.Email = new System.Windows.Forms.Label();
             this.label7 = new System.Windows.Forms.Label();
             this.label5 = new System.Windows.Forms.Label();
             this.CMND_TextBox = new System.Windows.Forms.TextBox();
@@ -59,7 +60,6 @@ namespace GUI.GUI
             this.label6 = new System.Windows.Forms.Label();
             this.TGDM_Picker = new System.Windows.Forms.DateTimePicker();
             this.label9 = new System.Windows.Forms.Label();
-            this.Email = new System.Windows.Forms.Label();
             this.TTNgTiem_Panel.SuspendLayout();
             this.panel3.SuspendLayout();
             ((System.ComponentModel.ISupportInitialize)(this.DSVacxinDaChon2_DataGridView)).BeginInit();
@@ -124,6 +124,15 @@ namespace GUI.GUI
             this.label13.Size = new System.Drawing.Size(71, 20);
             this.label13.TabIndex = 15;
             this.label13.Text = "Giới tính:";
+            // 
+            // Email
+            // 
+            this.Email.AutoSize = true;
+            this.Email.Location = new System.Drawing.Point(16, 288);
+            this.Email.Name = "Email";
+            this.Email.Size = new System.Drawing.Size(52, 20);
+            this.Email.TabIndex = 13;
+            this.Email.Text = "Email:";
             // 
             // label7
             // 
@@ -241,14 +250,14 @@ namespace GUI.GUI
             this.DSVacxinDaChon2_DataGridView.AllowUserToDeleteRows = false;
             this.DSVacxinDaChon2_DataGridView.AllowUserToOrderColumns = true;
             this.DSVacxinDaChon2_DataGridView.AutoSizeColumnsMode = System.Windows.Forms.DataGridViewAutoSizeColumnsMode.Fill;
-            dataGridViewCellStyle8.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
-            dataGridViewCellStyle8.BackColor = System.Drawing.SystemColors.Control;
-            dataGridViewCellStyle8.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            dataGridViewCellStyle8.ForeColor = System.Drawing.SystemColors.WindowText;
-            dataGridViewCellStyle8.SelectionBackColor = System.Drawing.SystemColors.Highlight;
-            dataGridViewCellStyle8.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
-            dataGridViewCellStyle8.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
-            this.DSVacxinDaChon2_DataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle8;
+            dataGridViewCellStyle1.Alignment = System.Windows.Forms.DataGridViewContentAlignment.MiddleCenter;
+            dataGridViewCellStyle1.BackColor = System.Drawing.SystemColors.Control;
+            dataGridViewCellStyle1.Font = new System.Drawing.Font("Microsoft Sans Serif", 8F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            dataGridViewCellStyle1.ForeColor = System.Drawing.SystemColors.WindowText;
+            dataGridViewCellStyle1.SelectionBackColor = System.Drawing.SystemColors.Highlight;
+            dataGridViewCellStyle1.SelectionForeColor = System.Drawing.SystemColors.HighlightText;
+            dataGridViewCellStyle1.WrapMode = System.Windows.Forms.DataGridViewTriState.True;
+            this.DSVacxinDaChon2_DataGridView.ColumnHeadersDefaultCellStyle = dataGridViewCellStyle1;
             this.DSVacxinDaChon2_DataGridView.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             this.DSVacxinDaChon2_DataGridView.Columns.AddRange(new System.Windows.Forms.DataGridViewColumn[] {
             this.MaVX,
@@ -264,6 +273,7 @@ namespace GUI.GUI
             this.DSVacxinDaChon2_DataGridView.RowTemplate.Height = 28;
             this.DSVacxinDaChon2_DataGridView.Size = new System.Drawing.Size(544, 297);
             this.DSVacxinDaChon2_DataGridView.TabIndex = 15;
+            this.DSVacxinDaChon2_DataGridView.CellContentClick += new System.Windows.Forms.DataGridViewCellEventHandler(this.DSVacxinDaChon2_DataGridView_CellContentClick);
             // 
             // MaVX
             // 
@@ -379,15 +389,6 @@ namespace GUI.GUI
             this.label9.Size = new System.Drawing.Size(139, 20);
             this.label9.TabIndex = 15;
             this.label9.Text = "Thời gian đặt mua:";
-            // 
-            // Email
-            // 
-            this.Email.AutoSize = true;
-            this.Email.Location = new System.Drawing.Point(16, 288);
-            this.Email.Name = "Email";
-            this.Email.Size = new System.Drawing.Size(52, 20);
-            this.Email.TabIndex = 13;
-            this.Email.Text = "Email:";
             // 
             // XacNhanDatMuaGUI
             // 
